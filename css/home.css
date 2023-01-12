@@ -1,8 +1,11 @@
-/* Whole Page */
 :root{
+    /* Declare Variables Here */
     --screen-width: 1920px;
     --is-screen-smol: false;
 }
+
+/* Add Orbitron Bold Font*/
+
 @font-face {
     font-family: 'Orbitron';
     font-style: bold;
@@ -10,7 +13,9 @@
     font-display: fallback;
     src: local('Orbitron'), local('Orbitron Bold'), local('Orbitron-Bold'), url(fonts/Orbitron-Bold.ttf) format('truetype');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-  }
+}
+
+/* Whole Page */
 
 *{
     padding: 0;
@@ -116,18 +121,6 @@
     width: 93.75%;
     z-index: 10;
     border: 10px solid #494e58;
-    border-radius: 10px
-}
-
-.vert-border-medium02{
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 1615px;
-    left: 3.125%;
-    width: 93.75%;
-    z-index: 10;
-    border: 10px solid #707070;
     border-radius: 10px
 }
 
@@ -259,3 +252,5 @@
 .cf-logo-bottom{
     text-align: center;
 }
+
+/* End Footer Section */
