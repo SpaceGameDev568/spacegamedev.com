@@ -1,10 +1,16 @@
 /* Whole Page */
-
-@font-face {
-    font-family: "Orbitron";
-    src: url(fonts/Orbitron-Regular.ttf) format("truetype");
-    font-weight: normal;
+:root{
+    --screen-width: 1920px;
+    --is-screen-smol: false;
 }
+@font-face {
+    font-family: 'Orbitron';
+    font-style: bold;
+    font-weight: 700;
+    font-display: fallback;
+    src: local('Orbitron'), local('Orbitron Bold'), local('Orbitron-Bold'), url(fonts/Orbitron-Bold.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
 
 *{
     padding: 0;
@@ -26,7 +32,7 @@
     color: azure;
     font-family: Orbitron;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
     line-height: 20px;
 }
@@ -106,7 +112,6 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 38em;
     left: 3.125%;
     width: 93.75%;
     z-index: 10;
@@ -131,7 +136,7 @@
 /* Start About-Me Section */
 
 .about-me{
-    height: 1000px;
+    height: 900px;
     width: 100%;
     background-color: #22272e;
 }
@@ -154,7 +159,8 @@
     font-family: Segoe UI;
     font-size: 30px;
     font-weight: semibold;
-    text-align: center;
+    justify-items: left;
+    text-align: left;
     color: azure;
     line-height: 45px;
     margin: 0% 18.125%;
@@ -162,65 +168,61 @@
 
 /* End About-Me Section */
 
-/* Start What-I-Use Section */
+/* Start Apps Section*/
 
-.what-i-use{
-    height: 1500px; /* Design calls for 1587px */
+.apps{
     width: 100%;
+    height: 500px;
     background-color: #22272e;
 }
 
-.what-i-use-headertext{
-    position: relative;
-    z-index: 10;
-    align-items: center;
-    font-family: Orbitron;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    color: azure;
-    line-height: 144px;
+/* End Apps Section*/
+
+/* Start Projects Section */
+
+.projects{
+    width: 100%;
+    height: 500px;
+    background-color: #22272e;
 }
 
-.what-i-use-content{
-    position: relative;
-    z-index: 10;
-    align-items: center;
-    font-family: Orbitron;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    color: azure;
-    line-height: 144px;
+/* End Projects Section */
+
+/* Start Contact Section */
+
+.contact{
+    width: 100%;
+    height: 650px;
+    background-color: #22272e;
 }
 
-.what-i-use-text{
-    margin-left: 40%;
-    margin-right: 40%;
-    position: relative;
-    z-index: 10;
-    align-items: center;
-    font-family: Segoe UI;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: azure;
-    line-height: 27px;
+.contact-desc{
+        position: absolute;
+        z-index: 10;
+        font-family: Segoe UI;
+        font-size: 30px;
+        font-weight: semibold;
+        justify-items: left;
+        text-align: left;
+        color: azure;
+        line-height: 45px;
+        margin: 0% 18.125%;
 }
 
-.vert-border-end_what-i-use{
-    margin-left: auto;
-    margin-right: auto;
+.contact-info{
     position: absolute;
-    top: 3114px;
-    left: 3.125%;
-    width: 93.75%;
     z-index: 10;
-    border: 10px solid #707070;
-    border-radius: 10px
+    font-family: Segoe UI;
+    font-size: 30px;
+    font-weight: semibold;
+    justify-items: left;
+    text-align: left;
+    color: azure;
+    line-height: 45px;
+    margin: 0% 18.125%;
 }
 
-/* End What-I-Use Section */
+/* End Contact Section */
 
 /* Start Footer Section */
 
@@ -231,8 +233,8 @@
 }
 
 .footertext1{
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
     color: azure;
     font-family: Segoe UI;
     font-weight: bold;

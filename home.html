@@ -16,6 +16,28 @@
   </head>
 
   <body>
+
+    <!-- Detect device type and set 'is-screen-smoll' accordingly -->
+    <script> // Set screen size
+
+      // Get the root element
+      var r = document.querySelector(':root');
+      // Create a function for setting a variable value
+      function setscreensize_set() {
+        r.style.setProperty('--is-screen-smol', 'true');
+      }
+      // Get the styles (properties and values) for the root
+      var rs = getComputedStyle(r);
+
+    if(navigator.userAgent == Android){
+      setscreensize_set()
+    }
+
+    if(navigator.userAgent == iPhone){
+      setscreensize_set()
+    }
+    </script>
+
     <section class="header">
       </div>
       <div class="logo">
@@ -64,7 +86,7 @@
         <p><br>
           I'm a hobbyist developer and digital artist from the United States specializing in programming and 3D art.
         </p>
-      </div>
+      </div><br><br><br>
       <hr class="vert-border-medium01">
     </section>
     <section class="about-me">
@@ -81,9 +103,37 @@
       </div>
       
     </section>
+    <hr class="vert-border-medium01">
+    <section class="apps">
+      <br><br><br>
+      <center><img src="images\ui\apps.png"></center>
+    </section>
+    <hr class="vert-border-medium01">
+    <section class="projects">
+      <br><br><br>
+      <p class="about-me-header">
+        Projects
+      </p>
+      <center><a href="https://ficsit.app/mod/Factory_Prop_Mod"><img src="images\ui\websitecardfprop.png"></a></center>
+    </section>
+    <hr class="vert-border-medium01">
+    <section class="contact">
+      <br><br><br>
+      <p class="about-me-header">
+          Contact
+      </p>
+      <p class="contact-desc">
+        If you would like to inquire about my work or need to contact me for any reason, please email me or reach out to me on Discord.
+      </p><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p class="contact-info">
+        Email: spacegamedev568@gmail.com
+        <br><br>
+        Discord: SpaceGameDev568 #0596
+      </p>
+    </section>
     <section class="footer">
       <div class="footertext1">
-        <br><br>
+        <br>
         <p>
            Copyright © 2023 SpaceGameDev568. All Rights Reserved.<br> The GitHub repository for this website can be found <a href="https://github.com/SpaceGameDev568/spacegamedev.com" style="color:#28a3e9">here</a>.
         </p>
