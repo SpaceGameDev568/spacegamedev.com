@@ -12,18 +12,13 @@
   </head>
   <body>
     <section class="content">
-    <!-- Detect device type and set 'is-screen-smoll' accordingly -->
-    <script> // Set screen size
-
-      // Get the root element
-      var r = document.querySelector(':root');
+    <!-- Detect device type and redirect to mobile site -->
+    <script>
       // Create a function for setting a variable value
       function setscreensize_set() {
         let url = "https://mobile.spacegamedev.com";
         window.location.href = url;
       }
-      // Get the styles (properties and values) for the root
-      var rs = getComputedStyle(r);
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     setscreensize_set()
@@ -36,9 +31,6 @@
 Loading...
     </p>
     </section>
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c4eacadc596344a8b26ac4d782a9cba2"}'></script>
-    <!-- End Cloudflare Web Analytics -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </body>
 </html>

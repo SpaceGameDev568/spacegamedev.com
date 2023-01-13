@@ -1,9 +1,3 @@
-:root{
-    /* Declare Variables Here */
-    --screen-width: 1920px;
-    --is-screen-smol: false;
-}
-
 /* Add Orbitron Bold Font*/
 
 @font-face {
