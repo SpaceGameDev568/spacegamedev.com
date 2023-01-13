@@ -12,6 +12,25 @@
   </head>
   <body>
     <section class="content">
+    <!-- Detect device type and set 'is-screen-smoll' accordingly -->
+    <script> // Set screen size
+
+      // Get the root element
+      var r = document.querySelector(':root');
+      // Create a function for setting a variable value
+      function setscreensize_set() {
+        let url = "https://mobile.spacegamedev.com";
+        window.location.href = url;
+      }
+      // Get the styles (properties and values) for the root
+      var rs = getComputedStyle(r);
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    setscreensize_set()
+    }
+    </script>
+    <!-- End detect device type detection -->
+
     <p>
       <br><br><br><br><br><br><br><br>
 Loading...

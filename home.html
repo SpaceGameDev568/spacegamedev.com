@@ -16,28 +16,6 @@
   </head>
 
   <body>
-    <!-- Detect device type and set 'is-screen-smoll' accordingly -->
-    <script> // Set screen size
-
-      // Get the root element
-      var r = document.querySelector(':root');
-      // Create a function for setting a variable value
-      function setscreensize_set() {
-        r.style.setProperty('--is-screen-smol', 'true');
-      }
-      // Get the styles (properties and values) for the root
-      var rs = getComputedStyle(r);
-
-    if(navigator.userAgent == Android){
-      setscreensize_set()
-    }
-
-    if(navigator.userAgent == iPhone){
-      setscreensize_set()
-    }
-    </script>
-    <!-- End detect device type detection -->
-
     <!-- Start Header Section -->
     <section class="header">
       </div>
