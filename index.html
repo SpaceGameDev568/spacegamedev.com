@@ -11,7 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer>
+      window.onloadTurnstileCallback = function () {
+    turnstile.render('#cf-turnstile', {
+        sitekey: '<0x4AAAAAAAAndkcAZaRnyvWq>',
+        callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+        },
+    });
+};
+    </script>
     <section class="content">
     <!-- Detect device type and redirect to mobile site -->
     <script>
