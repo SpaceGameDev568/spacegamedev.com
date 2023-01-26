@@ -7,15 +7,31 @@
     <link rel="shortcut icon" type="image/ico" href="images\sgdprofileimageround.png"/>
     <link rel="stylesheet" href="css\home.css">
     <!-- Start - Google Fonts and Icons Preconnects-->
-    <!-- Disabled: <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!-- Disabled: <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     <!-- End - Google Fonts and Icons Preconnects-->
   </head>
 
   <body>
+
+        <!-- Detect device type and redirect to mobile site -->
+        <script>
+          // Create a function for setting a variable value
+          function setscreensize_set() {
+            let url = "https://mobile.spacegamedev.com";
+            window.location.href = url;
+          }
+    
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        setscreensize_set()
+        }
+        </script>
+        <!-- End detect device type detection -->
+
     <!-- Start Header Section -->
     <section class="header">
       </div>
@@ -83,7 +99,7 @@
       </div>
       <div class="about-me-desc">
         <p><br>
-            I am a student and hobbyist game developer from the United States. I have experience in making mods for games such as Satisfactory and making 3D art in Blender. I am also working on a game in Unreal Engine 5 to learn the software necessary to make video games. My main interests are space exploration, game design, and digital art.
+            I am a student and hobbyist game developer from the United States. I have experience in making mods for games such as Satisfactory (which I publish on <a href="https://ficsit.app" style="color: #28a3e9">https://ficsit.app</a>) and making 3D art in Blender. I am also working on a game in Unreal Engine 5 to learn the software necessary to make video games. My main interests are space exploration, game design, and digital art.
         </p>
 
       </div>
