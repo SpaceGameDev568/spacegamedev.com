@@ -37,12 +37,8 @@
 }
 
 .logo{
-    color: azure;
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
-    line-height: 20px;
+    line-height: 10px;
 }
 
 /*  End Header Section */
@@ -269,6 +265,7 @@
 
 .cf-logo-bottom{
     text-align: center;
+    max-width: 200px;
 }
 
 /* End Footer Section */
