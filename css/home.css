@@ -108,39 +108,42 @@
 
 .intro{
     font-family: Open Sans, sans-serif;
-    font-size: 30px;
+    font-size: 1.9vw;
     font-weight: bold;
     text-align: center;
     color: azure;
     line-height: 40px;
 }
 
-.about01{
+.about-short{
     display: flex;
-    width: 40%;
+    width: 40vw;
     text-align: center;
     font-family: Open Sans, sans-serif;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: semibold;
     color: azure;
     line-height: 125%;
-    line-break: 20%;
+    line-break: 20vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*  End Bio-Short Section */
 
-/* Vertical Borders */
+/* Vertical Border */
 
-.vert-border-medium01{
+.vert-border-section{
+    width: 100%;
+    background-color: #22272e;
+}
+
+.vert-border{
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    left: 3.125%;
-    width: 93.75%;
+    width: 90vw;
     z-index: 10;
-    border: 10px solid #494e58;
+    border: 0.5vw solid #494e58;
     border-radius: 10px
 }
 
@@ -149,7 +152,7 @@
 /* Start About-Me Section */
 
 .about-me{
-    height: 900px;
+    height: 25vw;
     width: 100%;
     background-color: #22272e;
 }
@@ -159,24 +162,23 @@
     z-index: 10;
     align-items: center;
     font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
     color: azure;
-    line-height: 144px;
 }
 
 .about-me-desc{
     position: absolute;
     z-index: 10;
     font-family: Open Sans, sans-serif;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: semibold;
     justify-items: left;
     text-align: left;
     color: azure;
-    line-height: 45px;
-    margin: 0% 18.125%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 /* End About-Me Section */
@@ -185,8 +187,11 @@
 
 .apps{
     width: 100%;
-    height: 500px;
     background-color: #22272e;
+}
+
+.apps-img{
+    width: 35vw;
 }
 
 /* End Apps Section*/
@@ -195,8 +200,11 @@
 
 .projects{
     width: 100%;
-    height: 500px;
     background-color: #22272e;
+}
+
+.fprop-project-card{
+    width: 30vw;
 }
 
 /* End Projects Section */
@@ -205,34 +213,21 @@
 
 .contact{
     width: 100%;
-    height: 650px;
+    height: 25vw;
     background-color: #22272e;
 }
 
 .contact-desc{
-        position: absolute;
-        z-index: 10;
-        font-family: Open Sans, sans-serif;
-        font-size: 30px;
-        font-weight: semibold;
-        justify-items: left;
-        text-align: left;
-        color: azure;
-        line-height: 45px;
-        margin: 0% 18.125%;
-}
-
-.contact-info{
     position: absolute;
     z-index: 10;
     font-family: Open Sans, sans-serif;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: semibold;
     justify-items: left;
     text-align: left;
     color: azure;
-    line-height: 45px;
-    margin: 0% 18.125%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 /* End Contact Section */
@@ -241,13 +236,13 @@
 
 .socials{
     width: 100%;
-    height: 300px;
+    height: 20vw;
     background-color: #22272e;
 }
 
 .social-icon{
-    width: 64px;
-    margin: 10px;
+    width: 4vw; /* 64px */
+    margin: 0.5vw; /* 10px */
 }
 
 /* End Social Links Section */
@@ -256,7 +251,7 @@
 
 .footer{
     background: #2d333b;
-    height: 250px;
+    height: 15vw;
     width: 100%;
 }
 
@@ -266,7 +261,7 @@
     color: azure;
     font-family: Open Sans, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     text-align: center;
 }
 
@@ -276,7 +271,7 @@
     color: azure;
     font-family: Orbitron, Open Sans, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     text-align: center;
 }
 
@@ -286,13 +281,21 @@
 
 .cf-logo-bottom{
     text-align: center;
-    max-width: 200px;
+    width: 20vw;
 }
 
 /* End Footer Section */
 
 /* Generic Line Break Heights */
 
+.br-1vw{
+    line-height: 2vw;
+}
+
 .br-2vw{
     line-height: 2vw;
+}
+
+.br-4vw{
+    line-height: 4vw;
 }
