@@ -1,7 +1,12 @@
 {
 	"folders": [
 		{
+			"name": "spacegamedev.com",
 			"path": ".."
+		},
+		{
+			"name": "mobile.spacegamedev.com",
+			"path": "../../mobile.spacegamedev.com"
 		}
 	],
 	"settings": {}
