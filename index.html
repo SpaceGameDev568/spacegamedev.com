@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <!-- Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved -->
+  <!-- Copyright (©) 2022 - 2023 Jesse Hodgson. All Rights Reserved -->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceGameDev's Website</title>
-    <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images/sgd-logo-round.png"/>
+    <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images\webp\sgd-logo-round.webp"/>
     <link rel="stylesheet" href="css\home.css">
     <link rel="preconnect" href="https://assets.spacegamedev.com"/>
-    <link rel="preconnect" href="https://services.spacegamedev.com"/>
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">-->
   </head>
-    <body>
-      <!-- Detect device type and redirect to mobile site -->
-      <script>
-        // Create a function for setting a variable value
-        function setscreensize_set() {
-          let url = "https://mobile.spacegamedev.com";
-          window.location.href = url;
-        }
+  <!-- End Head, Start Body -->
+  <body>
+    <!-- Detect device type and redirect to mobile site -->
+    <script>
+
+      // Create a function for setting a variable value
+      function setscreensize_set() {
+        let url = "https://mobile.spacegamedev.com";
+        window.location.href = url;
+      }
   
       if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       setscreensize_set()
       }
-      </script>
-      <!-- End detect device type detection -->
+
+    </script>
+    <!-- End detect device type detection -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-1YLEB435KG');
+    </script>
+
+
     <!-- Start Header Section -->
     <section class="header">
       <center>
         <br>
-        <img class="header-logo" src="https://assets.spacegamedev.com/images/monochrome-logo-large.png">
+        <img class="header-logo" src="https://assets.spacegamedev.com/images\webp\monochrome-logo-large.webp">
       </center>
     </section>
     <!-- End Header Section-->
 
-          <!-- Back to Top button copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-          <script>
-            //Get the button:
-            mybutton = document.getElementById("myBtn");
-          
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-          
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-          
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-          </script>
-          <!-- End Back to Top button -->
+
+    <!-- Back to Top button copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+    
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+    </script>
+    <!-- End Back to Top button -->
+
 
     <!-- Start First Section -->
     <section class="bio-short">
       <br class="br-2vw">
-      <img class="sgd-logo" src="https://assets.spacegamedev.com/images/sgd-logo.png">
+      <img class="sgd-logo" src="https://assets.spacegamedev.com/images\webp\sgd-logo.webp">
       <br class="br-1vw">
       <div class="intro">
         <p>
@@ -76,12 +91,10 @@
           I'm a hobbyist developer and digital artist from the United States specializing in programming and 3D art.
         </p>
       </div><br class="br-1vw">
-
       <section class="vert-border-section"><center><hr class="vert-border"></center></section>
-    
-      
     </section>
     <!-- Start First Section -->
+
 
     <!-- Start About Section -->
     <section class="about-me">
@@ -99,14 +112,14 @@
     </section>
     <!-- End About Section -->
 
-    <section class="vert-border-section"><center><hr class="vert-border"></center></section>
 
+    <section class="vert-border-section"><center><hr class="vert-border"></center></section>
 
 
     <!-- Start Apps Section -->
     <section class="apps">
       <br class="br-1vw">
-      <center><img class="apps-img" src="https://assets.spacegamedev.com/images/ui/apps.png"></center>
+      <center><img class="apps-img" src="https://assets.spacegamedev.com/images\webp\ui\apps.webp"></center>
       <br class="br-1vw">
     </section>
     <!-- End Apps Section -->
@@ -119,7 +132,7 @@
       <p class="about-me-header">
         Projects
       </p><br class="br-1vw">
-      <center><a href="https://ficsit.app/mod/Factory_Prop_Mod"><img class="fprop-project-card" src="https://assets.spacegamedev.com/images/ui/websitecardfprop.png"></a></center>
+      <center><a href="https://ficsit.app/mod/Factory_Prop_Mod"><img class="fprop-project-card" src="https://assets.spacegamedev.com/images\webp\ui\websitecardfprop.webp"></a></center>
       <br class="br-1vw">
     </section>
     
