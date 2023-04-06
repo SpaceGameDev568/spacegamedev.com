@@ -50,43 +50,66 @@
 
     <!-- Start Header Section -->
     <div class="header">
-      <a href="nothing"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>
+      <!--<a><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
+      <button class="openbtn" onclick="openNav()"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="openbtn-img"></button>
       <center>
       <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
       </center>
-      <!--<button class="btn-toggle">Toggle Theme</button>-->
       <a href="#" class="btn-toggle">Toggle Theme</a>
+      <div id="websidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="https://assets.spacegamedev.com/images/ui/menu-x.svg" class="closenavbutton"></a>
+        <a href="index.html" class="sidebar-link">home</a>
+        <a href="projects.html" class="sidebar-link">projects</a>
+        <a href="downloads.html" class="sidebar-link">downloads</a>
+        <a href="support.html" class="sidebar-link">support</a>
+      </div>
     </div>
     <!-- End Header Section-->
 
-    <!-- Theme switcher button-->
-    <!--<script>
-      const btn = document.querySelector(".btn-toggle");
+    <!-- Sidebar function -->
+    <script>
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("websidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
-    btn.addEventListener("click", function () {
-      document.body.classList.toggle("light");
-    });
-    </script>-->
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("websidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <!-- Theme switcher button function with cookie -->
     <script>
       // Select the button
       const btn = document.querySelector(".btn-toggle");
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "light") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("light");
+      }
 
       // Listen for a click on the button 
       btn.addEventListener("click", function() {
-        // Toggle the .dark-theme class on the body
+        // Toggle the .dark-theme class on each click
         document.body.classList.toggle("light");
 
         // Let's say the theme is equal to light
-        let theme = "light";
+        let theme = "";
         // If the body contains the .dark-theme class...
         if (document.body.classList.contains("light")) {
           // ...then let's make the theme dark
           theme = "light";
         }
-        // Then save the choice in a cookie
-        document.cookie = "theme=" + theme;
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
       });
     </script>
+
 
     <!-- Back to Top button copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
