@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <!-- Copyright (©) 2022 - 2023 Jesse Hodgson. All Rights Reserved -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceGameDev's Website</title>
+    <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images\webp\sgd-logo-round.webp"/>
+    <link rel="stylesheet" href="css\downloads.css">
+    <link rel="preconnect" href="https://assets.spacegamedev.com"/>
+  </head>
+  <!-- End Head, Start Body -->
+  <body>
+
+    <!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-1YLEB435KG');
+    </script>
+
+    <!-- Auto detect OS theme -->
+    <script>
+      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+      if (prefersLightScheme.matches) {
+        document.body.classList.add("light");
+      } else {
+        document.body.classList.remove("light");
+      }
+    </script>
+
+
+    <!-- Start Header Section -->
+    <div class="header">
+      <div class="header-bg"></div>
+      <!--<a><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
+      <button class="openbtn" onclick="openNav()" title="Navigation"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="openbtn-img"></button>
+      <center>
+      <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
+      </center>
+      <a href="javascript:void(0)" class="btn-toggle" title="Switch themes"><img class="theme-icon" src="https://spacegamedev-assets.pages.dev/images/ui/theme-toggle.svg"></a>
+      <div id="websidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="https://assets.spacegamedev.com/images/ui/menu-x.svg" class="closenavbutton"></a>
+        <a href="index.html" class="sidebar-link">home</a>
+        <a href="projects.html" class="sidebar-link">projects</a>
+        <a href="downloads.html" class="sidebar-link">downloads</a>
+        <a href="support.html" class="sidebar-link">support</a>
+      </div>
+    </div>
+    <!-- End Header Section-->
+
+    <!-- Sidebar function -->
+    <script>
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("websidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("websidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <!-- Theme switcher button function with cookie -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".btn-toggle");
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "light") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("light");
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function() {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("light");
+
+        // Let's say the theme is equal to light
+        let theme = "";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("light")) {
+          // ...then let's make the theme dark
+          theme = "light";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+    </script>
+
+<section class="downloads"><br><br><br><br><br><br>
+<center><p class="downloads-header">Download Centre</p></center>
+<br><br><br><br>
+<center><div class="charles-download">
+    <p class="download-desc">Download the latest release of Charles from GitHub.</p><br>
+    <a href="https://github.com/SpaceGameDev568/Charles/releases" class="download-link">Download</a>
+</div></center>
+<br><br><br><br>
+<center><div class="charles-download">
+    <p class="download-desc">Download my Satisfactory mods from the Satisfactory Mod Repository or the Satisfactory Mod Manager</p><br>
+    <a href="https://ficsit.app/user/5GqLMHyzA3myPG" class="download-link">View</a>
+</div></center><br><br><br><br><br><br><br><br>
+</section>
+
+<section class="footer">
+    <center><p class="footer-p">
+      <br><br>
+      Copyright © 2022 - 2023 Jesse Hodgson. All Rights Reserved.<br>
+      This website is an open source project, and the source code can be found on GitHub <a href="https://github.com/SpaceGameDev568/spacegamedev.com" class="standard-link">here</a>.
+    </p>
+    <br><br>
+    <p class="attribution">
+      Performance and security by Cloudflare.
+      <br><br>
+      Fonts used:
+      <br><br>
+      Comfortaa: <a href="https://fonts.google.com/specimen/Comfortaa" class="standard-link">Comfortaa on Google Fonts</a>
+      <br>
+      Open Sans: <a href="https://fonts.google.com/specimen/Open+Sans" class="standard-link">Open Sans on Google Fonts</a>
+      <br>
+      Orbitron: <a href="https://fonts.google.com/specimen/Orbitron" class="standard-link">Orbitron on Google Fonts</a>
+    </p></center>
+    </section>
+  </body>
+
+</html>

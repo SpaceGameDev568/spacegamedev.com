@@ -1,0 +1,392 @@
+/* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
+
+/* Import font faces from the asset server */
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.ttf');
+    font-family:'Orbitron';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.ttf');
+    font-family:'Comfortaa';
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+/* Whole Page */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body{
+    background: var(--dark-background);
+}
+
+body.light{
+    background: var(--light-background);
+}
+
+/* Colour palette */
+
+:root{
+    --dark-background: #22272e;
+    --dark-foreground: #2d333b;
+    --dark-accent: #414141;
+    --dark-text: #f0ffff;
+    --dark-border: #999999;
+
+    --light-background: #ddeeeb;
+    --light-foreground: #a5aeb1;
+    --light-accent: #83898d;
+    --light-text: #1c1c1d;
+    --light-border: #414141;
+}
+
+/* Text selection */
+
+::-moz-selection { /* Code for Firefox */
+    color: #22272e;
+    background: #f0ffff;
+  }
+  
+::selection {
+  color: #22272e;
+  background: #f0ffff;
+}
+
+body.light ::-moz-selection{ /* Code for Firefox */
+    color: #928c8c;
+    background: #1d68a4;
+  }
+  
+body.light ::selection {
+  color: #928c8c;
+  background: #1d68a4;
+}
+
+/*  Start Header Section */
+
+.header{
+    background-color: var(--dark-foreground);
+    height: 80px;
+    width: 100%;
+    border: 1px solid var(--dark-accent);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+body.light .header{
+    background-color: var(--light-foreground);
+    border: 1px solid var(--light-accent);
+}
+
+.hamburger-menu{
+    top: 20px;
+    position: absolute;
+    width: 40px;
+    left: 20px;
+    background-color: var(--dark-accent);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+body.light .hamburger-menu{
+    background-color: var(--light-accent);
+}
+
+.hamburger-menu:hover{
+    background-color: #999999;
+}
+
+body.light .hamburger-menu:hover{
+    background-color: var(--light-border);
+}
+
+.header-logo{
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 64px;
+    background-color: var(--dark-accent);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+body.light .header-logo{
+    background-color: var(--light-accent);
+}
+
+.theme-icon{
+    width: 32px;
+}
+
+.btn-toggle{
+    display: flex;
+    position: absolute;
+    background-color: var(--dark-accent);
+    padding: 5px;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-toggle:hover{
+    background-color: #999999;
+}
+
+body.light .btn-toggle{
+    background-color: var(--light-accent);
+}
+
+body.light .btn-toggle:hover{
+    background-color: var(--dark-accent);
+}
+
+/*  End Header Section */
+
+/* Sidebar */
+
+    /* The sidebar menu */
+    .sidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: var(--dark-foreground); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+        border: 1px solid var(--dark-accent);
+      }
+
+    body.light .sidebar{
+        background-color: var(--light-foreground);
+        border: 1px solid var(--light-accent);
+    }
+
+      /* The sidebar links */
+      .sidebar-link {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: var(--dark-text);
+        display: block;
+        transition: 0.3s;
+        font-family: Comfortaa, Open sans, sans-serif;
+      }
+
+      body.light .sidebar-link{
+        color: var(--light-text);
+      }
+
+      /* Position and style the close button (top right corner) */
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* The button used to open the sidebar */
+      .openbtn {
+        display: flex;
+        top: 15px;
+        position: absolute;
+        left: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: var(--dark-accent);
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.5s;
+      }
+
+      .openbtn-img{
+        width: 40px;
+      }
+
+      .openbtn:hover{
+        background-color: #999999;
+      }
+
+      body.light .openbtn{
+        background-color: var(--light-accent);
+      }
+
+      body.light .openbtn:hover{
+        background-color: var(--light-border);
+      }
+
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+
+      .closenavbutton{
+        position: absolute;
+        top: 15px;
+        width: 30px;
+        right: 1px;
+      }
+
+.projects-header{
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+}
+
+body.light .projects-header{
+    color: var(--light-text);
+}
+
+.projects-subsection-h{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body.light .projects-subsection-h{
+    color: var(--light-text);
+}
+
+.project-name{
+    color: var(--dark-text);
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 30px;
+}
+
+body.light .project-name{
+    color: var(--light-text);
+}
+
+.project-desc{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 17px;
+    font-weight: light;
+}
+
+body.light .project-desc{
+    color: var(--light-text);
+}
+
+.charles-project{
+    background-color: var(--dark-foreground);
+    width: 400px;
+    padding: 10px;
+    border: 2px solid var(--light-accent);
+    border-radius: 20px;
+    margin-left: 5%;
+}
+
+body.light .charles-project{
+    background-color: var(--light-foreground);
+}
+
+.sf-mod-project{
+    display: inline-block;
+    background-color: var(--dark-foreground);
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    border: 2px solid var(--light-accent);
+    border-radius: 20px;
+    margin-left: 5%;
+}
+
+body.light .sf-mod-project{
+    background-color: var(--light-foreground);
+}
+
+.source-link{
+    background-color: #4f42c4;
+    padding: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Open Sans, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.download-link{
+    background-color: #42c48e;
+    padding: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Open Sans, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.footer{
+    background-color: var(--dark-foreground);
+    height: 340px;
+    line-height: 20px;
+    border: 1px solid var(--dark-accent);
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 15px;
+}
+
+body.light .footer{
+    color: var(--light-text);
+    background-color: var(--light-foreground);
+    border: var(--light-accent);
+}
+
+.standard-link{
+    color: #1d68a4;
+}
+
+.vertical-section-divider{
+    border: 5px solid var(--dark-border);
+    border-radius: 20px;
+    width: 80%;
+}
