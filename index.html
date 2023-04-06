@@ -39,14 +39,16 @@
 
     <!-- Start Header Section -->
     <div class="header">
-      <a href="nothing"> <img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>
+      <a href="nothing"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>
       <center>
       <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
       </center>
-      <button class="btn-toggle">Toggle Theme</button>
+      <!--<button class="btn-toggle">Toggle Theme</button>-->
+      <a href="#" class="btn-toggle">Toggle Theme</a>
     </div>
     <!-- End Header Section-->
 
+    <!-- Theme switcher button-->
     <script>
       const btn = document.querySelector(".btn-toggle");
 
@@ -55,6 +57,16 @@
     });
     </script>
 
+    <!-- Auto detect OS theme -->
+    <script>
+      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+      if (prefersLightScheme.matches) {
+        document.body.classList.add("light");
+      } else {
+        document.body.classList.remove("light");
+      }
+    </script>
 
     <!-- Back to Top button copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -95,7 +107,7 @@
           Hi there!
         </p>
       </div>
-      <br>
+      <br><br>
       <div class="about-short">
         <p>
           I'm Jesse Hodgson, more commonly known by my alias: SpaceGameDev,<br> and I'm a Software Developer from Charlotte, North Carolina, in the United States.

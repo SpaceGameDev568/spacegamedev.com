@@ -59,7 +59,7 @@ body.light{
 
     --light-background: #ddeeeb;
     --light-foreground: #919fa8;
-    --light-accent: #414141;
+    --light-accent: #627e94;
     --light-text: #1c1c1d;
     --light-border: #414141;
 }
@@ -137,6 +137,31 @@ body.light .header-logo{
     background-color: var(--light-accent);
 }
 
+.btn-toggle{
+    position: absolute;
+    color: var(--dark-text);
+    background-color: var(--dark-accent);
+    padding: 6px 10px;
+    top: 20px;
+    right: 20px;
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-toggle:hover{
+    background-color: #999999;
+}
+
+body.light .btn-toggle{
+    background-color: var(--light-accent);
+}
+
+body.light .btn-toggle:hover{
+    background-color: var(--dark-accent);
+}
+
 /*  End Header Section */
 
 /* Start Back to Top button modified from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -185,6 +210,7 @@ body.light .sgd-logo{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 40px;
+    font-weight: bold;
 }
 
 body.light .intro{
