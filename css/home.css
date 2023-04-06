@@ -456,7 +456,8 @@ body.light .socials-p{
 
 .footer{
     background-color: var(--dark-foreground);
-    height: 250px;
+    height: 320px;
+    line-height: 20px;
     border: 1px solid var(--dark-accent);
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
