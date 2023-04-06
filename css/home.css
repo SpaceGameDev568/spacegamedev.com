@@ -38,15 +38,65 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background: #22272e;
+}
+
+body{
+    background: var(--dark-background);
+}
+
+body.light{
+    background: var(--light-background);
+}
+
+/* Colour palette */
+
+:root{
+    --dark-background: #22272e;
+    --dark-foreground: #2d333b;
+    --dark-accent: #414141;
+    --dark-text: #f0ffff;
+    --dark-border: #999999;
+
+    --light-background: #ddeeeb;
+    --light-foreground: #919fa8;
+    --light-accent: #414141;
+    --light-text: #1c1c1d;
+    --light-border: #414141;
+}
+
+/* Text selection */
+
+::-moz-selection { /* Code for Firefox */
+    color: #22272e;
+    background: #f0ffff;
+  }
+  
+::selection {
+  color: #22272e;
+  background: #f0ffff;
+}
+
+body.light ::-moz-selection{ /* Code for Firefox */
+    color: #928c8c;
+    background: #1d68a4;
+  }
+  
+body.light ::selection {
+  color: #928c8c;
+  background: #1d68a4;
 }
 
 /*  Start Header Section */
 
 .header{
-    background-color: #2d333b;
+    background-color: var(--dark-foreground);
     height: 80px;
-    border: 1px solid #414141;
+    border: 1px solid var(--dark-accent);
+}
+
+body.light .header{
+    background-color: var(--light-foreground);
+    border: 1px solid var(--light-accent);
 }
 
 .hamburger-menu{
@@ -54,14 +104,22 @@
     position: absolute;
     width: 40px;
     left: 20px;
-    background-color: #414141;
+    background-color: var(--dark-accent);
     border-radius: 5px;
     padding: 5px;
     transition: 0.5s;
 }
 
+body.light .hamburger-menu{
+    background-color: var(--light-accent);
+}
+
 .hamburger-menu:hover{
     background-color: #999999;
+}
+
+body.light .hamburger-menu:hover{
+    background-color: var(--light-border);
 }
 
 .header-logo{
@@ -70,7 +128,13 @@
     -ms-transform: translate(-50%);
     transform: translate(-50%);
     width: 64px;
-    background-color: #ffffff00;
+    background-color: var(--dark-accent);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+body.light .header-logo{
+    background-color: var(--light-accent);
 }
 
 /*  End Header Section */
@@ -109,15 +173,46 @@
 
 .sgd-logo{
     width: 256px;
-    border: 2px solid #414141;
+    border: 2px solid var(--dark-accent);
     border-radius: 40px;
 }
 
+body.light .sgd-logo{
+    border: 2px solid var(--light-accent);
+}
+
 .intro{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 40px;
+}
+
+body.light .intro{
+    color: var(--light-text);
+}
+
+body.light{
+    color: var(--light-text);
 }
 
 .about-short{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--dark-text);
+    font-family: Comfortaa, Opens Sans, sans-serif;
+    font-size: 25px;
+    line-height: 42px;
+}
 
+body.light .about-short{
+    color: var(--light-text);
 }
 
 /*  End Bio-Short Section */
+
+.vertical-section-divider{
+    border: 5px solid var(--dark-border);
+    border-radius: 20px;
+    width: 80%;
+}
