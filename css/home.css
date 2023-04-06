@@ -66,10 +66,10 @@
 
 .header-logo{
     position: absolute;
-    top: 15px;
+    top: 8px;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
-    width: 350px;
+    width: 64px;
     background-color: #ffffff00;
 }
 
@@ -109,7 +109,7 @@
 
 .sgd-logo{
     width: 256px;
-    border: 1px solid #414141;
+    border: 2px solid #414141;
     border-radius: 40px;
 }
 
