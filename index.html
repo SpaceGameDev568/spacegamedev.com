@@ -10,21 +10,6 @@
   </head>
   <!-- End Head, Start Body -->
   <body>
-    <!-- Detect device type and redirect to mobile site --><!--
-    <script>
-
-      // Create a function for setting a variable value
-      function setscreensize_set() {
-        let url = "https://mobile.spacegamedev.com";
-        window.location.href = url;
-      }
-  
-      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      setscreensize_set()
-      }
-
-    </script>-->
-    <!-- End detect device type detection -->
 
     <!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG"></script>
@@ -55,13 +40,17 @@
       <center>
       <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
       </center>
-      <a href="#" class="btn-toggle">Toggle Theme</a>
+      <a href="#" class="btn-toggle"><img class="theme-icon" src="https://spacegamedev-assets.pages.dev/images/ui/theme-toggle.svg"></a>
       <div id="websidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="https://assets.spacegamedev.com/images/ui/menu-x.svg" class="closenavbutton"></a>
         <a href="index.html" class="sidebar-link">home</a>
+        <hr>
         <a href="projects.html" class="sidebar-link">projects</a>
+        <hr>
         <a href="downloads.html" class="sidebar-link">downloads</a>
+        <hr>
         <a href="support.html" class="sidebar-link">support</a>
+        <hr>
       </div>
     </div>
     <!-- End Header Section-->
@@ -159,6 +148,11 @@
     </section>
 
     <center><hr class="vertical-section-divider"></center>
+
+    <section class="about">
+      
+    </section>
+
   </body>
 
 </html>
