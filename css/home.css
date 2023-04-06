@@ -35,7 +35,6 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
     box-sizing: border-box;
     transition: 0.5s;
@@ -43,6 +42,7 @@
 
 body{
     background: var(--dark-background);
+    transition: 0.5s;
 }
 
 body.light{
@@ -310,6 +310,7 @@ body.light .sgd-logo{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 40px;
     font-weight: bold;
+    text-shadow: 4px 2px 4px #00000025;
 }
 
 body.light .intro{
@@ -340,4 +341,130 @@ body.light .about-short{
     border: 5px solid var(--dark-border);
     border-radius: 20px;
     width: 80%;
+}
+
+.about-header{
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+}
+
+body.light .about-header{
+    color: var(--light-text);
+}
+
+.about-me-bio{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: light;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .about-me-bio{
+    color: var(--light-text);
+}
+
+.standard-link{
+    color: #1d68a4;
+}
+
+.experience-header{
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+}
+
+body.light .experience-header{
+    color: var(--light-text);
+}
+
+.skills{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: light;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .skills{
+    color: var(--light-text);
+}
+
+.contact-header{
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+}
+
+body.light .contact-header{
+    color: var(--light-text);
+}
+
+.contact-p{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: light;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .contact-p{
+    color: var(--light-text);
+}
+
+.socials-header{
+    font-family: Orbitron, Open Sans, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+}
+
+body.light .socials-header{
+    color: var(--light-text);
+}
+
+.socials-p{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: light;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .socials-p{
+    color: var(--light-text);
+}
+
+.footer{
+    background-color: var(--dark-foreground);
+    height: 250px;
+    border: 1px solid var(--dark-accent);
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 15px;
+}
+
+body.light .footer{
+    color: var(--light-text);
+    background-color: var(--light-foreground);
+    border: var(--light-accent);
 }
