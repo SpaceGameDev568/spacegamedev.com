@@ -1,1 +1,166 @@
-Work in progress.
+<!DOCTYPE html>
+<html>
+  <!-- Copyright (©) 2022 - 2023 Jesse Hodgson. All Rights Reserved -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceGameDev's Website</title>
+    <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images\webp\sgd-logo-round.webp"/>
+    <link rel="stylesheet" href="css\projects.css">
+    <link rel="preconnect" href="https://assets.spacegamedev.com"/>
+  </head>
+  <!-- End Head, Start Body -->
+  <body>
+
+    <!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-1YLEB435KG');
+    </script>
+
+    <!-- Auto detect OS theme -->
+    <script>
+      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+      if (prefersLightScheme.matches) {
+        document.body.classList.add("light");
+      } else {
+        document.body.classList.remove("light");
+      }
+    </script>
+
+
+    <!-- Start Header Section -->
+    <div class="header">
+      <div class="header-bg"></div>
+      <!--<a><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
+      <button class="openbtn" onclick="openNav()" title="Navigation"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="openbtn-img"></button>
+      <center>
+      <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
+      </center>
+      <a href="javascript:void(0)" class="btn-toggle" title="Switch themes"><img class="theme-icon" src="https://spacegamedev-assets.pages.dev/images/ui/theme-toggle.svg"></a>
+      <div id="websidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="https://assets.spacegamedev.com/images/ui/menu-x.svg" class="closenavbutton"></a>
+        <a href="index.html" class="sidebar-link">home</a>
+        <a href="projects.html" class="sidebar-link">projects</a>
+        <a href="downloads.html" class="sidebar-link">downloads</a>
+        <a href="support.html" class="sidebar-link">support</a>
+      </div>
+    </div>
+    <!-- End Header Section-->
+
+    <!-- Sidebar function -->
+    <script>
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("websidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("websidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <!-- Theme switcher button function with cookie -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".btn-toggle");
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "light") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("light");
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function() {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("light");
+
+        // Let's say the theme is equal to light
+        let theme = "";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("light")) {
+          // ...then let's make the theme dark
+          theme = "light";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+    </script>
+
+<section class="projects">
+<br><br><br><br><br><br>
+<center><p class="projects-header">My Projects</p></center>
+<br><br>
+<p class="projects-subsection-h">Software</p>
+<br>
+<div class="charles-project">
+<p class="project-name">Charles</p><br>
+<p class="project-desc">Charles is a command line app I'm working on to learn the fundamentals of Go (golang).<br> It's purpose is to automate various tasks with one simple command.</p>
+<br>
+<a href="https://github.com/SpaceGameDev568/Charles" class="source-link">GitHub</a> <a href="downloads.html" class="download-link">Download</a>
+</div><br>
+<!--<p class="projects-subsection-h">Games</p>-->
+<p class="projects-subsection-h">Mods</p>
+<br>
+<div class="sf-mod-project">
+<p class="project-name">Factory Props</p><br>
+<p class="project-desc">Factory Props is a mod for Satisfactory that repurposes assets from the game as decorative buildings.</p>
+<br>
+<a href="https://github.com/SpaceGameDev568/Factory_Prop_Mod" class="source-link">GitHub</a> <a href="downloads.html" class="download-link">Download</a>
+</div><br><br>
+
+<div class="sf-mod-project">
+<p class="project-name">Remove All Annoyances</p><br>
+<p class="project-desc">Removes annoying things from the world.</p>
+<br>
+<a href="https://github.com/SpaceGameDev568/RemoveAllAnnoyances" class="source-link">GitHub</a> <a href="downloads.html" class="download-link">Download</a>
+</div><br><br>
+
+<div class="sf-mod-project">
+<p class="project-name">SatisWHACKtory</p><br>
+<p class="project-desc">FICSIT Inc. is not responsible for any injuries caused by the use of this mod.</p>
+<br>
+<a href="https://github.com/SpaceGameDev568/ObstacleMod" class="source-link">GitHub</a> <a href="downloads.html" class="download-link">Download</a>
+</div><br><br>
+
+<div class="sf-mod-project">
+<p class="project-name">Satisfactory Discord Rich Presence</p><br>
+<p class="project-desc">See your Satisfactory presence info on your Discord profile.</p>
+<br>
+<a href="https://github.com/SpaceGameDev568/FG_DiscordRP" class="source-link">GitHub</a> <a href="downloads.html" class="download-link">Download</a>
+</div><br>
+</section><br>
+
+
+
+<section class="footer">
+    <center><p class="footer-p">
+      <br><br>
+      Copyright © 2022 - 2023 Jesse Hodgson. All Rights Reserved.<br>
+      This website is an open source project, and the source code can be found on GitHub <a href="https://github.com/SpaceGameDev568/spacegamedev.com" class="standard-link">here</a>.
+    </p>
+    <br><br>
+    <p class="attribution">
+      Performance and security by Cloudflare.
+      <br><br>
+      Fonts used:
+      <br><br>
+      Comfortaa: <a href="https://fonts.google.com/specimen/Comfortaa" class="standard-link">Comfortaa on Google Fonts</a>
+      <br>
+      Open Sans: <a href="https://fonts.google.com/specimen/Open+Sans" class="standard-link">Open Sans on Google Fonts</a>
+      <br>
+      Orbitron: <a href="https://fonts.google.com/specimen/Orbitron" class="standard-link">Orbitron on Google Fonts</a>
+    </p></center>
+    </section>
+  </body>
+
+</html>
