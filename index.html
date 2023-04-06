@@ -36,6 +36,17 @@
       gtag('config', 'G-1YLEB435KG');
     </script>
 
+    <!-- Auto detect OS theme -->
+    <script>
+      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+      if (prefersLightScheme.matches) {
+        document.body.classList.add("light");
+      } else {
+        document.body.classList.remove("light");
+      }
+    </script>
+
 
     <!-- Start Header Section -->
     <div class="header">
@@ -49,23 +60,32 @@
     <!-- End Header Section-->
 
     <!-- Theme switcher button-->
-    <script>
+    <!--<script>
       const btn = document.querySelector(".btn-toggle");
 
     btn.addEventListener("click", function () {
       document.body.classList.toggle("light");
     });
-    </script>
-
-    <!-- Auto detect OS theme -->
+    </script>-->
     <script>
-      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+      // Select the button
+      const btn = document.querySelector(".btn-toggle");
 
-      if (prefersLightScheme.matches) {
-        document.body.classList.add("light");
-      } else {
-        document.body.classList.remove("light");
-      }
+      // Listen for a click on the button 
+      btn.addEventListener("click", function() {
+        // Toggle the .dark-theme class on the body
+        document.body.classList.toggle("light");
+
+        // Let's say the theme is equal to light
+        let theme = "light";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("light")) {
+          // ...then let's make the theme dark
+          theme = "light";
+        }
+        // Then save the choice in a cookie
+        document.cookie = "theme=" + theme;
+      });
     </script>
 
     <!-- Back to Top button copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
