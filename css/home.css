@@ -25,7 +25,7 @@
 
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.ttf');
-    font-family:'Comforta';
+    font-family:'Comfortaa';
     font-style: normal;
     font-weight: 1 1000;
 }
@@ -38,19 +38,39 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    background: #22272e;
 }
 
 /*  Start Header Section */
 
 .header{
-    background: #2d333b;
-    height: 4vw;
-    width: 100%;
-    line-height: 1vw;
+    background-color: #2d333b;
+    height: 80px;
+    border: 1px solid #414141;
+}
+
+.hamburger-menu{
+    top: 20px;
+    position: absolute;
+    width: 40px;
+    left: 20px;
+    background-color: #414141;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.hamburger-menu:hover{
+    background-color: #999999;
 }
 
 .header-logo{
-    width: 16vw;
+    position: absolute;
+    top: 15px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 350px;
+    background-color: #ffffff00;
 }
 
 /*  End Header Section */
@@ -84,209 +104,20 @@
 /*  Start Bio-Short Section */
 
 .bio-short{
-    background-color: #22272e;
     width: 100%;
 }
 
 .sgd-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #424242;
-    border-radius: 3vw;
-    width: 10vw;
+    width: 256px;
+    border: 1px solid #414141;
+    border-radius: 40px;
 }
 
 .intro{
-    font-family: Open Sans, sans-serif;
-    font-size: 1.9vw;
-    font-weight: bold;
-    text-align: center;
-    color: azure;
-    line-height: 40px;
 }
 
 .about-short{
-    display: flex;
-    width: 40vw;
-    text-align: center;
-    font-family: Open Sans, sans-serif;
-    font-size: 1.5vw;
-    font-weight: semibold;
-    color: azure;
-    line-height: 125%;
-    line-break: 20vw;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 /*  End Bio-Short Section */
-
-/* Vertical Border */
-
-.vert-border-section{
-    width: 100%;
-    background-color: #22272e;
-}
-
-.vert-border{
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
-    z-index: 10;
-    border: 0.5vw solid #494e58;
-    border-radius: 10px
-}
-
-/* End Vertical Borders */
-
-/* Start About-Me Section */
-
-.about-me{
-    height: 25vw;
-    width: 100%;
-    background-color: #22272e;
-}
-
-.about-me-header{
-    position: relative;
-    z-index: 10;
-    align-items: center;
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 2.5vw;
-    font-weight: bold;
-    text-align: center;
-    color: azure;
-}
-
-.about-me-desc{
-    position: absolute;
-    z-index: 10;
-    font-family: Open Sans, sans-serif;
-    font-size: 1.5vw;
-    font-weight: semibold;
-    justify-items: left;
-    text-align: left;
-    color: azure;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-/* End About-Me Section */
-
-/* Start Apps Section*/
-
-.apps{
-    width: 100%;
-    background-color: #22272e;
-}
-
-.apps-img{
-    width: 35vw;
-}
-
-/* End Apps Section*/
-
-/* Start Projects Section */
-
-.projects{
-    width: 100%;
-    background-color: #22272e;
-}
-
-.fprop-project-card{
-    width: 30vw;
-}
-
-/* End Projects Section */
-
-/* Start Contact Section */
-
-.contact{
-    width: 100%;
-    height: 25vw;
-    background-color: #22272e;
-}
-
-.contact-desc{
-    position: absolute;
-    z-index: 10;
-    font-family: Open Sans, sans-serif;
-    font-size: 1.5vw;
-    font-weight: semibold;
-    justify-items: left;
-    text-align: left;
-    color: azure;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-/* End Contact Section */
-
-/* Start Social Links Section */
-
-.socials{
-    width: 100%;
-    height: 20vw;
-    background-color: #22272e;
-}
-
-.social-icon{
-    width: 4vw; /* 64px */
-    margin: 0.5vw; /* 10px */
-}
-
-/* End Social Links Section */
-
-/* Start Footer Section */
-
-.footer{
-    background: #2d333b;
-    height: 15vw;
-    width: 100%;
-}
-
-.footertext1{
-    margin-left: auto;
-    margin-right: auto;
-    color: azure;
-    font-family: Open Sans, sans-serif;
-    font-weight: bold;
-    font-size: 1vw;
-    text-align: center;
-}
-
-.cf-attrib{
-    margin-left: 30%;
-    margin-right: 30%;
-    color: azure;
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-weight: bold;
-    font-size: 1vw;
-    text-align: center;
-}
-
-.cf-atrrib-text{
-    display: flex;
-}
-
-.cf-logo-bottom{
-    text-align: center;
-    width: 20vw;
-}
-
-/* End Footer Section */
-
-/* Generic Line Break Heights */
-
-.br-1vw{
-    line-height: 2vw;
-}
-
-.br-2vw{
-    line-height: 2vw;
-}
-
-.br-4vw{
-    line-height: 4vw;
-}
