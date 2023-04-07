@@ -5,8 +5,7 @@
 			"path": ".."
 		},
 		{
-			"name": "mobile.spacegamedev.com",
-			"path": "../../mobile.spacegamedev.com"
+			"path": "../../assets.spacegamedev.com"
 		}
 	],
 	"settings": {}

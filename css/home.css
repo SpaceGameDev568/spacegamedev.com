@@ -3,31 +3,35 @@
 /* Import font faces from the asset server */
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.ttf');
+    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.woff2');
     font-family:'Orbitron';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2');
     font-family:'Open Sans';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf');
+    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2');
     font-family:'Open Sans';
     font-style: italic;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 @font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.ttf');
+    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2');
     font-family:'Comfortaa';
     font-style: normal;
     font-weight: 1 1000;
+    font-display: swap;
 }
 
 /* Whole Page */
@@ -56,12 +60,14 @@ body.light{
     --dark-accent: #414141;
     --dark-text: #f0ffff;
     --dark-border: #999999;
+    --sgd-blue: #3B96CE; /* #1d68a4 */
 
     --light-background: #ddeeeb;
     --light-foreground: #a5aeb1;
     --light-accent: #83898d;
     --light-text: #1c1c1d;
     --light-border: #414141;
+    --light-sgd-blue: #24608E;
 }
 
 /* Text selection */
@@ -137,6 +143,7 @@ body.light .hamburger-menu:hover{
     -ms-transform: translate(-50%);
     transform: translate(-50%);
     width: 64px;
+    height: 64px;
     background-color: var(--dark-accent);
     padding: 5px;
     border-radius: 12px;
@@ -148,6 +155,7 @@ body.light .header-logo{
 
 .theme-icon{
     width: 32px;
+    height: 32px;
 }
 
 .btn-toggle{
@@ -238,6 +246,7 @@ body.light .btn-toggle:hover{
 
       .openbtn-img{
         width: 40px;
+        height: 40px;
       }
 
       .openbtn:hover{
@@ -268,6 +277,7 @@ body.light .btn-toggle:hover{
         position: absolute;
         top: 15px;
         width: 30px;
+        height: 30px;
         right: 1px;
       }
 
@@ -278,7 +288,6 @@ body.light .btn-toggle:hover{
 }
 
 .sgd-logo{
-    width: 256px;
     border: 2px solid var(--dark-accent);
     border-radius: 40px;
 }
@@ -353,7 +362,11 @@ body.light .about-me-bio{
 }
 
 .standard-link{
-    color: #1d68a4;
+    color: var(--sgd-blue);
+}
+
+body.light .standard-link{
+    color: var(--light-sgd-blue);
 }
 
 .experience-header{
@@ -366,6 +379,14 @@ body.light .about-me-bio{
 
 body.light .experience-header{
     color: var(--light-text);
+}
+
+.experience-minor-h{
+    color: var(--sgd-blue);
+}
+
+body.light .experience-minor-h{
+    color: var(--light-sgd-blue);
 }
 
 .skills{
