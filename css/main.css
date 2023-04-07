@@ -106,7 +106,6 @@ body.light ::selection {
     right: 0px;
 }
 
-
 body.light .header{
     background-color: var(--light-foreground);
     border: 1px solid var(--light-accent);
@@ -163,10 +162,13 @@ body.light .header-logo{
     position: absolute;
     background-color: var(--dark-accent);
     padding: 5px;
-    top: 20px;
+    top: 18px;
     right: 20px;
     border-radius: 5px;
     transition: 0.5s;
+    border: none;
+    cursor: pointer;
+
 }
 
 .btn-toggle:hover{
@@ -227,6 +229,8 @@ body.light .btn-toggle:hover{
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
+        border: none;
+        cursor: pointer;
       }
 
       /* The button used to open the sidebar */
