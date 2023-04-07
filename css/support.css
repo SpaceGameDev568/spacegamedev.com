@@ -16,8 +16,6 @@ body.light .support-header{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 body.light .support-p{
@@ -33,4 +31,15 @@ body.light .support-p{
 
 body.light .portal-link{
   background-color: var(--light-sgd-blue);
+}
+
+.support-email{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
+    line-break: loose;
+}
+
+body.light .support-email{
+    color: var(--light-text);
 }

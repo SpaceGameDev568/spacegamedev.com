@@ -10,6 +10,8 @@
     font-display: optional;
 }
 
+/* Currently unused
+
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2');
     font-family:'Open Sans';
@@ -25,6 +27,8 @@
     font-weight: 1 1000;
     font-display: optional;
 }
+
+*/
 
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2');
@@ -57,17 +61,17 @@ body.light{
 :root{
     --dark-background: #22272e;
     --dark-foreground: #2d333b;
-    --dark-accent: #414141;
+    --dark-accent: #414141; /* #414141 */
     --dark-text: #f0ffff;
     --dark-border: #999999;
     --sgd-blue: #1d68a4; /* #1d68a4 */
 
     --light-background: #EBEBEB; /* #ddeeeb*/
     --light-foreground: #acb1b3;
-    --light-accent: #83898d;
+    --light-accent: #414141; /* #83898d */
     --light-text: #1c1c1d;
     --light-border: #414141;
-    --light-sgd-blue: #004483;
+    --light-sgd-blue: #014D8E; /* #004483 */
 }
 
 /* Text selection */
@@ -180,7 +184,7 @@ body.light .btn-toggle{
 }
 
 body.light .btn-toggle:hover{
-    background-color: var(--dark-accent);
+    background-color: var(--sgd-blue);
 }
 
 /*  End Header Section */
@@ -206,7 +210,7 @@ body.light .sidebar{
     border: 1px solid var(--light-accent);
 }
 /* The sidebar links */
-.sidebar-link {
+.sidebar-link{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -253,7 +257,7 @@ body.light .openbtn{
   background-color: var(--light-accent);
 }
 body.light .openbtn:hover{
-  background-color: var(--light-border);
+  background-color: var(--sgd-blue);
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -318,4 +322,12 @@ body.light .footer-p{
 
 body.light .attribution{
   color: var(--light-text);
+}
+
+.footer-link{
+    color: #9CC6F2;
+}
+
+body.light .footer-link{
+    color: #000000;
 }
