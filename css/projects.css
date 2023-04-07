@@ -47,32 +47,13 @@ body.light .project-desc{
 }
 
 .charles-project{
-    background-color: var(--dark-foreground);
-    width: 400px;
-    height: 250px;
-    padding: 10px;
-    border: 2px solid var(--light-accent);
-    border-radius: 20px;
-    margin-left: 5%;
-}
-
-body.light .charles-project{
-    background-color: var(--light-foreground);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .sf-mod-project{
-    display: inline-block;
-    background-color: var(--dark-foreground);
-    width: 400px;
-    height: 250px;
-    padding: 10px;
-    border: 2px solid var(--light-accent);
-    border-radius: 20px;
-    margin-left: 5%;
-}
-
-body.light .sf-mod-project{
-    background-color: var(--light-foreground);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .source-link{

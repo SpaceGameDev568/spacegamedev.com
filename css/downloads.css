@@ -15,6 +15,7 @@ body.light .downloads-header{
 .download-desc{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 20px;
 }
 
 body.light .download-desc{
