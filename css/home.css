@@ -290,6 +290,8 @@ body.light .btn-toggle:hover{
 .sgd-logo{
     border: 2px solid var(--dark-accent);
     border-radius: 40px;
+    width: 256px;
+    height: 256px;
 }
 
 body.light .sgd-logo{
