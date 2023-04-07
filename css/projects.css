@@ -60,12 +60,14 @@ body.light{
     --dark-accent: #414141;
     --dark-text: #f0ffff;
     --dark-border: #999999;
+    --sgd-blue: #3B96CE; /* #1d68a4 */
 
     --light-background: #ddeeeb;
     --light-foreground: #a5aeb1;
     --light-accent: #83898d;
     --light-text: #1c1c1d;
     --light-border: #414141;
+    --light-sgd-blue: #24608E;
 }
 
 /* Text selection */
@@ -390,7 +392,11 @@ body.light .footer{
 }
 
 .standard-link{
-    color: #1d68a4;
+    color: var(--sgd-blue);
+}
+
+body.light .standard-link{
+    color: var(--light-sgd-blue);
 }
 
 .vertical-section-divider{
