@@ -5,33 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceGameDev's Website</title>
     <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images\webp\sgd-logo-round.webp"/>
+    <link rel="stylesheet" href="css\main.css">
     <link rel="stylesheet" href="css\home.css">
     <link rel="preconnect" href="https://assets.spacegamedev.com"/>
   </head>
   <!-- End Head, Start Body -->
   <body>
-
+    <!-- Javascripts -->
     <!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG" defer></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-1YLEB435KG');
-    </script>
-
+    <script src="js/googletag.js" defer></script>
     <!-- Auto detect OS theme -->
-    <script>
-      const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
-
-      if (prefersLightScheme.matches) {
-        document.body.classList.add("light");
-      } else {
-        document.body.classList.remove("light");
-      }
-    </script>
-
+    <script src="js/autotheme.js" defer></script>
+    <!-- Sidebar function -->
+    <script src="js/sidebar.js" defer></script>
+    <!-- Theme switcher button function with cookie -->
+    <script src="js/toggletheme.js" defer></script>
 
     <!-- Start Header Section -->
     <div class="header">
@@ -51,50 +40,6 @@
       </div>
     </div>
     <!-- End Header Section-->
-
-    <!-- Sidebar function -->
-    <script>
-      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-      function openNav() {
-        document.getElementById("websidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-
-      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-        document.getElementById("websidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
-    <!-- Theme switcher button function with cookie -->
-    <script>
-      // Select the button
-      const btn = document.querySelector(".btn-toggle");
-      // Select the theme preference from localStorage
-      const currentTheme = localStorage.getItem("theme");
-
-      // If the current theme in localStorage is "dark"...
-      if (currentTheme == "light") {
-        // ...then use the .dark-theme class
-        document.body.classList.add("light");
-      }
-
-      // Listen for a click on the button 
-      btn.addEventListener("click", function() {
-        // Toggle the .dark-theme class on each click
-        document.body.classList.toggle("light");
-
-        // Let's say the theme is equal to light
-        let theme = "";
-        // If the body contains the .dark-theme class...
-        if (document.body.classList.contains("light")) {
-          // ...then let's make the theme dark
-          theme = "light";
-        }
-        // Then save the choice in localStorage
-        localStorage.setItem("theme", theme);
-      });
-    </script>
 
     <!-- Start First Section -->
     <section class="bio-short">
