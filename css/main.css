@@ -10,8 +10,6 @@
     font-display: optional;
 }
 
-/* Currently unused
-
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2');
     font-family:'Open Sans';
@@ -27,8 +25,6 @@
     font-weight: 1 1000;
     font-display: optional;
 }
-
-*/
 
 @font-face {
     src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2');
@@ -216,7 +212,7 @@ body.light .sidebar{
   color: var(--dark-text);
   display: block;
   transition: 0.3s;
-  font-family: Comfortaa, Open sans, sans-serif;
+  font-family: Comfortaa, Open Sans, sans-serif;
 }
 body.light .sidebar-link{
   color: var(--light-text);
