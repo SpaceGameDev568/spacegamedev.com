@@ -1,39 +1,5 @@
 /* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
 
-/* Import font faces from the asset server */
-
-@font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Orbitron-VariableFont_wght.woff2');
-    font-family:'Orbitron';
-    font-style: normal;
-    font-weight: 1 1000;
-    font-display: optional;
-}
-
-@font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-VariableFont_wdth,wght.woff2');
-    font-family:'Open Sans';
-    font-style: normal;
-    font-weight: 1 1000;
-    font-display: optional;
-}
-
-@font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2');
-    font-family:'Open Sans';
-    font-style: italic;
-    font-weight: 1 1000;
-    font-display: optional;
-}
-
-@font-face {
-    src: url('https://assets.spacegamedev.com/css/fonts/Comfortaa-VariableFont_wght.woff2');
-    font-family:'Comfortaa';
-    font-style: normal;
-    font-weight: 1 1000;
-    font-display: optional;
-}
-
 /* Whole Page */
 
 *{
