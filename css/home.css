@@ -16,15 +16,6 @@
 body.light .sgd-logo{
     border: 2px solid var(--light-accent);
 }
-/*.intro{
-    color: var(--dark-text);
-    transition: 0s;
-}
-
-body.light .intro{
-    color: var(--light-text);
-}*/
-/* Problematic */
 
 .intro{
     color: var(--dark-text);
