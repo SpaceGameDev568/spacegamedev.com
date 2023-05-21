@@ -292,3 +292,13 @@ body.light .attribution{
 body.light .footer-link{
     color: #000000;
 }
+
+.text{
+  color: var(--dark-text);
+  font-family: Comfortaa, Open Sans, sans-serif;
+  font-size: 24px;
+}
+
+body.light .text{
+  color: var(--light-text);
+}
