@@ -1,11 +1,14 @@
 {
 	"folders": [
 		{
+			"path": "../../assets.spacegamedev.com"
+		},
+		{
 			"name": "spacegamedev.com",
 			"path": ".."
 		},
 		{
-			"path": "../../assets.spacegamedev.com"
+			"path": "../../mods.spacegamedev.com"
 		}
 	],
 	"settings": {}
