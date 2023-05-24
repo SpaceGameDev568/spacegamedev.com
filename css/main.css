@@ -3,11 +3,11 @@
 /* Whole Page */
 
 *{
-    padding: 0;
     margin: 0;
-    list-style: none;
     box-sizing: border-box;
+    font-family: Comfortaa, Open Sans, sans-serif;
     transition: 1s;
+    z-index: 10;
 }
 
 body{
@@ -92,6 +92,7 @@ body.light ::selection {
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 11;
 }
 
 body.light .header{
@@ -180,7 +181,7 @@ body.light .btn-toggle:hover{
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 15; /* Stay on top */
     top: 0;
     left: 0;
     background-color: var(--dark-foreground); /* Black*/
@@ -214,6 +215,7 @@ body.light .sidebar-link{
   margin-left: 50px;
   border: none;
   cursor: pointer;
+  padding: 0px;
 }
 /* The button used to open the sidebar */
 .openbtn {
