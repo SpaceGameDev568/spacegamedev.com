@@ -58,6 +58,28 @@ body.light ::selection {
   background: #1d68a4;
 }
 
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--light-background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: var(--dark-border);
+  	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: var(--sgd-blue);
+}
+
 /*  Start Header Section */
 
 .header{
