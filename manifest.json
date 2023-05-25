@@ -10,7 +10,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "https://assets.spacegamedev.com/images/SGD-Logo.png",
+            "src": "https://spacegamedev-assets.pages.dev/images/SGD-Logo.png",
             "sizes": "512x512"
         }
     ]

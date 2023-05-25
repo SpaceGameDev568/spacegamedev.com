@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "../../assets.spacegamedev.com"
+			"path": "../../spacegamedev-assets.pages.dev"
 		},
 		{
 			"name": "spacegamedev.com",
@@ -9,6 +9,9 @@
 		},
 		{
 			"path": "../../mods.spacegamedev.com"
+		},
+		{
+			"path": "../../blog.spacegamedev.com"
 		}
 	],
 	"settings": {}
