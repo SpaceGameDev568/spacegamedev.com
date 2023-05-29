@@ -89,9 +89,9 @@ body.light ::selection {
     border: 1px solid var(--dark-accent);
     display: flex;
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 11;
 }
 
