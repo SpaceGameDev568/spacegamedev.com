@@ -1,190 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Copyright (©) 2022 - 2023 Jesse Hodgson. All Rights Reserved -->
-  <head>
+<!-- Copyright (©) 2022 - 2023 Jesse Hodgson. All Rights Reserved -->
+<head>
     <title>SpaceGameDev's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="description" content="Jesse Hodgson, aka SpaceGameDev568 - Software Developer and Digital Artist">
-    <meta name="SpaceGameDev's Website" />
-    <meta name="keywords" content="space,spacegamedev,gamedev,spacegamedev568" />
-    <link rel="manifest" href="/manifest.json">
-    <link rel="shortcut icon" type="image/ico" href="https://spacegamedev-assets.pages.dev/images\webp\sgd-logo-round.webp"/>
-    <link rel="stylesheet" href="css\main.css">
-    <link rel="stylesheet" href="https://spacegamedev-assets.pages.dev/css/fonts.css">
-    <link rel="stylesheet" href="css\home.css">
-    <link rel="preconnect" href="https://spacegamedev-assets.pages.dev"/>
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/Orbitron.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans-Italic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/Comfortaa.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/FlowCircular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono-Italic.woff2" as="font" crossorigin="anonymous">
-    
-  </head>
-  <!-- End Head, Start Body -->
-  <body>
-    <!-- Javascripts -->
-    <!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG" defer></script>
-    <script src="js/googletag.js" defer></script>
-    <!-- Auto detect OS theme -->
-    <script src="js/autotheme.js" defer></script>
-    <!-- Sidebar function -->
-    <script src="js/sidebar.js" defer></script>
-    <!-- Theme switcher button function with cookie -->
-    <script src="js/toggletheme.js" defer></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="en" http-equiv="Content-Language">
+    <meta content="Jesse Hodgson, aka SpaceGameDev568 - Software Developer and Digital Artist" name="description">
+    <meta name="SpaceGameDev's Website"/>
+    <meta content="space,spacegamedev,gamedev,spacegamedev568" name="keywords"/>
+    <link href="/manifest.json" rel="manifest">
+    <link href="https://spacegamedev-assets.pages.dev/images\webp\sgd-logo-round.webp" rel="shortcut icon"
+          type="image/ico"/>
+    <link href="css\main.css" rel="stylesheet">
+    <link href="https://spacegamedev-assets.pages.dev/css/fonts.css" rel="stylesheet">
+    <link href="css\home.css" rel="stylesheet">
+    <link href="https://spacegamedev-assets.pages.dev" rel="preconnect"/>
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/Orbitron.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/OpenSans-Italic.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/Comfortaa.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/FlowCircular.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous" href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono.woff2"
+          rel="preload">
+    <link as="font" crossorigin="anonymous"
+          href="https://spacegamedev-assets.pages.dev/css/fonts/JetBrainsMono-Italic.woff2"
+          rel="preload">
+</head>
+<!-- End Head, Start Body -->
+<body>
+<!-- Javascripts -->
+<!-- Google tag (gtag.js) https://analytics.google.com/analytics/web/#/p360946171/reports/intelligenthome -->
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-1YLEB435KG"></script>
+<script defer src="js/googletag.js"></script>
+<!-- Auto detect OS theme -->
+<script defer src="js/autotheme.js"></script>
+<!-- Sidebar function -->
+<script defer src="js/sidebar.js"></script>
+<!-- Theme switcher button function with cookie -->
+<script defer src="js/toggletheme.js"></script>
 
-    <!-- Start Header Section -->
-    <div class="header">
-      <div class="header-bg"></div>
-      <!--<a><img src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
-      <button class="openbtn" onclick="openNav()" title="Navigation"><img src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg" class="openbtn-img" alt="Open Sidebar"></button>
-      <center>
-      <img class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp" alt="">
-      </center>
-      <button class="btn-toggle" onclick="javascript:void(0)" title="Switch themes"><img class="theme-icon" src="https://spacegamedev-assets.pages.dev/images/ui/theme-toggle.svg" alt="Toggle Light or Dark Theme"></button>
-      <div id="websidebar" class="sidebar">
-        <button class="closebtn" onclick="closeNav()"><img src="https://spacegamedev-assets.pages.dev/images/ui/menu-x.svg" class="closenavbutton" title="Close Navigation" alt="Close Navigation" aria-label="Close the navigation bar."></button>
-        <a href="index.html" class="sidebar-link">Home</a>
-        <a href="projects.html" class="sidebar-link">Projects</a>
-        <a href="downloads.html" class="sidebar-link">Downloads</a>
-        <a href="support.html" class="sidebar-link">Support</a>
+<!-- Start Header Section -->
+<div class="header">
+    <div class="header-bg"></div>
+    <!--<a><img src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
+    <button class="openbtn" onclick="openNav()" title="Navigation"><img
+            alt="Open Sidebar" class="openbtn-img"
+            src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg"></button>
+    <center>
+        <img alt="" class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
+    </center>
+    <button class="btn-toggle" onclick="void(0)" title="Switch themes"><img alt="Toggle Light or Dark Theme"
+                                                                            class="theme-icon"
+                                                                            src="https://spacegamedev-assets.pages.dev/images/ui/theme-toggle.svg">
+    </button>
+    <div class="sidebar" id="websidebar">
+        <button class="closebtn" onclick="closeNav()"><img
+                alt="Close Navigation" aria-label="Close the navigation bar."
+                class="closenavbutton" src="https://spacegamedev-assets.pages.dev/images/ui/menu-x.svg"
+                title="Close Navigation"></button>
+        <a class="sidebar-link" href="index.html">Home</a>
+        <a class="sidebar-link" href="projects.html">Projects</a>
+        <a class="sidebar-link" href="downloads.html">Downloads</a>
+        <a class="sidebar-link" href="support.html">Support</a>
         <hr>
-        <a href="https://mods.spacegamedev.com" class="sidebar-link">Mods</a>
-      </div>
+        <a class="sidebar-link" href="https://mods.spacegamedev.com">Mods</a>
     </div>
-    <!-- End Header Section-->
+</div>
+<!-- End Header Section-->
 
-    <!-- Start First Section -->
-    <section class="bio-short">
-      <center>
-      <br><br><br><br><br><br>
-      <img class="sgd-logo" src="https://spacegamedev-assets.pages.dev/images/webp/sgd-logo-384.webp" alt="SpaceGameDev's Avatar">
-      <br><br>
-      <div class="intro">
-        <p>
-          Hi there!
-        </p>
-      </div>
-      <br><br>
-      <div class="about-short">
-        <p>
-          I'm Jesse, more commonly known by my alias: SpaceGameDev,<br> and I'm a Software Developer from Charlotte, North Carolina, in the United States.
-        </p>
-      </div><br></center>
-    </section>
-
-    <center><hr class="vertical-section-divider"></center>
-
-    <section class="about">
-      <br><br>
-      <center><p class="about-header">About Me</p>
+<!-- Start First Section -->
+<section class="bio-short">
+    <center>
+        <br><br><br><br><br><br>
+        <img alt="SpaceGameDev's Avatar" class="sgd-logo"
+             src="https://spacegamedev-assets.pages.dev/images/webp/sgd-logo-384.webp">
         <br><br>
-      <p class="about-me-bio">
-        I started learning software development back in 2021 when I was curious about how the games that I enjoyed were made. This lead me to download <u><a href="https://unity.com" class="standard-link">Unity</a></u> and begin following the courses on their website to learn game development. I gained a lot of knowledge about the game design process and the basics of programming from the time I spent in Unity. After that, I took what I had learned and decided to try to make some mods for a game I play, called <u><a href="https://satisfactorygame.com" class="standard-link">Satisfactory</a></u>. This led me to create 4 mods, which I published on <u><a href="https://ficsit.app/user/5GqLMHyzA3myPG" class="standard-link">ficsit.app</a></u> and <u><a href="https://github.com/SpaceGameDev568?tab=repositories" class="standard-link">GitHub</a></u>. If you would like, you can read more about them on the <u><a href="projects.html" class="standard-link">projects page</a></u>.</p>
+        <div class="intro">
+            <p>
+                Hi there!
+            </p>
+        </div>
         <br><br>
-        
-      <p class="about-me-bio">When <u><a href="https://unrealengine.com" class="standard-link">Unreal Engine 5</a></u> launched in April 2022, I chose to focus my efforts for a while on learning how to use it to get some experience using industry standard software. In late 2022, I began working on a website for myself to show off my skills and to attain some knowledge of HTML, CSS, and Javascript. I also gained some familiarity with <u><a href="https://git-scm.com" class="standard-link">Git</a></u> and <u><a href="https://perforce.com" class="standard-link">Perforce</a></u> for version control of these projects. Most recently, I have been learning programming with the <u><a href="https://go.dev" class="standard-link">Go language</a></u> to create a <u><a href="https://github.com/SpaceGameDev568/Charles" class="standard-link">command line application</a></u> to automate some basic computing tasks and to make it easier for me to debug issues with other apps.</p>
-      </center>
-    </section>
+        <div class="about-short">
+            <p>
+                I'm Jesse, more commonly known by my alias: SpaceGameDev,<br> and I'm a Software Developer from
+                Charlotte, North Carolina, in the United States.
+            </p>
+        </div>
+        <br></center>
+</section>
+
+<center>
+    <hr class="vertical-section-divider">
+</center>
+
+<section class="about">
     <br><br>
-    <center><hr class="vertical-section-divider"></center>
-    <section class="experience">
-      <br><br>
-      <center><p class="experience-header">My Skills</p>
+    <center><p class="about-header">About Me</p>
+        <br><br>
+        <p class="about-me-bio">
+            I started learning software development back in 2021 when I was curious about how the games that I enjoyed
+            were made. This lead me to download <u><a class="standard-link" href="https://unity.com">Unity</a></u> and
+            begin following the courses on their website to learn game development. I gained a lot of knowledge about
+            the game design process and the basics of programming from the time I spent in Unity. After that, I took
+            what I had learned and decided to try to make some mods for a game I play, called <u><a
+                class="standard-link" href="https://satisfactorygame.com">Satisfactory</a></u>. This led me to create 4
+            mods, which I published on <u><a class="standard-link" href="https://ficsit.app/user/5GqLMHyzA3myPG">ficsit.app</a></u>
+            and <u><a class="standard-link" href="https://github.com/SpaceGameDev568?tab=repositories">GitHub</a></u>.
+            If you would like, you can read more about them on the <u><a class="standard-link" href="projects.html">projects
+            page</a></u>.</p>
+        <br><br>
+
+        <p class="about-me-bio">When <u><a class="standard-link" href="https://unrealengine.com">Unreal Engine 5</a></u>
+            launched in April 2022, I chose to focus my efforts for a while on learning how to use it to get some
+            experience using industry standard software. In late 2022, I began working on a website for myself to show
+            off my skills and to attain some knowledge of HTML, CSS, and Javascript. I also gained some familiarity with
+            <u><a class="standard-link" href="https://git-scm.com">Git</a></u> and <u><a class="standard-link"
+                                                                                         href="https://perforce.com">Perforce</a></u>
+            for version control of these projects. Most recently, I have been learning programming with the <u><a
+                    class="standard-link" href="https://go.dev">Go language</a></u> to create a <u><a
+                    class="standard-link" href="https://github.com/SpaceGameDev568/Charles">command line application</a></u>
+            to automate some basic computing tasks and to make it easier for me to debug issues with other apps.</p>
+    </center>
+</section>
+<br><br>
+<center>
+    <hr class="vertical-section-divider">
+</center>
+<section class="experience">
+    <br><br>
+    <center><p class="experience-header">My Skills</p>
         <br><br>
         <p class="skills">
-        <b class="experience-minor-h">Programming Languages:</b>
-        <br><br>
-        Blueprints
-        <br>
-        CSS
-        <br>
-        Go
-        <br>
-        HTML
-        <br><br>
-        <b class="experience-minor-h">Software:</b>
-        <br><br>
-        Adobe Creative Cloud
-        <br>
-        Blender
-        <br>     
-        Docker
-        <br>
-        GIMP
-        <br>
-        Git
-        <br>
-        Perforce
-        <br>
-        Rider
-        <br>    
-        Unity
-        <br>
-        Unreal Engine 4/5
-        <br>
-        WebStorm
-        <br>
-        Visual Studio/VS Code
-        <br>
-        VMware Workstation
+            <b class="experience-minor-h">Programming Languages:</b>
+            <br><br>
+            Blueprints
+            <br>
+            CSS
+            <br>
+            Go
+            <br>
+            HTML
+            <br>
+            C++
+            <br>
+            C#
+            <br>
+            <br><br>
+            <b class="experience-minor-h">Software:</b>
+            <br><br>
+            Adobe Creative Cloud
+            <br>
+            Blender
+            <br>
+            Docker
+            <br>
+            GIMP
+            <br>
+            Git
+            <br>
+            Perforce
+            <br>
+            Rider
+            <br>
+            Unity
+            <br>
+            Unreal Engine 4/5
+            <br>
+            WebStorm
+            <br>
+            Visual Studio/VS Code
+            <br>
+            VMware Workstation
         </p></center>
-    </section>
-    <br><br>
-    <center><hr class="vertical-section-divider"></center>
-    <section class="contact">
+</section>
+<br><br>
+<center>
+    <hr class="vertical-section-divider">
+</center>
+<section class="contact">
     <br><br>
     <center><p class="contact-header">Contact Me</p></center>
     <p class="contact-p">
-      <br><br>
-      If you would like to contact me about something, please use one of the below methods to reach out. If you need help with one of my projects, please visit the <a href="support.html" class="standard-link">support page</a> for info on how to submit a ticket.
-      <br><br>
-      By Email: <a href="mailto:space@spacegamedev.com" class="standard-link">space@spacegamedev.com</a>
-      <br><br>
-      Discord: <a href="https://discord.com/app" class="standard-link">SpaceGameDev568 #0596</a>
+        <br><br>
+        If you would like to contact me about something, please use one of the below methods to reach out. If you need
+        help with one of my projects, please visit the <a class="standard-link" href="support.html">support page</a> for
+        info on how to submit a ticket.
+        <br><br>
+        By Email: <a class="standard-link" href="mailto:space@spacegamedev.com">space@spacegamedev.com</a>
+        <br><br>
+        Discord: <a class="standard-link" href="https://discord.com/app">@spacegamedev568</a>
     </p>
-    </section><br><br>
-    <center><hr class="vertical-section-divider"></center>
-    <section class="socials"><br><br>
+</section>
+<br><br>
+<center>
+    <hr class="vertical-section-divider">
+</center>
+<section class="socials"><br><br>
     <center><p class="socials-header">My Socials</p></center>
     <br><br>
     <center><p class="socials-p">
-      <a href="https://github.com/SpaceGameDev568" class="standard-link">GitHub</a>
-      <br><br>
-      <a href="https://www.linkedin.com/in/jesse-hodgson-22aba626b/" class="standard-link">LinkedIn</a>
-      <br><br>
-      <a href="https://youtube.com/@spacegamedev" class="standard-link">YouTube</a>
-      <br><br>
-      <a href="https://steamcommunity.com/id/spacegamedev/" class="standard-link">Steam</a>
-      <br><br>
-      <a href="https://trello.com/u/spacegamedev568/activity" class="standard-link">Trello</a>
-      <br><br>
-      <a href="https://ficsit.app/user/5GqLMHyzA3myPG" class="standard-link">Satisfactory Mod Repository</a>
-      <br><br>
+        <a class="standard-link" href="https://github.com/SpaceGameDev568">GitHub</a>
+        <br><br>
+        <a class="standard-link" href="https://www.linkedin.com/in/jesse-hodgson-22aba626b/">LinkedIn</a>
+        <br><br>
+        <a class="standard-link" href="https://youtube.com/@spacegamedev">YouTube</a>
+        <br><br>
+        <a class="standard-link" href="https://steamcommunity.com/id/spacegamedev/">Steam</a>
+        <br><br>
+        <a class="standard-link" href="https://trello.com/u/spacegamedev568/activity">Trello</a>
+        <br><br>
+        <a class="standard-link" href="https://ficsit.app/user/5GqLMHyzA3myPG">Satisfactory Mod Repository</a>
+        <br><br>
     </p></center>
-    </section>
-    <section class="footer">
+</section>
+<section class="footer">
     <center><p class="footer-p">
-      <br><br>
-      Copyright &#169; 2022 - 2023 Jesse Hodgson. All Rights Reserved.<br>
-      This website is an open source project, and the source code can be found on <a href="https://github.com/SpaceGameDev568/spacegamedev.com" class="footer-link">GitHub</a>.
+        <br><br>
+        Copyright &#169; 2022 - 2023 Jesse Hodgson. All Rights Reserved.<br>
+        This website is an open source project, and the source code can be found on <a
+            class="footer-link" href="https://github.com/SpaceGameDev568/spacegamedev.com">GitHub</a>.
     </p>
-    <br><br>
-    <p class="attribution">
-      Performance and security by Cloudflare.
-      <br><br>
-      Fonts used:
-      <br><br>
-      Comfortaa: <a href="https://fonts.google.com/specimen/Comfortaa" class="footer-link">Comfortaa on Google Fonts</a>
-      <br>
-      Open Sans: <a href="https://fonts.google.com/specimen/Open+Sans" class="footer-link">Open Sans on Google Fonts</a>
-      <br>
-      Orbitron: <a href="https://fonts.google.com/specimen/Orbitron" class="footer-link">Orbitron on Google Fonts</a>
-    </p></center>
-    </section>
-  </body>
+        <br><br>
+        <p class="attribution">
+            Performance and security by Cloudflare.
+            <br><br>
+            Fonts used:
+            <br><br>
+            Comfortaa: <a class="footer-link" href="https://fonts.google.com/specimen/Comfortaa">Comfortaa on Google
+            Fonts</a>
+            <br>
+            Open Sans: <a class="footer-link" href="https://fonts.google.com/specimen/Open+Sans">Open Sans on Google
+            Fonts</a>
+            <br>
+            Orbitron: <a class="footer-link" href="https://fonts.google.com/specimen/Orbitron">Orbitron on Google
+            Fonts</a>
+        </p></center>
+</section>
+</body>
 
 </html>

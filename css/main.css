@@ -21,13 +21,14 @@ body.light{
 /* Colour palette */
 
 :root{
+  /* Dark colors */
     --dark-background: #22272e;
     --dark-foreground: #2d333b;
     --dark-accent: #414141; /* #414141 */
     --dark-text: #f0ffff;
     --dark-border: #999999;
     --sgd-blue: #1d68a4; /* #1d68a4 */
-
+  /* Light colors */
     --light-background: #EBEBEB; /* #ddeeeb*/
     --light-foreground: #acb1b3;
     --light-accent: #414141; /* #83898d */
