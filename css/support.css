@@ -15,7 +15,7 @@ body.light .support-header{
 .support-p{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 body.light .support-p{
@@ -23,14 +23,30 @@ body.light .support-p{
 }
 
 .portal-link{
+    display: block;
     background-color: var(--sgd-blue);
     color: #f0ffff;
-    padding: 10px;
-    border-radius: 6px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 240px;
+    transition: 0.3s;
+}
+
+.portal-link:hover{
+    background-color: var(--light-sgd-blue);
 }
 
 body.light .portal-link{
   background-color: var(--light-sgd-blue);
+}
+
+body.light .portal-link:hover{
+    background-color: var(--sgd-blue);
 }
 
 .support-email{

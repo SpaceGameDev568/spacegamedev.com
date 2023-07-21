@@ -23,7 +23,7 @@ body.light .sgd-logo{
     font-size: 40px;
     font-weight: bold;
     text-shadow: 4px 2px 4px #00000025;
-    transition: 0s;
+    transition-property: none;
 }
 
 body.light .intro{
@@ -38,7 +38,7 @@ body.light .intro{
     font-family: Comfortaa, Opens Sans, sans-serif;
     font-size: 22px;
     line-height: 42px;
-    transition: 0s;
+    transition-property: none;
 }
 
 body.light .about-short{

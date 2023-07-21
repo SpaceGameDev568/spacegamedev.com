@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Comfortaa, Open Sans, sans-serif;
+    transition-property: color, background-color;
     transition: 1s;
     z-index: 10;
 }
@@ -67,18 +68,18 @@ body.light ::selection {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--light-background);
+    border-left: 1px solid var(--dark-accent);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   	background: var(--dark-border);
-  	border-radius: 2px;
+  	border-radius: 0px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  	background: var(--sgd-blue);
+  	background: var(--dark-accent);
 }
 
 /*  Start Header Section */
@@ -87,7 +88,7 @@ body.light ::selection {
     background-color: var(--dark-foreground);
     height: 80px;
     width: 100%;
-    border: 1px solid var(--dark-accent);
+    border-bottom: 1px solid var(--dark-accent);
     display: flex;
     position: fixed;
     top: 0;
@@ -98,7 +99,7 @@ body.light ::selection {
 
 body.light .header{
     background-color: var(--light-foreground);
-    border: 1px solid var(--light-accent);
+    border-bottom: 1px solid var(--light-accent);
 }
 
 .hamburger-menu{
@@ -189,10 +190,11 @@ body.light .btn-toggle:hover{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-
+    border-right: 1px solid var(--dark-accent);
 }
 body.light .sidebar{
     background-color: var(--light-foreground);
+    border-right: 1px solid var(--light-accent);
 }
 /* The sidebar links */
 .sidebar-link{
@@ -203,9 +205,19 @@ body.light .sidebar{
   display: block;
   transition: 0.3s;
   font-family: Comfortaa, Open Sans, sans-serif;
+    background-color: var(--dark-background);
+    border-radius: 5px;
+    margin: 5px;
+}
+.sidebar-link:hover{
+    background-color: var(--dark-accent);
 }
 body.light .sidebar-link{
   color: var(--light-text);
+    background-color: var(--light-background);
+}
+body.light .sidebar-link:hover{
+    background-color: var(--light-accent);
 }
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
@@ -261,6 +273,10 @@ body.light .openbtn:hover{
   width: 30px;
   height: 30px;
   right: 1px;
+}
+
+body.light .closenavbutton{
+    color: #014D8E;
 }
 
 .standard-link{

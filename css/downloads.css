@@ -23,12 +23,14 @@ body.light .download-desc{
 }
 
 .download-link{
+    display: block;
     background-color: #42c48e;
-    padding: 6px;
     text-decoration: none;
     color: #ffffff;
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     font-size: 30px;
     border-radius: 5px;
+    width: 240px;
+    height: 44px;
 }

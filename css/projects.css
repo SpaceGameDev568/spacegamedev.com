@@ -64,6 +64,11 @@ body.light .project-desc{
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     border-radius: 4px;
+    transition: 0.3s;
+}
+
+.source-link:hover{
+    background-color: #1a437e;
 }
 
 .download-link{
@@ -74,4 +79,9 @@ body.light .project-desc{
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     border-radius: 4px;
+    transition: 0.3s;
+}
+
+.download-link:hover{
+    background-color: #1d5643;
 }
