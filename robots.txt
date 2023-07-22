@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /siteversion.html
-
-Sitemap: https://spacegamedev.com/sitemap.xml
