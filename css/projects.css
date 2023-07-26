@@ -29,6 +29,7 @@ body.light .projects-subsection-h{
     color: var(--dark-text);
     font-family: Orbitron, Open Sans, sans-serif;
     font-size: 30px;
+    font-weight: bold;
 }
 
 body.light .project-name{
@@ -49,11 +50,21 @@ body.light .project-desc{
 .charles-project{
     margin-left: 10%;
     margin-right: 10%;
+    background-color: var(--dark-foreground);
+    padding: 15px;
+    width: max-content;
+    border-radius: 10px;
+    border: 1px solid var(--dark-accent);
 }
 
 .sf-mod-project{
     margin-left: 10%;
     margin-right: 10%;
+    background-color: var(--dark-foreground);
+    padding: 15px;
+    width: max-content;
+    border-radius: 10px;
+    border: 1px solid var(--dark-accent);
 }
 
 .source-link{
