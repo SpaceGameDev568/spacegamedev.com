@@ -296,12 +296,12 @@ body.light .standard-link{
 .footer{
     background-color: var(--dark-foreground);
     height: 340px;
-    border: 1px solid var(--dark-accent);
+    border-top: 1px solid var(--dark-accent);
 }
 
 body.light .footer{
     background-color: var(--light-foreground);
-    border: var(--light-accent);
+    border-top: 1px solid var(--light-accent);
 }
 
 .footer-p{
