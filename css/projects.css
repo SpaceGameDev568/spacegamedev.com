@@ -67,6 +67,16 @@ body.light .project-desc{
     border: 1px solid var(--dark-accent);
 }
 
+body.light .charles-project{
+    background-color: var(--light-foreground);
+    border: 1px solid var(--light-accent);
+}
+
+body.light .sf-mod-project{
+    background-color: var(--light-foreground);
+    border: 1px solid var(--light-accent);
+}
+
 .source-link{
     background-color: #3085f3;
     padding: 4px;
