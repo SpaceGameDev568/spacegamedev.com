@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /siteversion.html
+
+User-agent: GPTBot
+Disallow: /*
