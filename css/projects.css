@@ -30,6 +30,8 @@ body.light .projects-subsection-h{
     font-family: Orbitron, Open Sans, sans-serif;
     font-size: 30px;
     font-weight: bold;
+    max-width: 70%;
+    line-break: anywhere;
 }
 
 body.light .project-name{
