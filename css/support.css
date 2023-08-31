@@ -24,7 +24,7 @@ body.light .support-p{
 
 .portal-link{
     display: block;
-    background-color: var(--sgd-blue);
+    background: var(--sgd-blue);
     color: #f0ffff;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -38,15 +38,15 @@ body.light .support-p{
 }
 
 .portal-link:hover{
-    background-color: var(--light-sgd-blue);
+    background: var(--light-sgd-blue);
 }
 
 body.light .portal-link{
-  background-color: var(--light-sgd-blue);
+  background: var(--light-sgd-blue);
 }
 
 body.light .portal-link:hover{
-    background-color: var(--sgd-blue);
+    background: var(--sgd-blue);
 }
 
 .support-email{

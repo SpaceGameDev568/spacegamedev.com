@@ -50,9 +50,10 @@ body.light .project-desc{
 .charles-project{
     margin-left: 10%;
     margin-right: 10%;
-    background-color: var(--dark-foreground);
+    background: var(--dark-foreground);
     padding: 15px;
     width: max-content;
+    max-width: 80%;
     border-radius: 10px;
     border: 1px solid var(--dark-accent);
 }
@@ -60,25 +61,26 @@ body.light .project-desc{
 .sf-mod-project{
     margin-left: 10%;
     margin-right: 10%;
-    background-color: var(--dark-foreground);
+    background: var(--dark-foreground);
     padding: 15px;
     width: max-content;
+    max-width: 80%;
     border-radius: 10px;
     border: 1px solid var(--dark-accent);
 }
 
 body.light .charles-project{
-    background-color: var(--light-foreground);
+    background: var(--light-foreground);
     border: 1px solid var(--light-accent);
 }
 
 body.light .sf-mod-project{
-    background-color: var(--light-foreground);
+    background: var(--light-foreground);
     border: 1px solid var(--light-accent);
 }
 
 .source-link{
-    background-color: #3085f3;
+    background: #3085f3;
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
@@ -89,11 +91,11 @@ body.light .sf-mod-project{
 }
 
 .source-link:hover{
-    background-color: #1a437e;
+    background: #1a437e;
 }
 
 .download-link{
-    background-color: #42c48e;
+    background: #42c48e;
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
@@ -104,5 +106,5 @@ body.light .sf-mod-project{
 }
 
 .download-link:hover{
-    background-color: #1d5643;
+    background: #1d5643;
 }

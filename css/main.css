@@ -6,8 +6,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Comfortaa, Open Sans, sans-serif;
-    transition-property: color, background-color;
-    transition: 1s;
+    transition-property: color, background;
+    transition: background 1s;
     z-index: 10;
 }
 
@@ -85,7 +85,7 @@ body.light ::selection {
 /*  Start Header Section */
 
 .header{
-    background-color: var(--dark-foreground);
+    background: var(--dark-foreground);
     height: 80px;
     width: 100%;
     border-bottom: 1px solid var(--dark-accent);
@@ -98,7 +98,7 @@ body.light ::selection {
 }
 
 body.light .header{
-    background-color: var(--light-foreground);
+    background: var(--light-foreground);
     border-bottom: 1px solid var(--light-accent);
 }
 
@@ -108,22 +108,22 @@ body.light .header{
     width: 40px;
     height: 40px;
     left: 20px;
-    background-color: var(--dark-accent);
+    background: var(--dark-accent);
     border-radius: 5px;
     padding: 5px;
-    transition: 0.5s;
+    transition: background 0.5s;
 }
 
 body.light .hamburger-menu{
-    background-color: var(--light-accent);
+    background: var(--light-accent);
 }
 
 .hamburger-menu:hover{
-    background-color: #999999;
+    background: #999999;
 }
 
 body.light .hamburger-menu:hover{
-    background-color: var(--light-border);
+    background: var(--light-border);
 }
 
 .header-logo{
@@ -135,13 +135,13 @@ body.light .hamburger-menu:hover{
     transform: translate(-50%);
     width: 64px;
     height: 64px;
-    background-color: var(--dark-accent);
+    background: var(--dark-accent);
     padding: 5px;
     border-radius: 12px;
 }
 
 body.light .header-logo{
-    background-color: var(--light-accent);
+    background: var(--light-accent);
 }
 
 .theme-icon{
@@ -152,26 +152,26 @@ body.light .header-logo{
 .btn-toggle{
     display: flex;
     position: absolute;
-    background-color: var(--dark-accent);
+    background: var(--dark-accent);
     padding: 5px;
     top: 18px;
     right: 20px;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: background 0.5s;
     border: none;
     cursor: pointer;
 }
 
 .btn-toggle:hover{
-    background-color: #999999;
+    background: #999999;
 }
 
 body.light .btn-toggle{
-    background-color: var(--light-accent);
+    background: var(--light-accent);
 }
 
 body.light .btn-toggle:hover{
-    background-color: var(--sgd-blue);
+    background: var(--sgd-blue);
 }
 
 /*  End Header Section */
@@ -186,14 +186,14 @@ body.light .btn-toggle:hover{
     z-index: 15; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: var(--dark-foreground); /* Black*/
+    background: var(--dark-foreground); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
     border-right: 1px solid var(--dark-accent);
 }
 body.light .sidebar{
-    background-color: var(--light-foreground);
+    background: var(--light-foreground);
     border-right: 1px solid var(--light-accent);
 }
 /* The sidebar links */
@@ -203,21 +203,21 @@ body.light .sidebar{
   font-size: 25px;
   color: var(--dark-text);
   display: block;
-  transition: 0.3s;
+  transition: background 0.3s;
   font-family: Comfortaa, Open Sans, sans-serif;
-    background-color: var(--dark-background);
+    background: var(--dark-background);
     border-radius: 5px;
     margin: 5px;
 }
 .sidebar-link:hover{
-    background-color: var(--dark-accent);
+    background: var(--dark-accent);
 }
 body.light .sidebar-link{
   color: var(--light-text);
-    background-color: var(--light-background);
+    background: var(--light-background);
 }
 body.light .sidebar-link:hover{
-    background-color: var(--light-accent);
+    background: var(--light-accent);
 }
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
@@ -238,24 +238,24 @@ body.light .sidebar-link:hover{
   left: 20px;
   font-size: 20px;
   cursor: pointer;
-  background-color: var(--dark-accent);
+  background: var(--dark-accent);
   padding: 5px;
   border: none;
   border-radius: 5px;
-  transition: 0.5s;
+  transition: background 0.5s;
 }
 .openbtn-img{
   width: 40px;
   height: 40px;
 }
 .openbtn:hover{
-  background-color: #999999;
+  background: #999999;
 }
 body.light .openbtn{
-  background-color: var(--light-accent);
+  background: var(--light-accent);
 }
 body.light .openbtn:hover{
-  background-color: var(--sgd-blue);
+  background: var(--sgd-blue);
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -294,13 +294,13 @@ body.light .standard-link{
 }
 
 .footer{
-    background-color: var(--dark-foreground);
+    background: var(--dark-foreground);
     height: 340px;
     border-top: 1px solid var(--dark-accent);
 }
 
 body.light .footer{
-    background-color: var(--light-foreground);
+    background: var(--light-foreground);
     border-top: 1px solid var(--light-accent);
 }
 

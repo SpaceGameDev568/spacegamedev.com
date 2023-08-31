@@ -24,7 +24,7 @@ body.light .download-desc{
 
 .download-link{
     display: block;
-    background-color: #42c48e;
+    background: #42c48e;
     text-decoration: none;
     color: #ffffff;
     font-family: Open Sans, sans-serif;
