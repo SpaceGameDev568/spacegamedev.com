@@ -42,7 +42,7 @@ body.light .project-name{
 .project-desc{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: lighter;
 }
 
