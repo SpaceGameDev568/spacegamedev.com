@@ -37,7 +37,7 @@ body.light .support-p{
     font-size: 25px;
     border-radius: 5px;
     width: fit-content;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
 .portal-link:hover{

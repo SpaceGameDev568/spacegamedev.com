@@ -91,7 +91,7 @@ body.light .sf-mod-project{
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
 .source-link:hover{
