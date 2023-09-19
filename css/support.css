@@ -6,6 +6,7 @@
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .support-header{
@@ -16,6 +17,7 @@ body.light .support-header{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 body.light .support-p{
@@ -24,6 +26,8 @@ body.light .support-p{
 
 .portal-link{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--sgd-blue);
     color: #f0ffff;
     padding-top: 9px;
@@ -54,6 +58,7 @@ body.light .portal-link:hover{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
     line-break: loose;
+    text-align: center;
 }
 
 body.light .support-email{
