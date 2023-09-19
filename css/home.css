@@ -69,7 +69,7 @@ body.light .about-header{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
     line-height: 30px;
-    font-weight: light;
+    
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -105,7 +105,6 @@ body.light .experience-minor-h{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
     line-height: 30px;
-    font-weight: light;
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -133,7 +132,7 @@ body.light .contact-header{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
     line-height: 30px;
-    font-weight: light;
+    
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -161,7 +160,7 @@ body.light .socials-header{
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
     line-height: 30px;
-    font-weight: light;
+    
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;

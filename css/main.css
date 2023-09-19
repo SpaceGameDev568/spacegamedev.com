@@ -22,8 +22,13 @@ body{
 }
 
 .content-wrapper {
+    background: var(--dark-background);
     overflow: auto;
     padding-bottom: 340px;
+}
+
+body.light .content-wrapper {
+    background: var(--light-background);
 }
 
 body.light{

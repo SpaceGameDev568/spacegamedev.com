@@ -30,14 +30,13 @@ body.light .support-p{
     margin-right: auto;
     background: var(--sgd-blue);
     color: #f0ffff;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding: 9px 36px 9px 36px;
     text-decoration: none;
     text-align: center;
     font-family: Open Sans, sans-serif;
     font-size: 25px;
     border-radius: 5px;
-    width: 240px;
+    width: fit-content;
     transition: 0.3s;
 }
 
