@@ -6,6 +6,7 @@
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .downloads-header{
@@ -16,6 +17,7 @@ body.light .downloads-header{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 body.light .download-desc{

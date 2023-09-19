@@ -11,6 +11,9 @@
     border-radius: 40px;
     width: 256px;
     height: 256px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body.light .sgd-logo{
@@ -24,6 +27,7 @@ body.light .sgd-logo{
     font-weight: bold;
     text-shadow: 4px 2px 4px #00000025;
     transition-property: none;
+    text-align: center;
 }
 
 body.light .intro{
@@ -53,6 +57,7 @@ body.light .about-short{
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .about-header{
@@ -80,6 +85,7 @@ body.light .about-me-bio{
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .experience-header{
@@ -115,6 +121,7 @@ body.light .skills{
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .contact-header{
@@ -142,6 +149,7 @@ body.light .contact-p{
     font-weight: bold;
     color: var(--dark-text);
     text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
 }
 
 body.light .socials-header{
@@ -156,6 +164,7 @@ body.light .socials-header{
     font-weight: light;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
 }
 
 body.light .socials-p{
