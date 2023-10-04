@@ -51,19 +51,6 @@ body.light .about-short{
 
 /*  End Bio-Short Section */
 
-.about-header{
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--dark-text);
-    text-shadow: 4px 2px 4px #00000025;
-    text-align: center;
-}
-
-body.light .about-header{
-    color: var(--light-text);
-}
-
 .about-me-bio{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
@@ -76,19 +63,6 @@ body.light .about-header{
 }
 
 body.light .about-me-bio{
-    color: var(--light-text);
-}
-
-.experience-header{
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--dark-text);
-    text-shadow: 4px 2px 4px #00000025;
-    text-align: center;
-}
-
-body.light .experience-header{
     color: var(--light-text);
 }
 
@@ -111,19 +85,6 @@ body.light .experience-minor-h{
 }
 
 body.light .skills{
-    color: var(--light-text);
-}
-
-.contact-header{
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--dark-text);
-    text-shadow: 4px 2px 4px #00000025;
-    text-align: center;
-}
-
-body.light .contact-header{
     color: var(--light-text);
 }
 

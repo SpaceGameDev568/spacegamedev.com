@@ -1,0 +1,42 @@
+/* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
+
+.certifications-text {
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+body.light .certifications-text {
+    color: var(--light-text);
+}
+
+.certifications-badge {
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--sgd-blue);
+}
+
+body.light .certificate {
+    color: var(--light-sgd-blue);
+}
+
+.certificate-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 80%;
+    border: 1px solid var(--dark-accent);
+    border-radius: 20px;
+}

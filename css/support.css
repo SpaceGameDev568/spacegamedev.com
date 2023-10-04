@@ -1,18 +1,5 @@
 /* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
 
-.support-header{
-    font-family: Orbitron, Open Sans, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--dark-text);
-    text-shadow: 4px 2px 4px #00000025;
-    text-align: center;
-}
-
-body.light .support-header{
-    color: var(--light-text);
-}
-
 .support-p{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, sans-serif;
