@@ -1,0 +1,61 @@
+.socials-links {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 80%;
+    background-color: var(--dark-foreground);
+    height: 100%;
+    vertical-align: middle;
+    padding: 15px;
+    border: 1px solid var(--dark-accent);
+    border-radius: 10px;
+}
+
+body.light .socials-links {
+    background-color: var(--light-foreground);
+    border: 1px solid var(--light-accent);
+}
+
+.social-link{
+    display: inline-block;
+    color: var(--dark-text);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+body.light .social-link {
+    color: var(--light-text);
+}
+
+.social-icon {
+    width: 128px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.github-social-icon {
+    width: 128px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+body.light .github-social-icon {
+    filter: brightness(0%);
+}
+
+.social-link-label {
+    text-align: center;
+    padding: 12px;
+}
+
+.youtube-link-label {
+    text-align: center;
+    padding-top: 38px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
