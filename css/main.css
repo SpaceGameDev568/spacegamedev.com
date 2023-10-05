@@ -24,7 +24,7 @@ body{
 .content-wrapper {
     background: var(--dark-background);
     overflow: auto;
-    padding-bottom: 340px;
+    padding-bottom: 360px;
 }
 
 body.light .content-wrapper {
@@ -320,7 +320,7 @@ body.light .standard-link{
 
 .footer{
     background: var(--dark-foreground);
-    height: 340px;
+    height: 360px;
     border-top: 1px solid var(--dark-accent);
 
     position: relative;
