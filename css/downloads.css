@@ -1,25 +1,36 @@
 /* Copyright (©) 2022 - 2023  Jesse Hodgson. All Rights Reserved */
 
-.download-desc{
-    color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-body.light .download-desc{
-    color: var(--light-text);
-}
-
-.download-link{
-    display: block;
-    background: #42c48e;
+.dl-link {
+    /*color: #2871c5;
+    background-color: var(--dark-foreground);
+    padding: 6px 12px; border-radius: 5px;
     text-decoration: none;
-    color: #ffffff;
+    font-size: 26px;
+    text-align: center;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--sgd-blue);
+    color: var(--dark-text);
+    padding: 9px 36px 9px 36px;
+    text-decoration: none;
+    text-align: center;
     font-family: Open Sans, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 5px;
-    width: 240px;
-    height: 44px;
+    width: fit-content;
+    transition: background 0.3s;
+}
+
+.dl-link:hover {
+    background-color: #185485;
+}
+
+body.light .dl-link{
+    color: var(--light-foreground);
+    background-color: var(--light-sgd-blue);
+}
+
+body.light .dl-link:hover {
+    background-color: #015eaf;
 }
