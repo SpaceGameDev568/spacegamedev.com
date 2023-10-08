@@ -326,7 +326,7 @@ body.light .standard-link{
     border-top: 1px solid var(--dark-accent);
 
     position: relative;
-    margin-top: -340px;
+    margin-top: -360px;
     /* negative value of footer height */
     clear: both;
 }
