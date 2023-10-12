@@ -38,7 +38,7 @@ body.light .project-desc{
     color: var(--light-text);
 }
 
-.charles-project{
+.project-wrapper{
     margin-left: 10%;
     margin-right: 10%;
     background: var(--dark-foreground);
@@ -49,23 +49,7 @@ body.light .project-desc{
     border: 1px solid var(--dark-accent);
 }
 
-.sf-mod-project{
-    margin-left: 10%;
-    margin-right: 10%;
-    background: var(--dark-foreground);
-    padding: 15px;
-    width: max-content;
-    max-width: 80%;
-    border-radius: 10px;
-    border: 1px solid var(--dark-accent);
-}
-
-body.light .charles-project{
-    background: var(--light-foreground);
-    border: 1px solid var(--light-accent);
-}
-
-body.light .sf-mod-project{
+body.light .project-wrapper{
     background: var(--light-foreground);
     border: 1px solid var(--light-accent);
 }
