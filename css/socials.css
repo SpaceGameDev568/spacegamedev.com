@@ -25,7 +25,6 @@ body.light .socials-links {
     margin-right: 10px;
     height: 100%;
     vertical-align: middle;
-
 }
 
 body.light .social-link {
@@ -40,7 +39,7 @@ body.light .social-link {
 
 .github-social-icon {
     width: 128px;
-    height: 100%;
+    height: 128px;
     vertical-align: middle;
 }
 
