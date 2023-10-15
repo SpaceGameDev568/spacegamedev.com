@@ -81,24 +81,33 @@ body.light ::selection {
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 3px;
+}
+
+body.light::-webkit-scrollbar {
+    background: var(--light-background)
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    border-left: 1px solid var(--dark-accent);
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   	background: var(--dark-border);
-  	border-radius: 0px;
+  	border-radius: 5px;
+    margin-right: 1px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/*::-webkit-scrollbar-thumb:hover {
   	background: var(--dark-accent);
 }
+
+body.light::-webkit-scrollbar-thumb:hover {
+    background: var(--light-accent);
+}*/
 
 /*  Start Header Section */
 
@@ -162,7 +171,21 @@ body.light .header-logo{
     background: var(--light-accent);
 }
 
-.theme-icon{
+.theme-icon-light{
+    width: 32px;
+    height: 32px;
+}
+
+body.light .theme-icon-light{
+    display: none;
+}
+
+.theme-icon-dark {
+    display: none;
+}
+
+body.light .theme-icon-dark{
+    display: flex;
     width: 32px;
     height: 32px;
 }

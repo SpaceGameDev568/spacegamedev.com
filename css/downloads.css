@@ -2,7 +2,7 @@
 
 .dl-link {
     /*color: #2871c5;
-    background-color: var(--dark-foreground);
+    background: var(--dark-foreground);
     padding: 6px 12px; border-radius: 5px;
     text-decoration: none;
     font-size: 26px;
@@ -23,14 +23,14 @@
 }
 
 .dl-link:hover {
-    background-color: #185485;
+    background: #185485;
 }
 
 body.light .dl-link{
     color: var(--light-foreground);
-    background-color: var(--light-sgd-blue);
+    background: var(--light-sgd-blue);
 }
 
 body.light .dl-link:hover {
-    background-color: #015eaf;
+    background: #015eaf;
 }
