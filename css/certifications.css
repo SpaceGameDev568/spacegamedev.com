@@ -14,9 +14,12 @@ body.light .certifications-text {
 .certifications-badge {
     display: block;
     width: 340px;
+    height: 340px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    color: var(--sgd-blue);
 }
 
 .certificate {
@@ -38,6 +41,8 @@ body.light .certificate {
     margin-left: auto;
     margin-right: auto;
     width: 800px;
+    height: auto;
+    max-height: 619px;
     max-width: 100%;
     border: 1px solid var(--dark-accent);
     border-radius: 20px;
