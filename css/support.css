@@ -2,7 +2,7 @@
 
 .support-p{
     color: var(--dark-text);
-    font-family: Comfortaa, system-ui;
+    font-family: Comfortaa, Open Sans, system-ui;
     font-size: 20px;
     text-align: center;
 }
@@ -20,7 +20,7 @@ body.light .support-p{
     padding: 9px 36px 9px 36px;
     text-decoration: none;
     text-align: center;
-    font-family: system-ui;
+    font-family: Open Sans, system-ui;
     font-size: 25px;
     border-radius: 5px;
     width: fit-content;
@@ -41,7 +41,7 @@ body.light .portal-link:hover{
 
 .support-email{
     color: var(--dark-text);
-    font-family: Comfortaa, system-ui;
+    font-family: Comfortaa, Open Sans, system-ui;
     font-size: 20px;
     line-break: loose;
     text-align: center;

@@ -2,7 +2,7 @@
 
 .projects-subsection-h{
     color: var(--dark-text);
-    font-family: Comfortaa, system-ui;
+    font-family: Comfortaa, Open Sans, system-ui;
     font-size: 40px;
     font-weight: bold;
     margin-left: 5%;
@@ -15,7 +15,7 @@ body.light .projects-subsection-h{
 
 .project-name{
     color: var(--dark-text);
-    font-family: Orbitron, system-ui;
+    font-family: Orbitron, Open Sans, system-ui;
     font-size: 30px;
     font-weight: bold;
     hyphens: auto;
@@ -29,7 +29,7 @@ body.light .project-name{
 
 .project-desc{
     color: var(--dark-text);
-    font-family: Comfortaa, system-ui;
+    font-family: Comfortaa, Open Sans, system-ui;
     font-size: 20px;
     font-weight: lighter;
 }
@@ -55,31 +55,47 @@ body.light .project-wrapper{
 }
 
 .source-link{
-    background: #3085f3;
+    background: var(--sgd-blue);
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
-    font-family: system-ui;
+    font-family: Open Sans, system-ui;
     font-weight: bold;
     border-radius: 4px;
     transition: background 0.3s;
+}
+
+body.light .source-link {
+    background: var(--light-sgd-blue);
 }
 
 .source-link:hover{
     background: #1a437e;
 }
 
+body.light .source-link:hover{
+    background: #1a437e;
+}
+
 .download-link{
-    background: #42c48e;
+    background: var(--sgd-blue);
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
-    font-family: system-ui;
+    font-family: Open Sans, system-ui;
     font-weight: bold;
     border-radius: 4px;
     transition: 0.3s;
 }
 
+body.light .download-link {
+    background: var(--light-sgd-blue);
+}
+
 .download-link:hover{
+    background: #1d5643;
+}
+
+body.light .download-link:hover {
     background: #1d5643;
 }
