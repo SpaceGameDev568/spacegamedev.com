@@ -2,7 +2,7 @@
 
 .projects-subsection-h{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 40px;
     font-weight: bold;
     margin-left: 5%;
@@ -15,7 +15,7 @@ body.light .projects-subsection-h{
 
 .project-name{
     color: var(--dark-text);
-    font-family: Orbitron, Open Sans, sans-serif;
+    font-family: Orbitron, system-ui;
     font-size: 30px;
     font-weight: bold;
     hyphens: auto;
@@ -29,7 +29,7 @@ body.light .project-name{
 
 .project-desc{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     font-weight: lighter;
 }
@@ -59,7 +59,7 @@ body.light .project-wrapper{
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
-    font-family: Open Sans, sans-serif;
+    font-family: system-ui;
     font-weight: bold;
     border-radius: 4px;
     transition: background 0.3s;
@@ -74,7 +74,7 @@ body.light .project-wrapper{
     padding: 4px;
     text-decoration: none;
     color: #ffffff;
-    font-family: Open Sans, sans-serif;
+    font-family: system-ui;
     font-weight: bold;
     border-radius: 4px;
     transition: 0.3s;

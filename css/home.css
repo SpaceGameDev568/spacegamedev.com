@@ -22,7 +22,7 @@ body.light .sgd-logo{
 
 .intro{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 40px;
     font-weight: bold;
     text-shadow: 4px 2px 4px #00000025;
@@ -39,7 +39,7 @@ body.light .intro{
     margin-left: 10%;
     margin-right: 10%;
     color: var(--dark-text);
-    font-family: Comfortaa, Opens Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 22px;
     line-height: 42px;
     transition-property: none;
@@ -53,10 +53,9 @@ body.light .about-short{
 
 .about-me-bio{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     line-height: 30px;
-    
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -76,7 +75,7 @@ body.light .experience-minor-h{
 
 .skills{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     line-height: 30px;
     text-align: left;
@@ -90,7 +89,7 @@ body.light .skills{
 
 .contact-p{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     line-height: 30px;
     
@@ -104,7 +103,7 @@ body.light .contact-p{
 }
 
 .socials-header{
-    font-family: Orbitron, Open Sans, sans-serif;
+    font-family: Orbitron, system-ui;
     font-size: 50px;
     font-weight: bold;
     color: var(--dark-text);
@@ -118,7 +117,7 @@ body.light .socials-header{
 
 .socials-p{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     line-height: 30px;
     

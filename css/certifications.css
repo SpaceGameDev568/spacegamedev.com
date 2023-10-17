@@ -2,7 +2,7 @@
 
 .certifications-text {
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 24px;
     text-align: center;
 }

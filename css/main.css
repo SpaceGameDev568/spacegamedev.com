@@ -5,7 +5,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     transition-property: color, background;
     transition: background 1s;
     z-index: 10;
@@ -245,7 +245,7 @@ body.light .sidebar{
   color: var(--dark-text);
   display: block;
   transition: background 0.3s;
-  font-family: Comfortaa, Open Sans, sans-serif;
+  font-family: Comfortaa, system-ui;
     background: var(--dark-background);
     border-radius: 5px;
     margin: 5px;
@@ -362,7 +362,7 @@ body.light .footer{
 .footer-p{
   color: var(--dark-text);
   line-height: 20px;
-  font-family: Comfortaa, Open Sans, sans-serif;
+  font-family: Comfortaa, system-ui;
   font-size: 15px;
     text-align: center;
 }
@@ -374,7 +374,7 @@ body.light .footer-p{
 .attribution{
   color: var(--dark-text);
   line-height: 20px;
-  font-family: Comfortaa, Open Sans, sans-serif;
+  font-family: Comfortaa, system-ui;
   font-size: 15px;
     text-align: center;
 }
@@ -393,7 +393,7 @@ body.light .footer-link{
 
 .text{
     color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, sans-serif;
+    font-family: Comfortaa, system-ui;
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
@@ -404,7 +404,7 @@ body.light .text{
 }
 
 .generic-text-header {
-    font-family: Orbitron, Open Sans, sans-serif;
+    font-family: Orbitron, system-ui;
     font-size: 50px;
     font-weight: bold;
     color: var(--dark-text);
