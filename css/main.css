@@ -217,6 +217,11 @@ body.light .btn-toggle:hover{
 
 /*  End Header Section */
 
+.betterstack-badge {
+    padding: 0px 8px 0px 8px;
+    display: block;
+}
+
 /* Sidebar */
 
 /* The sidebar menu */
@@ -246,9 +251,9 @@ body.light .sidebar{
   display: block;
   transition: background 0.3s;
   font-family: Comfortaa, Open Sans, system-ui;
-    background: var(--dark-background);
-    border-radius: 5px;
-    margin: 5px;
+  background: var(--dark-background);
+  border-radius: 5px;
+  margin: 5px;
 }
 .sidebar-link:hover{
     background: var(--dark-accent);
