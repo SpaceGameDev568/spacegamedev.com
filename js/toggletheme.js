@@ -11,9 +11,17 @@
 
       // Listen for a click on the button 
       btn.addEventListener("click", function() {
+
+        if (localStorage.getItem("theme") == "light") {
+          document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=dark';
+
+        }
+        if (localStorage.getItem("theme") == "") {
+          document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=light';
+        }
+
         // Toggle the .dark-theme class on each click
         document.body.classList.toggle("light");
-
         // Let's say the theme is equal to light
         let theme = "";
         // If the body contains the .dark-theme class...
