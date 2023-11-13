@@ -397,6 +397,10 @@ body.light .footer-link{
     color: var(--light-blue-high-contrast);
 }
 
+#betterstack-attribution {
+    border-radius: 4px;
+}
+
 .text{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, system-ui;

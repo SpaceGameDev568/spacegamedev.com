@@ -14,10 +14,11 @@
 
         if (localStorage.getItem("theme") == "light") {
           document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=dark';
-
+          document.getElementById('betterstack-attribution').src = 'https://uptime.betterstack.com/assets/static_assets/badges/dark.png';
         }
         if (localStorage.getItem("theme") == "") {
           document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=light';
+          document.getElementById('betterstack-attribution').src = 'https://uptime.betterstack.com/assets/static_assets/badges/light.png';
         }
 
         // Toggle the .dark-theme class on each click
