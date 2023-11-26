@@ -26,7 +26,7 @@ body{
 .content-wrapper {
     background: var(--dark-background);
     overflow: auto;
-    padding-bottom: 415px;
+    padding-bottom: 435px;
 }
 
 body.light .content-wrapper {
@@ -353,11 +353,11 @@ body.light .standard-link{
 
 .footer{
     background: var(--dark-foreground);
-    height: 415px;
+    height: 435px;
     border-top: 1px solid var(--dark-accent);
 
     position: relative;
-    margin-top: -415px;
+    margin-top: -435px;
     /* negative value of footer height */
     clear: both;
 }
