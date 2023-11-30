@@ -40,6 +40,7 @@ body.light{
 /* Colour palette */
 
 :root{
+    /* color-scheme: dark; Breaks Better Stack status embed */
   /* Dark colors */
     --dark-background: #22272e;
     --dark-foreground: #2d333b;
@@ -85,6 +86,7 @@ body.light ::selection {
 ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
+    display: none;
 }
 
 body.light::-webkit-scrollbar {
@@ -239,7 +241,7 @@ body.light .btn-toggle:hover{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    border-right: 1px solid var(--dark-accent);
+    /*border-right: ;*/
 }
 body.light .sidebar{
     background: var(--light-foreground);
