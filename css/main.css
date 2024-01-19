@@ -26,7 +26,7 @@ body{
 .content-wrapper {
     background: var(--dark-background);
     overflow: auto;
-    padding-bottom: 435px;
+    padding-bottom: 435px; /* Change this when adjusting the footer*/
 }
 
 body.light .content-wrapper {
