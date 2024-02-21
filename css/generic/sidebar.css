@@ -1,8 +1,11 @@
+/*height: calc(100% - 3% /* Margins */ /* - 80px /* Header Height */ /* - 2px /* Account for padding */ /*);*/
+
 /* Sidebar */
 
 /* The sidebar menu */
 .sidebar {
-    height: calc(100% - 3% /* Margins */ - 80px /* Header Height */ - 2px /* Account for padding */);
+    height: calc(100% - 80px); /* 100% Full-height */
+    margin-top: 80px;
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 15; /* Stay on top */
@@ -12,20 +15,12 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    border-radius: 10px;
-    margin-left: 0.5%;
-    margin-top: calc(1% + 80px);
-    margin-bottom: 0.5%;
-    background-color: rgba(45, 51, 59, 0.5);
-    backdrop-filter: blur(10px);
 }
 
 body.light .sidebar{
     background: var(--light-foreground);
-    background-color: rgba(198, 204, 208, 0.5);
-    backdrop-filter: blur(10px);
+    border-right: 1px solid var(--light-accent);
 }
-
 /* The sidebar links */
 .sidebar-link{
     padding: 8px 8px 8px 32px;
@@ -38,25 +33,17 @@ body.light .sidebar{
     background: var(--dark-background);
     border-radius: 5px;
     margin: 5px;
-    background-color: rgba(0,0,0,0);
-    border: 1px solid var(--dark-accent);
 }
-
 .sidebar-link:hover{
     background: var(--dark-accent);
 }
-
 body.light .sidebar-link{
     color: var(--light-text);
     background: var(--light-background);
-    background-color: rgba(0,0,0,0);
-    border: 1px solid var(--light-accent);
 }
-
 body.light .sidebar-link:hover{
     background: var(--light-accent);
 }
-
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
     position: absolute;
@@ -72,6 +59,7 @@ body.light .sidebar-link:hover{
 body.light .sidebar .closebtn {
     filter: brightness(40%);
 }
+
 
 /* The button used to open the sidebar */
 .openbtn {

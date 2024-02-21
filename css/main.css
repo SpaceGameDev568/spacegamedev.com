@@ -118,8 +118,6 @@ body.light::-webkit-scrollbar-thumb:hover {
     background: var(--light-accent);
 }*/
 
-
-
 .standard-link{
     color: var(--sgd-blue);
 }
@@ -135,4 +133,29 @@ body.light .standard-link{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.text{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, system-ui;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .text{
+    color: var(--light-text);
+}
+
+.generic-text-header {
+    font-family: Orbitron, Open Sans, system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
+}
+
+body.light .generic-text-header {
+    color: var(--light-text);
 }

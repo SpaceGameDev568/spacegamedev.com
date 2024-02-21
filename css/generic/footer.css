@@ -48,28 +48,3 @@ body.light .footer-link{
 #betterstack-attribution {
     border-radius: 4px;
 }
-
-.text{
-    color: var(--dark-text);
-    font-family: Comfortaa, Open Sans, system-ui;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-body.light .text{
-    color: var(--light-text);
-}
-
-.generic-text-header {
-    font-family: Orbitron, Open Sans, system-ui;
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--dark-text);
-    text-shadow: 4px 2px 4px #00000025;
-    text-align: center;
-}
-
-body.light .generic-text-header {
-    color: var(--light-text);
-}

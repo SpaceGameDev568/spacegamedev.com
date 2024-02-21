@@ -3,24 +3,25 @@
 .header{
     display: block;
     position: fixed;
+    background: var(--dark-foreground);
+    height: 80px;
+    width: 100%;
+    border: 1px solid var(--dark-accent);
+    top: 0;
+    z-index: 11;
+    /*
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-top: 0.5%;
     border-radius: 10px;
-    background: var(--dark-foreground);
-    height: 80px;
-    width: 99%;
-    border: 1px solid var(--dark-accent);
-    top: 0;
-    z-index: 11;
     background-color: rgba(45, 51, 59, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);*/
 }
 
 body.light .header{
     background: var(--light-foreground);
-    background-color: rgba(198, 204, 208, 0.5);
-    backdrop-filter: blur(10px);
+    /*background-color: rgba(198, 204, 208, 0.5);
+    backdrop-filter: blur(10px);*/
 }
 
 .hamburger-menu{
