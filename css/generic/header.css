@@ -6,7 +6,7 @@
     background: var(--dark-foreground);
     height: 80px;
     width: 100%;
-    border: 1px solid var(--dark-accent);
+    border-bottom: 1px solid var(--dark-accent);
     top: 0;
     z-index: 11;
     /*
