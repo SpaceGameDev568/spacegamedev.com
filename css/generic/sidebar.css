@@ -1,0 +1,123 @@
+/* Sidebar */
+
+/* The sidebar menu */
+.sidebar {
+    height: calc(100% - 3% /* Margins */ - 80px /* Header Height */ - 2px /* Account for padding */);
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Stay on top */
+    top: 0;
+    left: 0;
+    background: var(--dark-foreground); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border-radius: 10px;
+    margin-left: 0.5%;
+    margin-top: calc(1% + 80px);
+    margin-bottom: 0.5%;
+    background-color: rgba(45, 51, 59, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+body.light .sidebar{
+    background: var(--light-foreground);
+    background-color: rgba(198, 204, 208, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* The sidebar links */
+.sidebar-link{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--dark-text);
+    display: block;
+    transition: background 0.3s;
+    font-family: Comfortaa, Open Sans, system-ui;
+    background: var(--dark-background);
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid var(--dark-accent);
+}
+
+.sidebar-link:hover{
+    background: var(--dark-accent);
+}
+
+body.light .sidebar-link{
+    color: var(--light-text);
+    background: var(--light-background);
+    background-color: rgba(0,0,0,0);
+    border: 1px solid var(--light-accent);
+}
+
+body.light .sidebar-link:hover{
+    background: var(--light-accent);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+body.light .sidebar .closebtn {
+    filter: brightness(40%);
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    display: flex;
+    top: 15px;
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--dark-accent);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+.openbtn-img{
+    width: 40px;
+    height: 40px;
+}
+.openbtn:hover{
+    background: #999999;
+}
+body.light .openbtn{
+    background: var(--light-accent);
+}
+body.light .openbtn:hover{
+    background: var(--sgd-blue);
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+.closenavbutton{
+    position: absolute;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    right: 1px;
+}
+
+body.light .closenavbutton{
+    color: #014D8E;
+}

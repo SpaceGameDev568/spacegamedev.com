@@ -7,7 +7,7 @@
     <title>SpaceGameDev's Website</title>
     <link rel="shortcut icon" type="image/ico" href="https://assets.spacegamedev.com/images\webp\sgd-logo-round.webp"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/pages/projects.css">
     <link rel="preconnect" href="https://assets.spacegamedev.com"/>
   </head>
   <!-- End Head, Start Body -->
@@ -18,29 +18,13 @@
     <!-- Sidebar function -->
     <script src="js/sidebar.js" defer></script>
     <!-- Theme switcher button function with cookie -->
-    <script src="js/toggletheme.js" defer></script>
+
+    <script defer src="js/CommonElements.js"></script>
+
+    <script src="js/jquery.js"></script>
 
     <!-- Start Header Section -->
-    <div class="header">
-      
-      <!--<a><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
-      <button class="openbtn" onclick="openNav()" title="Navigation"><img src="https://assets.spacegamedev.com/images/ui/hamburger-menu.svg" class="openbtn-img" alt="Open Sidebar"></button>
-      
-      <img class="header-logo" src="https:\\assets.spacegamedev.com/images/webp/avatar-outline.webp" alt="">
-
-      <button class="btn-toggle" onclick="void(0)" title="Switch themes"><img class="theme-icon-light" src="https://assets.spacegamedev.com/images/ui/light-theme.svg" alt="Toggle Light or Dark Theme" title="Light Theme"><img class="theme-icon-dark" src="https://assets.spacegamedev.com/images/ui/dark-theme.svg" alt="Toggle Light or Dark Theme" title="Dark Theme"></button>
-
-      <div id="websidebar" class="sidebar">
-        <button class="closebtn" onclick="closeNav()"><img src="https://assets.spacegamedev.com/images/ui/menu-x.svg" class="closenavbutton" title="Close Navigation" alt="Close Navigation" aria-label="Close the navigation bar."></button>
-        <a href="index.html" class="sidebar-link">Home</a>
-        <a class="sidebar-link" href="certifications.html">Certifications</a>
-        <a href="projects.html" class="sidebar-link">Projects</a>
-        <a href="resources.html" class="sidebar-link">Resources</a>
-        <a href="support.html" class="sidebar-link">Support</a>
-        <a class="sidebar-link" href="socials.html">Socials</a>
-        <iframe class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
+    <div data-include="header"></div>
     <!-- End Header Section-->
     <div id="page-wrapper">
       <div class="content-wrapper">

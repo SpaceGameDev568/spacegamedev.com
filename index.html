@@ -11,7 +11,7 @@
     <link href="https://spacegamedev-assets.pages.dev/images\webp\sgd-logo-round.webp" rel="shortcut icon"
           type="image/ico"/>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/pages/home.css" rel="stylesheet">
     <link href="https://spacegamedev-assets.pages.dev" rel="preconnect"/>
 </head>
 <!-- End Head, Start Body -->
@@ -22,36 +22,14 @@
 <!-- Sidebar function -->
 <script defer src="js/sidebar.js"></script>
 <!-- Theme switcher button function with cookie -->
-<script defer src="js/toggletheme.js"></script>
+
+<script defer src="js/CommonElements.js"></script>
+
+<script src="js/jquery.js"></script>
+
 
 <!-- Start Header Section -->
-<div class="header">
-    
-    <!--<a><img src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg" class="hamburger-menu"></a>-->
-    <button class="openbtn" onclick="openNav()" title="Navigation"><img
-            alt="Open Sidebar" class="openbtn-img"
-            src="https://spacegamedev-assets.pages.dev/images/ui/hamburger-menu.svg"></button>
-    
-        <img alt="" class="header-logo" src="https:\\spacegamedev-assets.pages.dev/images/webp/avatar-outline.webp">
-
-    <button class="btn-toggle" onclick="void(0)" title="Switch themes"><img class="theme-icon-light" src="https://spacegamedev-assets.pages.dev/images/ui/light-theme.svg" alt="Toggle Light or Dark Theme"><img class="theme-icon-dark" src="https://spacegamedev-assets.pages.dev/images/ui/dark-theme.svg" alt="Toggle Light or Dark Theme"></button>
-    </button>
-    <div class="sidebar" id="websidebar">
-        <button class="closebtn" onclick="closeNav()"><img
-                alt="Close Navigation" aria-label="Close the navigation bar."
-                class="closenavbutton" src="https://spacegamedev-assets.pages.dev/images/ui/menu-x.svg"
-                title="Close Navigation"></button>
-        <a class="sidebar-link" href="index.html">Home</a>
-        <a class="sidebar-link" href="certifications.html">Certifications</a>
-        <a class="sidebar-link" href="projects.html">Projects</a>
-        <a class="sidebar-link" href="resources.html">Resources</a>
-        <a class="sidebar-link" href="support.html">Support</a>
-        <a class="sidebar-link" hre f="socials.html">Socials</a>
-
-        <iframe class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" frameborder="0" scrolling="no"></iframe>
-
-    </div>
-</div>
+<div data-include="header"></div>
 <!-- End Header Section-->
 <div id="page-wrapper">
     <div class="content-wrapper">
@@ -91,7 +69,7 @@
             begin following the courses on their website to learn game development. I gained a lot of knowledge about
             the game design process and the basics of programming from the time I spent in Unity. After that, I took
             what I had learned and decided to try to make some mods for a game I play, called <u><a
-                class="standard-link" href="https://satisfactorygame.com">Satisfactory</a></u>. This led me to create 6
+                class="standard-link" href="https://satisfactorygame.com">Satisfactory</a></u>. This led me to create several
             mods, which I published on <u><a class="standard-link" href="https://ficsit.app/user/5GqLMHyzA3myPG">ficsit.app</a></u>
             and <u><a class="standard-link" href="https://github.com/SpaceGameDev568?tab=repositories">GitHub</a></u>.
             If you would like, you can read more about them on the <u><a class="standard-link" href="projects.html">projects
@@ -209,33 +187,8 @@
 </section>
 </div>
 </div>
-<section class="footer">
-    <p class="footer-p">
-        <br><br>
-        Copyright &#169; 2022 - 2024 Jesse Hodgson. All Rights Reserved.<br>
-        The source code for this website is available for reference on <a
-            class="footer-link" href="https://github.com/SpaceGameDev568/spacegamedev.com">GitHub</a>.
-    </p>
-        <br><br>
-        <p class="attribution">
-            Performance and security by Cloudflare.
-            <br><br>
-            Having trouble with one of my services? Check the <a class="footer-link" href="https://status.spacegamedev.com">status of everything here</a>.
-            <br><br>
-            Fonts used:
-            <br><br>
-            Comfortaa: <a class="footer-link" href="https://fonts.google.com/specimen/Comfortaa">Comfortaa on Google
-            Fonts</a>
-            <br>
-            Open Sans: <a class="footer-link" href="https://fonts.google.com/specimen/Open+Sans">Open Sans on Google
-            Fonts</a>
-            <br>
-            Orbitron: <a class="footer-link" href="https://fonts.google.com/specimen/Orbitron">Orbitron on Google
-            Fonts</a>
-            <br><br>
-            <a class="betterstack-attribution" target="_blank" href="https://uptime.betterstack.com"><img id="betterstack-attribution" style="width: 130px; height: 52px;" alt="Better Stack Website Monitoring" src="https://uptime.betterstack.com/assets/static_assets/badges/dark.png" /></a>
-        </p>
-</section>
+<div data-include="footer"></div>
+
 </body>
 
 </html>

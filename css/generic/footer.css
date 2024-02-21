@@ -1,0 +1,75 @@
+.footer{
+    background: var(--dark-foreground);
+    height: 435px;
+    border: 1px solid var(--dark-accent);
+    position: relative;
+    margin-top: -435px;
+    /* negative value of footer height */
+    clear: both;
+}
+
+body.light .footer{
+    background: var(--light-foreground);
+    border-top: 1px solid var(--light-accent);
+}
+
+.footer-p{
+    color: var(--dark-text);
+    line-height: 20px;
+    font-family: Comfortaa, Open Sans, system-ui;
+    font-size: 15px;
+    text-align: center;
+}
+
+body.light .footer-p{
+    color: var(--light-text);
+}
+
+.attribution{
+    color: var(--dark-text);
+    line-height: 20px;
+    font-family: Comfortaa, Open Sans, system-ui;
+    font-size: 15px;
+    text-align: center;
+}
+
+body.light .attribution{
+    color: var(--light-text);
+}
+
+.footer-link{
+    color: var(--dark-blue-high-contrast);
+}
+
+body.light .footer-link{
+    color: var(--light-blue-high-contrast);
+}
+
+#betterstack-attribution {
+    border-radius: 4px;
+}
+
+.text{
+    color: var(--dark-text);
+    font-family: Comfortaa, Open Sans, system-ui;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body.light .text{
+    color: var(--light-text);
+}
+
+.generic-text-header {
+    font-family: Orbitron, Open Sans, system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-shadow: 4px 2px 4px #00000025;
+    text-align: center;
+}
+
+body.light .generic-text-header {
+    color: var(--light-text);
+}
