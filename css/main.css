@@ -12,14 +12,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Comfortaa, Open Sans, system-ui;
-    transition-property: color, background;
-    transition: background 1s;
+    transition: color, background 1s;
     z-index: 10;
 }
 
 html,
 body{
-    background: var(--dark-background);
     height: 100%;
 }
 
