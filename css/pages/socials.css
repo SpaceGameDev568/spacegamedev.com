@@ -18,7 +18,8 @@
 }
 
 body.light .social-card{
-    background: var(--light-foreground)
+    background: var(--light-foreground);
+    border: 1px solid var(--light-accent);
 }
 
 .social-card:hover{
@@ -26,7 +27,7 @@ body.light .social-card{
 }
 
 body.light .social-card:hover{
-    background: var(--light-sgd-blue)
+    background: var(--light-sgd-blue);
 }
 
 .social-icon {
