@@ -18,7 +18,7 @@ body.light .projects-subsection-h{
     font-family: Orbitron, Open Sans, system-ui;
     font-size: 30px;
     font-weight: bold;
-    hyphens: auto;
+    hyphens: manual;
     max-width: 90%;
     line-break: loose;
 }

@@ -1,5 +1,15 @@
 /* Copyright (©) 2022 - 2024  Jesse Hodgson. All Rights Reserved */
 
+.satisfactory-help-image{
+    border: 2px solid var(--dark-accent);
+    border-radius: 20px;
+    max-width: 80%; /* 1243px */
+    max-height: 80%; /* 761px */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .support-p{
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, system-ui;

@@ -1,7 +1,7 @@
 .footer{
     background: var(--dark-foreground);
     height: 435px;
-    border: 1px solid var(--dark-accent);
+    border-top: 1px solid var(--dark-accent);
     position: relative;
     margin-top: -435px;
     /* negative value of footer height */
