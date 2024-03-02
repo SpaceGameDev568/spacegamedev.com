@@ -28,3 +28,7 @@
     margin-right: 10%;
     margin-bottom: 20px;
 }
+
+body.light .logo-text {
+    color: var(--light-text);
+}
