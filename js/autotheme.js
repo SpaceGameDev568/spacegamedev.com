@@ -3,7 +3,7 @@ const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
 
   const themeStuff = localStorage.getItem("theme");
 
-  if (themeStuff == "light") {
+  if (themeStuff === "light") {
   document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=light';
   document.getElementById('betterstack-attribution').src = 'https://uptime.betterstack.com/assets/static_assets/badges/light.png';
 

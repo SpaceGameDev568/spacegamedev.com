@@ -1,5 +1,3 @@
-      // Select the button
-      const btn = document.querySelector(".btn-toggle");
       // Select the theme preference from localStorage
       const currentTheme = localStorage.getItem("theme");
 
@@ -10,7 +8,7 @@
       }
 
       // Listen for a click on the button 
-      btn.addEventListener("click", function() {
+     function changeTheme() {
 
         if (localStorage.getItem("theme") == "light") {
           document.getElementById('betterstack-badge').src = 'https://status.spacegamedev.com/badge?theme=dark';
@@ -32,4 +30,4 @@
         }
         // Then save the choice in localStorage
         localStorage.setItem("theme", theme);
-      });
+      };
