@@ -1,6 +1,6 @@
 /* Copyright (©) 2022 - 2024  Jesse Hodgson. All Rights Reserved */
 
-.projects-subsection-h{
+.projects-subsection-h {
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, system-ui;
     font-size: 40px;
@@ -9,11 +9,16 @@
     margin-right: 5%;
 }
 
-body.light .projects-subsection-h{
+body.light .projects-subsection-h {
     color: var(--light-text);
 }
 
-.project-name{
+.project-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project-name {
     color: var(--dark-text);
     font-family: Orbitron, Open Sans, system-ui;
     font-size: 30px;
@@ -23,22 +28,22 @@ body.light .projects-subsection-h{
     line-break: loose;
 }
 
-body.light .project-name{
+body.light .project-name {
     color: var(--light-text);
 }
 
-.project-desc{
+.project-desc {
     color: var(--dark-text);
     font-family: Comfortaa, Open Sans, system-ui;
     font-size: 20px;
     font-weight: lighter;
 }
 
-body.light .project-desc{
+body.light .project-desc {
     color: var(--light-text);
 }
 
-.project-wrapper{
+.project-wrapper {
     margin-left: 10%;
     margin-right: 10%;
     background: var(--dark-foreground);
@@ -49,14 +54,25 @@ body.light .project-desc{
     border: 1px solid var(--dark-accent);
 }
 
-body.light .project-wrapper{
+body.light .project-wrapper {
     background: var(--light-foreground);
     border: 1px solid var(--light-accent);
 }
 
-.source-link{
+.project-image {
+    height: 128px;
+    width: 128px;
+    border-radius: 10px;
+    max-width: 80%; /* 1243px */
+    max-height: 80%; /* 761px */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.source-link {
     background: var(--sgd-blue);
-    padding: 4px;
+    padding: 10px;
     text-decoration: none;
     color: #ffffff;
     font-family: Open Sans, system-ui;
@@ -69,30 +85,30 @@ body.light .source-link {
     background: var(--light-sgd-blue);
 }
 
-.source-link:hover{
+.source-link:hover {
     background: #1a437e;
 }
 
-body.light .source-link:hover{
+body.light .source-link:hover {
     background: #1a437e;
 }
 
-.download-link{
+.download-link {
     background: var(--sgd-blue);
-    padding: 4px;
+    padding: 10px;
     text-decoration: none;
     color: #ffffff;
     font-family: Open Sans, system-ui;
     font-weight: bold;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
 body.light .download-link {
     background: var(--light-sgd-blue);
 }
 
-.download-link:hover{
+.download-link:hover {
     background: #1a437e;
 }
 
