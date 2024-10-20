@@ -1,4 +1,4 @@
-@use 'shared';
+@use '../shared';
 
 .about-me-section {
   margin-top: 50px;
@@ -6,6 +6,8 @@
 
 .profile-picture {
   border-radius: 3.125rem;
+  max-width: 50%;
+  height: auto;
 }
 
 .box {
@@ -40,6 +42,21 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  object-fit: contain;
+
+}
+
+.plane-pic {
+  border-radius: 3.125rem;
+  transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+}
+
+.plane-pic:hover {
+  transform: scale(1.1);
+  margin: 40px;
 }
 
 .side-text {
@@ -55,17 +72,6 @@
   text-align: left;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.plane-pic {
-  border-radius: 50px;
-  transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  max-width: 95%;
-}
-
-.plane-pic:hover {
-  transform: scale(1.1);
-  margin: 40px;
 }
 
 .primary-side-text {

@@ -1,8 +1,8 @@
-import '../../styles/header.scss';
-import Sidebar from "./Sidebar.jsx";
+import '../../../styles/components/sidebar-toggle.scss';
+
 import {useState} from "react";
 
-function Header() {
+function SidebarToggle() {
 
   const [state, setState] = useState("Collapsed");
 
@@ -11,32 +11,30 @@ function Header() {
       setState("Expanded");
       const sidebar = document.getElementById('sidebar');
       sidebar.style.left = '0px';
+      sidebar.style.transition = '800ms cubic-bezier(0.34, 1.56, 0.64, 1)';
     } else {
       setState("Collapsed");
       const sidebar = document.getElementById('sidebar');
       sidebar.style.left = sidebar.style.width;
+      sidebar.style.transition = '800ms cubic-bezier(0.36, 0, 0.66, -0.56)';
     }
 
   }
 
   return (
       <>
-
-        <div className="header">
+        <div className="button-container">
 
           <button className={"sidebar-button-toggle"} onClick={toggleSidebar}>
+
             <span className="material-symbols-outlined"> menu </span>
+
           </button>
 
         </div>
-
-        <div className="top-spacer"/>
-
-        <Sidebar />
-
       </>
   )
 
 }
 
-export default Header;
+export default SidebarToggle;

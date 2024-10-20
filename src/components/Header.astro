@@ -1,14 +1,18 @@
 ---
-import "../styles/header.scss";
+import '../styles/components/header.scss';
+import SidebarButton from './SidebarButton.astro';
+import SidebarToggle from './react/buttons/SidebarToggle.jsx';
 ---
 
 <div class="header">
 
-        <h3 style="text-align: left; margin: 0;">SpaceGameDev</h3>
+    <SidebarToggle client:load />
 
+</div>
 
+<div class="top-spacer"/>
 
-    <button class="sidebar-button-toggle" onclick="toggleSidebar()">
-        <span class="material-symbols-outlined"> menu </span>
-    </button>
+<div class="sidebar" id="sidebar">
+    <SidebarButton title="Home" symbol="home" link="/"/>
+    <SidebarButton title="About" symbol="data_info_alert" link="about" />
 </div>

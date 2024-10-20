@@ -1,0 +1,30 @@
+@use '../shared';
+
+.main-heading {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25vw;
+  color: shared.$text;
+  font-family: Jetbrains Mono, monospace;
+  font-weight: bold;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2vh 10%;
+  color: shared.$text;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .main-heading {
+    color: shared.$dark-text;
+  }
+
+  .subtext {
+      color: shared.$dark-text;
+  }
+
+}

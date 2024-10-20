@@ -1,4 +1,4 @@
-@use 'shared';
+@use '../shared';
 
 body {
   background: linear-gradient(to top left, #0479cc, rgba(255, 153, 150, 0), red), linear-gradient(to top right, yellow, rgba(255, 153, 150, 0), magenta) rgba(255, 153, 150, 1);

@@ -1,12 +1,11 @@
 ---
-import "../styles/index.scss";
+import "../styles/pages/index.scss";
 
 import { Image } from 'astro:assets';
 
 import Layout from '../layouts/Layout.astro';
 import Footer from "../components/Footer.astro";
-// import Header from "../components/react/Header.jsx";
-import Sidebar from "../components/react/Sidebar.jsx";
+import Header from "../components/Header.astro";
 
 import profilePicture from '../../public/images/ProfilePicture.webp';
 import airportPicture1 from '../../public/images/777-Takeoff-Hero.jpg';
@@ -16,7 +15,7 @@ import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
 
 <Layout title="Jesse Hodgson / Home">
 
-    <Sidebar client:load/>
+    <Header />
 
     <section class="about-me-section">
 
@@ -55,7 +54,7 @@ import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
                         src={airportPicture1}
                         alt="A Boeing 777-200ER taking off at Charlotte"
                         width="950"
-                        height="600"
+                        height="633"
                         class="plane-pic"
                 />
 
@@ -81,7 +80,7 @@ import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
                         src={airportPicture2}
                         alt="An Airbus A350-900 taking off at Charlotte"
                         width="950"
-                        height="600"
+                        height="633"
                         class="plane-pic"
                 />
 
@@ -121,10 +120,9 @@ import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
 
         <h2><u> Contact </u></h2>
 
-
-
     </section>
 
     <Footer />
 
 </Layout>
+

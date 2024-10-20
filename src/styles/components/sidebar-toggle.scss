@@ -1,0 +1,14 @@
+@use '../shared';
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+
+.sidebar-button-toggle {
+  border: none;
+  line-height: 50px;
+  background: none;
+}

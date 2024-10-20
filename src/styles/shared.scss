@@ -57,8 +57,10 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 .material-symbols-outlined {
-  color: $dark-text;
+  color: $text;
   font-variation-settings:
           'FILL' 1,
           'wght' 400,
@@ -66,15 +68,21 @@ body {
           'opsz' 24
 }
 
+@media (prefers-color-scheme: dark) {
+  .material-symbols-outlined {
+    color: $dark-text;
+  }
+}
+
 body {
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans', system-ui;
   font-weight: 400;
   text-align: center;
   font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Rubik';
+  font-family: 'Rubik', system-ui;
   font-weight: 700;
   text-align: center;
 }
@@ -113,4 +121,32 @@ a {
   a {
     color: $dark-accent;
   }
+}
+
+.pill-button {
+  color: $text;
+  background-color: $accent;
+  border-radius: 50px;
+  display: block;
+  padding: 20px 40px;
+  width: fit-content;
+  font-weight: bold;
+  transition: 300ms;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pill-button {
+    color: $dark-text;
+    background-color: $dark-accent;
+  }
+}
+
+.pill-button:hover {
+  filter: brightness(90%);
+  transform: scale(1.1);
 }

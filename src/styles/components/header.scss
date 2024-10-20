@@ -1,4 +1,4 @@
-@use 'shared';
+@use '../shared';
 
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
@@ -27,11 +27,22 @@
   display: block;
 }
 
-.sidebar-button-toggle {
+.sidebar {
+
   display: block;
-  position: absolute;
-  left: 0;
-  background: shared.$dark-background;
-  border: none;
-  vertical-align: center;
+  position: fixed;
+  height: calc(100% - 50px);
+  top: 50px;
+  width: 10%;
+  left: -10%;
+  background: shared.$background-darker;
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background: shared.$dark-background-lighter;
+  }
 }
