@@ -1,0 +1,109 @@
+---
+import "../styles/linkinbio.scss";
+import Layout from "../layouts/Layout.astro";
+import {Image} from "astro:assets";
+
+import profilePicture from '../../public/images/pfp.webp';
+
+import BioButton from "../components/BioButton.astro";
+
+import GitHubLogo from '../../public/images/Icons/GitHub.png';
+import GitLabLogo from '../../public/images/Icons/GitLab.png';
+import LinkedInLogo from '../../public/images/Icons/LinkedIn.png';
+import YouTubeLogo from '../../public/images/Icons/YouTube.png';
+import SteamLogo from '../../public/images/Icons/Steam.png';
+import ThreadsLogo from '../../public/images/Icons/Threads.png';
+import InstagramLogo from '../../public/images/Icons/Instagram.png';
+import TwitchLogo from '../../public/images/Icons/Twitch.png';
+import SMRLogo from '../../public/images/Icons/SMR.webp';
+
+---
+
+<Layout title="Jesse Hodgson / LinkInBio">
+
+    <br/><br/>
+
+    <Image
+            src={profilePicture}
+            alt="Me"
+            width="256"
+            height="256"
+            class="profile-picture"
+    />
+
+    <h2> Jesse Hodgson </h2>
+
+    <a href="https://www.buymeacoffee.com/spacegamedev"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=spacegamedev&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" class="bmc-button"/></a>
+
+    <br/><br/>
+
+    <BioButton
+            title="Satisfactory Mods"
+            link="https://ficsit.app/user/5GqLMHyzA3myPG"
+            image={SMRLogo}
+            alt="SpaceGameDev on SMR"
+    />
+
+    <BioButton
+            title="GitHub"
+            link="https://github.com/SpaceGameDev568"
+            image={GitHubLogo}
+            alt="SpaceGameDev568 on GitHub"
+    />
+
+    <BioButton
+            title="GitLab"
+            link="https://gitlab.com/SpaceGameDev568"
+            image={GitLabLogo}
+            alt="SpaceGameDev568 on GitLab"
+    />
+
+    <BioButton
+            title="Instagram"
+            link="https://www.instagram.com/jessehodgsonaviation"
+            image={InstagramLogo}
+            alt="@jessehodgsonaviation on Instagram"
+    />
+
+    <BioButton
+            title="LinkedIn"
+            link="https://www.linkedin.com/in/jesse-hodgson/"
+            image={LinkedInLogo}
+            alt="Jesse Hodgson on LinkedIn"
+    />
+
+    <BioButton
+            title="Steam"
+            link="https://steamcommunity.com/id/spacegamedev/"
+            image={SteamLogo}
+            alt="SpaceGameDev on Steam"
+    />
+
+    <BioButton
+            title="Threads"
+            link="https://www.threads.net/@jessehodgsonaviation"
+            image={ThreadsLogo}
+            alt="@jessehodgsonaviation on Threads"
+    />
+
+    <BioButton
+            title="Twitch"
+            link="https://www.twitch.tv/spacegamedev568"
+            image={TwitchLogo}
+            alt="SpaceGameDev568 on Twitch"
+    />
+
+    <BioButton
+            title="YouTube"
+            link="https://youtube.com/@spacegamedev"
+            image={YouTubeLogo}
+            alt="@spacegamedev on YouTube"
+    />
+
+    <br/>
+
+    <p> Made with ❤️ by <a href="/"> SpaceGameDev Software </a> </p>
+
+    <br/>
+
+</Layout>

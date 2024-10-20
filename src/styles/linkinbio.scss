@@ -1,0 +1,28 @@
+@use 'shared';
+
+body {
+  background: linear-gradient(to top left, #0479cc, rgba(255, 153, 150, 0), red), linear-gradient(to top right, yellow, rgba(255, 153, 150, 0), magenta) rgba(255, 153, 150, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to top left, rgba(4, 121, 204, 0.5), rgba(255, 153, 150, 0), rgba(255, 0, 0, 0.5)), linear-gradient(to top right, rgba(255, 255, 0, 0.5), rgba(255, 153, 150, 0), magenta) rgba(255, 153, 150, 1);
+  }
+}
+
+
+.profile-picture {
+  border-radius: 3.125rem;
+}
+
+.bmc-button {
+  width: calc(20rem + 1.25rem);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 300ms;
+}
+
+.bmc-button:hover {
+  border: 1px solid rgb(124, 124, 124);
+}

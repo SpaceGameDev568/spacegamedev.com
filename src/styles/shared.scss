@@ -1,0 +1,116 @@
+$text: #0b0f13;
+$background: 	hsl(210, 40%, 98%); // #f8fafc
+$background-darker: 	hsl(210, 40%, 93%);
+$background-darkest: 	hsl(210, 40%, 88%);
+
+$primary: #0f558a;
+$secondary: #81b8ef;
+$accent: #70b5fa;
+
+$dark-text: #ecf0f4;
+$dark-background: 	hsl(210, 40%, 2%); // #030507
+$dark-background-lighter: 	hsl(210, 40%, 7%);
+$dark-background-lightest: 	hsl(210, 40%, 12%);
+
+$dark-primary: #75bbf0;
+$dark-secondary: #10477e;
+$dark-accent: #054a8f;
+
+$border: rgba(255, 255, 255, 0.1);
+
+$primary-font: Inter, sans-serif;
+$secondary-font: Roboto, sans-serif;
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  color: $text;
+  background-color: $background;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: $dark-text;
+    background-color: $dark-background;
+  }
+}
+
+%text-shared {
+  color: $text;
+}
+
+@media (prefers-color-scheme: dark) {
+  %text-shared {
+    color: $dark-text;
+  }
+}
+
+.description {
+  @extend %text-shared;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:700|Noto%20Sans:400|Jetbrains+Mono:400');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+  color: $dark-text;
+  font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+}
+
+body {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Rubik';
+  font-weight: 700;
+  text-align: center;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    color: $dark-text;
+  }
+}
+
+/* Style links*/
+
+a {
+  color: $accent;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: $dark-accent;
+  }
+}

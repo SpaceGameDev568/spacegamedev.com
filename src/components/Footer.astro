@@ -1,0 +1,73 @@
+---
+import "../styles/footer.scss";
+import {Image} from "astro:assets";
+import spaceGameDevLogo from '../../public/images/TripleSevenLogoJHAviation.png';
+---
+<section class="footer">
+
+
+
+    <br>
+
+    <div class="box">
+
+        <div class="column">
+            <Image
+                    src={spaceGameDevLogo}
+                    alt="SpaceGameDev Logo"
+                    width="512"
+            />
+
+            <br/>
+
+            <small> Copyright 2022 - 2024 Jesse Hodgson. All Rights Reserved. </small>
+
+        </div>
+
+        <div class="column">
+            <h5>PAGES</h5>
+
+            <a>
+                Home
+            </a>
+
+            <br/>
+
+            <a>
+                Projects
+            </a>
+
+            <br/>
+
+            <a>
+                Socials
+            </a>
+
+
+        </div>
+
+        <div class="column">
+            <h5>SOCIALS</h5>
+
+            <a>
+                Instagram
+            </a>
+
+            <br/>
+
+            <a>
+                YouTube
+            </a>
+
+            <br/>
+
+            <a>
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+
+</section>

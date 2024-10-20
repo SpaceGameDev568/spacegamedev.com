@@ -1,0 +1,29 @@
+@use 'shared';
+
+.sidebar {
+  top: 0;
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 5%;
+  background: shared.$background-darker;
+  transition: 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background: shared.$dark-background-lighter;
+  }
+}
+
+.sidebarButton {
+  background: shared.$primary;
+  font-family: Jetbrains Mono, system-ui;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  color: shared.$dark-text;
+}

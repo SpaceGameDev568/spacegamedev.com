@@ -1,0 +1,77 @@
+@use 'shared';
+
+.about-me-section {
+  margin-top: 50px;
+}
+
+.profile-picture {
+  border-radius: 3.125rem;
+}
+
+.box {
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.special-text {
+  background: linear-gradient(120deg, shared.$primary, shared.$accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .special-text {
+    background: linear-gradient(120deg, shared.$dark-primary, shared.$dark-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.image-box {
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.side-text {
+  overflow-wrap: break-word;
+  width: 30%; /* fixed width */
+  font-size: 1.777rem;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.plane-pic {
+  border-radius: 50px;
+  transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  max-width: 95%;
+}
+
+.plane-pic:hover {
+  transform: scale(1.1);
+  margin: 40px;
+}
+
+.primary-side-text {
+  width: 50%;
+}
+
+.secondary-side-text {
+  margin: 0;
+}

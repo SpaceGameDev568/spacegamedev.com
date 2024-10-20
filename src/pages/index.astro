@@ -1,0 +1,130 @@
+---
+import "../styles/index.scss";
+
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import Footer from "../components/Footer.astro";
+import Header from "../components/react/Header.jsx";
+import Sidebar from "../components/react/Sidebar.jsx";
+
+import profilePicture from '../../public/images/pfp.webp';
+import airportPicture1 from '../../public/images/JH1_4303.jpg';
+import airportPicture2 from '../../public/images/JH1_3923.jpg';
+import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
+---
+
+<Layout title="Jesse Hodgson / Home">
+
+    <Sidebar client:load/>
+
+    <section class="about-me-section">
+
+        <div class="box">
+
+            <Image
+                    src={profilePicture}
+                    alt="Me"
+                    width="512"
+                    height="512"
+                    class="profile-picture"
+            />
+
+            <div class="primary-side-text">
+                <h1 class="secondary-side-text"> Hi there! <span class="special-text"> I'm Jesse </span></h1>
+                <h3 class="secondary-side-text"> and I'm an AvGeek, Photographer, and Software Developer from Charlotte, NC. </h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <br/><br/>
+
+    <section class="aviation-photography-section">
+
+        <h2><u> Aviation Photography </u></h2>
+
+             I often like to go planespotting at my home airport of Charlotte Douglas International (KCLT) and take photos of planes.<br/>
+
+            <br/><br/>
+
+            <div class="image-box">
+
+                <Image
+                        src={airportPicture1}
+                        alt="A Boeing 777-200ER taking off at Charlotte"
+                        width="950"
+                        height="600"
+                        class="plane-pic"
+                />
+
+                <p class="side-text">
+
+                    A Boeing 777-200ER operated by American Airlines taking off on Runway 18C at Charlotte Douglas International Airport.
+
+                </p>
+
+            </div>
+
+            <br/><br/>
+
+            <div class="image-box">
+
+                <p class="side-text">
+
+                    An Airbus A350-900 operated by Lufthansa taking off on Runway 36C at Charlotte Douglas International Airport.
+
+                </p>
+
+                <Image
+                        src={airportPicture2}
+                        alt="An Airbus A350-900 taking off at Charlotte"
+                        width="950"
+                        height="600"
+                        class="plane-pic"
+                />
+
+            </div>
+
+            <br/><br/>
+
+            I post a lot of photos to my <a href="https://www.instagram.com/jessehodgsonaviation">Instagram</a>, so go check that out if you're interested.
+
+    </section>
+
+    <section class="mod-development-section">
+
+        <h2><u> Mod Development </u></h2>
+
+            I also work on mods for Satisfactory and I've made 8 so far, including Factory Props, Discord Rich Presence Mod, and Mod Update Notifier.
+
+            <br/><br/>
+
+        <div class="image-box">
+
+            <Image
+                    src={moddingShowcaseImage}
+                    alt="Factory Props showcase from U6"
+                    width="840"
+                    height="480"
+                    class="plane-pic"
+            />
+
+            <p class="side-text">
+
+                A showcase of every decoration in Factory Props from Update 6 (2022)
+
+            </p>
+
+        </div>
+
+        <h2><u> Contact </u></h2>
+
+
+
+    </section>
+
+    <Footer />
+
+</Layout>

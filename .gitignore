@@ -1,2 +1,3 @@
-# Ignore WebStorm Files
-/.idea/*
+/dist/*
+
+/node_modules/*

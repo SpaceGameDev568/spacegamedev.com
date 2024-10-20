@@ -1,0 +1,25 @@
+@use 'shared';
+
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cccfd3;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #0e1720;
+  }
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
