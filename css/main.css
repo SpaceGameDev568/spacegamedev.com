@@ -64,6 +64,8 @@ body.light{
     --light-border: #414141;
     --light-sgd-blue: #014D8E; /* #004483 */
     --light-blue-high-contrast: #000000;
+
+    color-scheme: light dark;
 }
 
 /* Text selection */
@@ -150,6 +152,10 @@ body.light .text{
     color: var(--light-text);
 }
 
+.text.centered{
+    text-align: center;
+}
+
 .generic-text-header {
     font-family: Orbitron, Open Sans, system-ui;
     font-size: 50px;
@@ -161,4 +167,11 @@ body.light .text{
 
 body.light .generic-text-header {
     color: var(--light-text);
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
 }
