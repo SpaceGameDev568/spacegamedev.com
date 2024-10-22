@@ -27,7 +27,7 @@ function SidebarToggle() {
 
           <button className={"sidebar-button-toggle"} onClick={toggleSidebar}>
 
-            <span className="material-symbols-outlined"> menu </span>
+            <span className="material-symbols-rounded icon-large"> menu </span>
 
           </button>
 

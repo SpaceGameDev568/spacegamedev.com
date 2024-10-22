@@ -30,6 +30,7 @@ body {
 :root {
   color: $text;
   background-color: $background;
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,11 +56,11 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:700|Noto%20Sans:400|Jetbrains+Mono:400');
 
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-.material-symbols-outlined {
+.material-symbols-rounded {
   color: $text;
   font-variation-settings:
           'FILL' 1,
@@ -69,7 +70,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .material-symbols-outlined {
+  .material-symbols-rounded {
     color: $dark-text;
   }
 }
@@ -124,6 +125,7 @@ a {
 }
 
 .pill-button {
+  font-family: Noto Sans, system-ui;
   color: $text;
   background-color: $accent;
   border-radius: 50px;
@@ -137,6 +139,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   margin: auto auto;
+  font-size: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

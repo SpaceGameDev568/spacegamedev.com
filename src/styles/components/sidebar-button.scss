@@ -2,10 +2,11 @@
 
 .sidebar-button {
   background-color: #eae4e4;
-  width: 100%;
+  width: 90%;
   height: 2.5rem;
   border-radius: 0.5rem;
   margin: 1rem auto;
+  padding: 0;
 
   display: flex;
   align-items: center;
@@ -19,11 +20,19 @@
 
 @media (prefers-color-scheme: dark) {
   .sidebar-button {
-    background-color: #141414;
+    background-color: shared.$dark-accent;
     color: shared.$dark-text;
   }
 }
 
 .sidebar-button:hover {
   border: 1px solid rgb(124, 124, 124);
+}
+
+.title {
+  margin-left: 0.625rem;
+}
+
+.icon {
+  margin-left: 0.625rem;
 }
