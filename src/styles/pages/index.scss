@@ -2,12 +2,22 @@
 
 .about-me-section {
   margin-top: 50px;
+  width: 100%;
 }
 
 .profile-picture {
   border-radius: 3.125rem;
   max-width: 50%;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .profile-picture {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
 }
 
 .box {
@@ -20,30 +30,33 @@
   align-items: center;
 }
 
-.special-text {
-  background: linear-gradient(120deg, shared.$primary, shared.$accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.primary-side-text {
+  width: 50%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .special-text {
-    background: linear-gradient(120deg, shared.$dark-primary, shared.$dark-accent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.secondary-side-text {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .primary-side-text {
+    width: 100%;
+  }
+
+  .secondary-side-text {
+    width: 100%;
   }
 }
 
 .image-box {
-  width: 80%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-
   justify-content: space-evenly;
   align-items: center;
-  object-fit: contain;
-
 }
 
 .plane-pic {
@@ -51,7 +64,6 @@
   transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   max-width: 100%;
   height: auto;
-  aspect-ratio: 3/2;
 }
 
 .plane-pic:hover {
@@ -68,16 +80,41 @@
   text-align: left;
 }
 
-.description {
-  text-align: left;
-  margin-left: 10%;
-  margin-right: 10%;
+.left {
+  margin-left: 0;
 }
 
-.primary-side-text {
-  width: 50%;
+.right {
+  margin-right: 0;
 }
 
-.secondary-side-text {
-  margin: 0;
+
+@media only screen and (max-width: 1400px) {
+  .image-box {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .plane-pic {
+    width: 100%;
+  }
+
+  .plane-pic:hover {
+    transform: scale(1);
+    margin: auto;
+  }
+
+  .side-text {
+    width: 100%;
+  }
+
+  .left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

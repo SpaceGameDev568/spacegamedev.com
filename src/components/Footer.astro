@@ -9,65 +9,26 @@ import spaceGameDevLogo from '../../public/images/TripleSevenLogoJHAviation.png'
 
     <br>
 
-    <div class="box">
 
-        <div class="column">
-            <Image
-                    src={spaceGameDevLogo}
-                    alt="SpaceGameDev Logo"
-                    width="512"
-            />
 
             <br/>
 
             <small> Copyright 2022 - 2024 Jesse Hodgson. All Rights Reserved. </small>
 
-        </div>
+        <a class="betterstack-attribution" target="_blank" href="https://uptime.betterstack.com">
+            <Image
+                    src="https://uptime.betterstack.com/assets/static_assets/badges/light.png"
+                    id="betterstack-attribution"
+                    width="130"
+                    height="52"
+                    alt="Better Stack Website Monitoring"
+                />
+        </a>
 
-        <div class="column">
-            <h5>PAGES</h5>
-
-            <a>
-                Home
-            </a>
-
-            <br/>
-
-            <a>
-                Projects
-            </a>
-
-            <br/>
-
-            <a>
-                Socials
-            </a>
-
-
-        </div>
-
-        <div class="column">
-            <h5>SOCIALS</h5>
-
-            <a>
-                Instagram
-            </a>
-
-            <br/>
-
-            <a>
-                YouTube
-            </a>
-
-            <br/>
-
-            <a>
-                LinkedIn
-            </a>
-
-        </div>
-
-    </div>
-
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementById("betterstack-attribution").src = "https://uptime.betterstack.com/assets/static_assets/badges/dark.png";
+        }
+    </script>
 
 </section>

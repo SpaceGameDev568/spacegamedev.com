@@ -6,14 +6,39 @@ import SidebarToggle from './react/buttons/SidebarToggle.jsx';
 
 <div class="header">
 
-    <SidebarToggle client:load />
+    <SidebarToggle client:only />
 
 </div>
 
 <div class="top-spacer"/>
 
 <div class="sidebar" id="sidebar">
+
     <SidebarButton title="Home" symbol="home" link="/"/>
     <SidebarButton title="About" symbol="data_info_alert" link="about" />
     <SidebarButton title="Software" symbol="sdk" link="software" />
+
+    <hr/>
+
+    <div id="badge-location"/>
+
+     <iframe title="Better Stack Status" class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=light" id="betterstack-badge" width="250" height="30" frameborder="0" scrolling="no"></iframe>
+
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+             document.getElementById("betterstack-badge").src = "https://status.spacegamedev.com/badge?theme=dark";
+
+        //    const BetterStackBadge = document.createElement("iframe");
+//
+        //    BetterStackBadge.setAttribute("src", "https://status.spacegamedev.com/badge?theme=light")
+//
+        //    const location = document.getElementById("badge-location");
+//
+        //    document.body.insertBefore(BetterStackBadge, location);
+
+
+        }
+    </script>
+
 </div>
+

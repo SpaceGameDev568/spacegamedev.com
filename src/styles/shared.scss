@@ -1,29 +1,32 @@
 $text: #0b0f13;
-$background: 	hsl(210, 40%, 98%); // #f8fafc
-$background-darker: 	hsl(210, 40%, 93%);
-$background-darkest: 	hsl(210, 40%, 88%);
+$background: hsl(262, 52%, 96%);
+$background-darker: hsl(262, 52%, 91%);
+$background-darkest: hsl(262, 52%, 86%);
 
-$primary: #0f558a;
-$secondary: #81b8ef;
-$accent: #70b5fa;
+$primary: hsl(241, 31%, 50%);
+$secondary: hsl(175, 22%, 50%);
+$accent: hsl(56, 48%, 50%);
 
-$dark-text: #ecf0f4;
-$dark-background: 	hsl(210, 40%, 2%); // #030507
-$dark-background-lighter: 	hsl(210, 40%, 7%);
-$dark-background-lightest: 	hsl(210, 40%, 12%);
+$dark-text: hsl(0, 0%, 95%);
+$dark-background: hsl(0, 0%, 14%);
+$dark-background-lighter: hsl(0, 0%, 18%);
+$dark-background-lightest: hsl(0, 0%, 21%);
 
 $dark-primary: #75bbf0;
 $dark-secondary: #10477e;
 $dark-accent: #054a8f;
 
-$border: rgba(255, 255, 255, 0.1);
+$border: hsl(0, 0%, 25%);
 
 $primary-font: Inter, sans-serif;
 $secondary-font: Roboto, sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -115,19 +118,33 @@ small {font-size: 0.750rem; /* 12px */}
 /* Style links*/
 
 a {
-  color: $accent;
+  color: $primary;
 }
 
 @media (prefers-color-scheme: dark) {
   a {
-    color: $dark-accent;
+    color: $dark-primary;
   }
+}
+
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .pill-button {
   font-family: Noto Sans, system-ui;
   color: $text;
-  background-color: $accent;
+  background: $primary;
   border-radius: 50px;
   display: block;
   padding: 20px 40px;
@@ -152,4 +169,21 @@ a {
 .pill-button:hover {
   filter: brightness(90%);
   transform: scale(1.1);
+}
+
+.special-text {
+  background: linear-gradient(120deg, $primary, $secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-wrap: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .special-text {
+    background: linear-gradient(120deg, $dark-primary, $dark-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
