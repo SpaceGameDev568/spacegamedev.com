@@ -1,0 +1,20 @@
+---
+
+import {Image} from "astro:assets";
+const props = Astro.props
+
+---
+
+<a href={props.link} class="image-button" title={props.alt}>
+
+    <Image
+            src={props.image}
+            alt={props.alt}
+            width={props.imageWidth}
+            height={props.imageHeight}
+            class="button-thumbnail"
+    />
+
+    <p class="title"> {props.title} </p>
+
+</a>

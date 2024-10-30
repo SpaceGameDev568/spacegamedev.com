@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 $text: #0b0f13;
 $background: hsl(262, 52%, 96%);
 $background-darker: hsl(262, 52%, 91%);
