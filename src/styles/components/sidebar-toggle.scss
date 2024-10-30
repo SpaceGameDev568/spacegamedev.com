@@ -14,20 +14,19 @@
 
 .icon-large {
   font-size: 48px;
-  font-variation-settings:
-          'opsz' 48;
+  font-variation-settings: 'opsz' 48;
   transition: 300ms;
   color: shared.$text;
 }
 
 @media (prefers-color-scheme: dark) {
   .material-symbols-rounded {
-    color: shared.$dark-text;
+	color: shared.$dark-text;
   }
 }
 
 .button-container:hover {
   .icon-large {
-    color: shared.$primary;
+	color: shared.$primary;
   }
 }

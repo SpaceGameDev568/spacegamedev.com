@@ -22,16 +22,16 @@
 
 @media (prefers-color-scheme: dark) {
   .bio-button {
-    background-color: #141414;
-    color: shared.$dark-text;
+	background-color: #141414;
+	color: shared.$dark-text;
   }
 
   .button-thumbnail {
-    background-color: #ffffff;
-    border-radius: 0.625rem;
-    width: 42px;
-    height: 42px;
-    padding: 5px;
+	background-color: #ffffff;
+	border-radius: 0.625rem;
+	width: 42px;
+	height: 42px;
+	padding: 5px;
   }
 }
 
