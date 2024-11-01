@@ -3,6 +3,8 @@
 import {Image} from "astro:assets";
 const props = Astro.props
 
+import '../styles/components/image-button.scss'
+
 ---
 
 <a href={props.link} class="image-button" title={props.alt}>
@@ -15,6 +17,6 @@ const props = Astro.props
             class="button-thumbnail"
     />
 
-    <p class="title"> {props.title} </p>
+    <p class="title"><b> {props.title} </b></p>
 
 </a>

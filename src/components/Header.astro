@@ -1,7 +1,9 @@
 ---
+
 import '../styles/components/header.scss';
 import SidebarButton from './SidebarButton.astro';
-import SidebarToggle from './react/buttons/SidebarToggle.jsx';
+import SidebarToggle from './react/buttons/SidebarToggle.tsx';
+
 ---
 
 <div class="header">
@@ -18,11 +20,12 @@ import SidebarToggle from './react/buttons/SidebarToggle.jsx';
     <SidebarButton title="About" symbol="data_info_alert" link="about" />
     <SidebarButton title="Software" symbol="sdk" link="software" />
     <SidebarButton title="Achievements" symbol="trophy" link="achievements" />
+    <SidebarButton title="Specs" symbol="devices" link="specs" />
 
     <hr/>
 
     <div id="badge-location"/>
 
-     <iframe title="Better Stack Status" class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=light" id="betterstack-badge" width="250" height="30"></iframe>
+    <iframe title="Better Stack Status" class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=light" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
 
 </div>
