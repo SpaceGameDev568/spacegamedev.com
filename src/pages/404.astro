@@ -1,25 +1,29 @@
 ---
-import "../styles/pages/not-found.scss";
-
 import Layout from "../layouts/Layout.astro";
+import PillButton from "../components/PillButton.astro";
 ---
 
 
-<Layout title="Jesse Hodgson / 404 :(">
+<Layout title="SpaceGameDev / 404 :(">
 
-	<p class="main-heading">404</p>
+	<div>
 
-	<br>
+		<p class="font-bold text-[25vw] ml-auto mr-auto w-fit text-center">404</p>
 
-	<p class="subtext">
-		Sorry, that page could not be found.<br>
-		Would you like to return to the home page?
-	</p>
+		<br>
 
-	<br>
+		<p class="ml-auto mr-auto w-fit text-center">
+			Sorry, that page could not be found.<br>
+			Would you like to return to the home page?
+		</p>
 
-	<a class="pill-button" href="/">Home</a>
+		<br>
 
-	<br><br>
+		<PillButton
+				link="/"
+				title="Home"
+		/>
+
+	</div>
 
 </Layout>

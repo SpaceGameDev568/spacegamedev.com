@@ -1,145 +1,155 @@
 ---
-import "../styles/pages/index.scss";
-
+import Layout from '../layouts/Layout.astro';
 import {Image} from 'astro:assets';
 
-import Layout from '../layouts/Layout.astro';
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import ContactForm from "../components/react/ContactForm.tsx";
-
 import profilePicture from '../../public/images/ProfilePicture.webp';
-import airportPicture1 from '../../public/images/777-Takeoff-Hero.jpg';
-import airportPicture2 from '../../public/images/A350-Takeoff-Hero.jpg';
-import moddingShowcaseImage from '../../public/images/FactoryProps1.webp';
+import ModCard from '../components/ModCard.astro'
+import ContactForm from '../components/react/ContactForm';
+
+import ModdingHeader from '../../public/images/FactoryProps1.webp'
 ---
 
-<Layout title="Jesse Hodgson / Home">
+<Layout title="SpaceGameDev / Home">
 
-	<Header/>
+	<div class="bg-gradient-to-r from-violet-100 to-indigo-100 dark:bg-gradient-to-r dark:from-violet-900 dark:to-indigo-900 m-10 rounded-2xl">
 
-	<section class="about-me-section">
-
-		<div class="box">
-
+		<div class="h-[256px] w-fit ml-auto mr-0">
 			<Image
 					src={profilePicture}
-					alt="Me"
-					width="512"
-					height="512"
-					class="profile-picture"
+					alt="me"
+					width="256"
+					height="256"
+					class="rounded-2xl float-right mr-10 mt-10"
 					loading="eager"
 			/>
-
-			<div class="primary-side-text">
-				<h1 class="secondary-side-text"> Hi there! <span class="special-text"> I'm Jesse </span></h1>
-				<h3 class="secondary-side-text"> and I'm an AvGeek, Photographer, and Software Developer from Charlotte,
-					NC. </h3>
-			</div>
-
 		</div>
 
-	</section>
+			<h1 id="heading-text-animated" class="text-6xl font-bold text-black dark:text-white font-heading z-10 ml-10  underline decoration-blue-500 drop-shadow-lg"> SPACEGAMEDEV</h1>
+			<br/>
+			<h2 id="heading-text-animated-2" class="absoulte text-black dark:text-white z-10 ml-10">Space Nerd, AvGeek, and Software Developer</h2>
+
+	</div>
 
 	<br/><br/>
 
-	<section class="aviation-photography-section">
+	<script>
 
-		<h2><u> Aviation Photography </u></h2>
+		import { animate, scroll } from "motion"
 
-		I often like to go planespotting at my home airport of Charlotte Douglas International (KCLT) and take photos of
-		planes.<br/>
+		animate("#heading-text-animated", { y: [-300, -200], opacity: [0, 100] }, { ease: "easeInOut", duration: 2 } )
+		animate("#heading-text-animated-2", { y: [-300, -200], opacity: [0, 100] }, { ease: "easeInOut", duration: 2.5 } )
 
-		<br/><br/>
+	</script>
 
-		<div class="image-box">
 
-			<Image
-					src={airportPicture1}
-					alt="A Boeing 777-200ER taking off at Charlotte"
-					width="950"
-					height="633"
-					class="plane-pic"
-					loading="eager"
-			/>
-
-			<p class="side-text right">
-
-				A Boeing 777-200ER operated by American Airlines taking off on Runway 18C at Charlotte Douglas
-				International Airport.
-
-			</p>
-
-		</div>
+	<p class="text-black dark:text-white ml-40 mr-40 text-lg">
+		Hey, I'm Jesse!
+		My nickname, "SpaceGameDev", is derived from my love of everything related to Spaceflight, and my passion
+		for Software Development and Video Games.
 
 		<br/><br/>
 
-		<div class="image-box">
-
-			<p class="side-text left">
-
-				An Airbus A350-900 operated by Lufthansa taking off on Runway 36C at Charlotte Douglas International
-				Airport.
-
-			</p>
-
-			<Image
-					src={airportPicture2}
-					alt="An Airbus A350-900 taking off at Charlotte"
-					width="950"
-					height="633"
-					class="plane-pic"
-			/>
-
-		</div>
+		Starting my professional journey with Software Development and IT in 2021, I created my first mod for
+		Satisfactory, called "Factory Props".
+		Since then I have significantly increased my expertise through both first-hand experience and online
+		resources.
+		In Fall 2023, I obtained my IT Support Certificate from Google.
+		Since then, I've been learning as much as I can, and helping friends and family with tech issues.
 
 		<br/><br/>
 
-		I post a lot of photos to my <a href="https://www.instagram.com/jessehodgsonaviation">Instagram</a>, so go check
-		that out if you're interested.
+		I've taken up photography more recently, and since I already love to go planespotting at my local airport, I
+		take lots of plane photos there.
+	</p>
 
-	</section>
+	<br/><br/><br/><br/>
 
-	<section class="mod-development-section">
+	<hr class="border-black dark:border-white border-opacity-20 dark:border-opacity-20"/>
 
-		<h2><u> Mod Development </u></h2>
+	<br/>
 
-		I also work on mods for Satisfactory and I've made 8 so far, including Factory Props, Discord Rich Presence Mod,
-		and Mod Update Notifier.
+	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-black dark:text-white font-heading"> SATISFACTORY MODS </h1>
 
-		<br/><br/>
+	<br/><br/>
 
-		<div class="image-box right">
+	<div class="flex flex-wrap place-content-center">
 
-			<Image
-					src={moddingShowcaseImage}
-					alt="Factory Props showcase from U6"
-					width="840"
-					height="480"
-					class="plane-pic"
-			/>
+		<ModCard
+				title="Factory Props"
+				description="The Ultimate Decorating Toolkit!"
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8ivr6Mvuv4sCkX/logo.webp"
+				link="https://ficsit.app/mod/Factory_Prop_Mod"
+				github="https://github.com/SpaceGameDev568/Factory_Prop_Mod"
+		/>
 
-			<p class="side-text">
+		<ModCard
+				title="Discord Rich Presence"
+				description="Show off your Satisfactory presence info on your Discord profile!"
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/2t2nCEBqMdUt1n/logo.webp"
+				link="https://ficsit.app/mod/FG_DiscordRP"
+				github="https://github.com/SpaceGameDev568/FG_DiscordRP"
+		/>
 
-				A showcase of every decoration in Factory Props from Update 6 (2022)
+		<ModCard
+				title="Remove All Annoyances"
+				description="Removes annoying things from the world."
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/FGnDVTV2ygmANY/logo.webp"
+				link="https://ficsit.app/mod/RemoveAllAnnoyances"
+				github="https://github.com/SpaceGameDev568/RemoveAllAnnoyances"
+		/>
 
-			</p>
+		<ModCard
+				title="Better Grass"
+				description="More beautiful grass for your game."
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/4S2xwMEFdMKymS/logo.webp"
+				link="https://ficsit.app/mod/BetterGrass"
+				github="https://github.com/SpaceGameDev568/BetterGrass"
+		/>
 
-		</div>
+		<ModCard
+				title="SatisWHACKtory"
+				description="FICSIT Inc. is not responsible for any injuries caused by the use of this mod."
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8XYLMRNbnfzc2G/logo.webp"
+				link="https://ficsit.app/mod/ObstacleMod"
+				github="https://github.com/SpaceGameDev568/ObstacleMod"
+		/>
 
-		<div class="clearer">
+		<ModCard
+				title="Mod Update Notifier"
+				description="This mod will notify you whenever a supported mod has an update available!"
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8KzYMxowiUmKLn/logo.webp"
+				link="https://ficsit.app/mod/ModUpdateNotifier"
+				github="https://github.com/SpaceGameDev568/ModUpdateNotifier"
+		/>
 
-		</div>
+		<ModCard
+				title="2m Walls"
+				description="2m high walls for the extra efficient builder."
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/7NEYeWC3Mf5Rqa/logo.webp"
+				link="https://ficsit.app/mod/TwoMeterWalls"
+				github="https://github.com/SpaceGameDev568/TwoMeterWalls"
+		/>
 
-		<h2><u> Contact </u></h2>
+		<ModCard
+				title="More Players"
+				description="Allows you to have more than just 4 people in your game."
+				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/CMA7t3H6L1dkWT/logo.webp"
+				link="https://ficsit.app/mod/MorePlayers"
+				github="https://github.com/SpaceGameDev568/MorePlayers"
+		/>
 
-		<ContactForm />
+	</div>
 
-		<br/>
+	<br/><br/>
 
-	</section>
+	<hr class="border-black dark:border-white border-opacity-20 dark:border-opacity-20"/>
 
-	<Footer/>
+	<br/><br/>
+
+	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-black dark:text-white font-heading"> CONTACT </h1>
+
+	<br/><br/>
+
+	<ContactForm />
 
 </Layout>
-

@@ -1,7 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import ImageButton from "../components/ImageButton.astro";
 
 
@@ -12,17 +10,16 @@ import TechSupportFundamentalsCertificate from "../../public/certificates/thumbn
 import BitsAndBytesCertificate from "../../public/certificates/thumbnails/computer-networking.webp";
 import BecomingAPowerUserCertificate from "../../public/certificates/thumbnails/becoming-a-power-user.webp";
 import SystemAdministrationCertificate from "../../public/certificates/thumbnails/system-administration.webp";
-import DefenseAgainstTheDigitalDarkArtsCertificate
-	from "../../public/certificates/thumbnails/defense-against-digital-dark-arts.webp";
+import DefenseAgainstTheDigitalDarkArtsCertificate from "../../public/certificates/thumbnails/defense-against-digital-dark-arts.webp";
 ---
 
 <Layout title="Jesse Hodgson / Achievements">
 
-	<Header/>
+	<div id="header-spacer" class="h-[50px] mb-10"/>
 
-	<section class="achievements">
+	<section class="w-fit ml-auto mr-auto">
 
-		<h1> Achievements </h1>
+		<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-black dark:text-white font-heading"> ACHIEVEMENTS </h1>
 
 		<ImageButton
 				link="https://www.credly.com/badges/a0e09d60-b274-4675-9ad3-db3cafb271dd"
@@ -31,6 +28,7 @@ import DefenseAgainstTheDigitalDarkArtsCertificate
 				height="340"
 				alt="Google IT Support Specialization"
 				title="Google IT Support Specialization"
+				loading="eager"
 		/>
 
 		<ImageButton
@@ -40,6 +38,7 @@ import DefenseAgainstTheDigitalDarkArtsCertificate
 				height="646"
 				alt="Google IT Support Certificate"
 				title="Google IT Support Certificate"
+				loading="eager"
 		/>
 
 		<ImageButton
@@ -88,9 +87,5 @@ import DefenseAgainstTheDigitalDarkArtsCertificate
 		/>
 
 	</section>
-
-	<br><br>
-
-	<Footer/>
 
 </Layout>

@@ -1,4 +1,4 @@
-import '../../styles/components/contact-form.scss'
+import '../../styles/global.css';
 
 function ContactForm() {
 
@@ -23,10 +23,9 @@ function ContactForm() {
 
       const subject = "[Inquiry]" + " " + name;
 
-      const link = "mailto:jesse@spacegamedev.com?subject=" + subject + "&body=" + inquiry;
+      const link = "mailto:support@spacegamedev.com?subject=" + subject + "&body=" + inquiry;
 
       window.open(link, '_blank');
-
     }
   }
 
@@ -35,15 +34,13 @@ function ContactForm() {
   return (
       <>
 
-          <label htmlFor="name"></label><input type="text" id="name" name="name" placeholder="Name"
-                                               className="input-field"/>
+          <label htmlFor="name" className={"hidden"}>Name</label><input type="text" id="name" name="name" placeholder="Name" className="block w-[60%] ml-auto mr-auto min-w-[60%] p-3 bg-gray-200 broder-0 rounded-lg resize-y font-mono dark:bg-gray-900"/>
           <br/><br/>
-          <label htmlFor="inquiry"></label><textarea id="inquiry" name="inquiry" placeholder="Inquiry" spellCheck="true"
-                                                     rows={rows} className="input-field"></textarea>
+          <label htmlFor="inquiry" className={"hidden"}>Inquiry</label><textarea id="inquiry" name="inquiry" placeholder="Inquiry" spellCheck="true" rows={rows} className="block w-[60%] ml-auto mr-auto min-w-[60%] p-3 bg-gray-200 broder-0 rounded-lg resize-y font-mono dark:bg-gray-900"></textarea>
 
           <br/><br/>
 
-          <button className="pill-button" onClick={submitForm}>Submit</button>
+          <button className="bg-blue-500 rounded-2xl p-4 font-bold font-sans text-white hover:bg-blue-600 hover:text-black duration-300 ml-auto mr-auto block" onClick={submitForm}>Submit</button>
 
       </>
   )

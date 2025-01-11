@@ -1,12 +1,11 @@
 ---
 const props = Astro.props
 
-import "../styles/components/sidebar-button.scss";
-
 ---
 
-<a href={props.link} class="sidebar-button">
+<a href={props.link} class="flex items-center justify-left bg-blue-200 w-[90%] h-10 rounded-lg mt-2 mb-2 ml-auto mr-auto p-0 no-underline text-black dark:bg-blue-950 dark:text-white">
 
-    <span class="material-symbols-rounded icon"> {props.symbol} </span>
-    <p class="title"> {props.title} </p>
+    <span class="material-symbols-rounded ml-1"> {props.symbol} </span>
+    <p class="ml-1"> {props.title} </p>
+
 </a>

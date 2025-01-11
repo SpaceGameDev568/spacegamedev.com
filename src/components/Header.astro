@@ -1,31 +1,25 @@
 ---
 
-import '../styles/components/header.scss';
 import SidebarButton from './SidebarButton.astro';
-import SidebarToggle from './react/buttons/SidebarToggle.tsx';
+import SidebarToggleButton from './react/SidebarToggleButton.tsx';
 
 ---
 
-<div class="header">
+<div id="header" class="fixed h-[50px] bg-gray-900 w-full z-50">
 
-    <SidebarToggle client:only />
+	<SidebarToggleButton client:only />
 
 </div>
 
-<div class="top-spacer"/>
+<!-- <div id="header-spacer" class="h-[50px] mb-10"/> -->
 
-<div class="sidebar" id="sidebar">
+<div id="sidebar" class="block fixed h-[calc(100%-50px)] top-[50px] w-[15rem] left-[-15rem] bg-gray-100 m-0  rounded-br-2xl shadow-2xl z-50 dark:bg-gray-900">
 
-    <SidebarButton title="Home" symbol="home" link="/"/>
-    <SidebarButton title="About" symbol="data_info_alert" link="about" />
-    <SidebarButton title="Software" symbol="sdk" link="software" />
-    <SidebarButton title="Achievements" symbol="trophy" link="achievements" />
-    <SidebarButton title="Specs" symbol="devices" link="specs" />
-
-    <hr/>
-
-    <div id="badge-location"/>
-
-    <iframe title="Better Stack Status" class="betterstack-badge" src="https://status.spacegamedev.com/badge?theme=light" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
+	<SidebarButton title="Home" symbol="home" link="/"/>
+	<SidebarButton title="Achievements" symbol="trophy" link="achievements" />
+	<SidebarButton title="Gallery" symbol="photo_library" link="gallery" />
+	<SidebarButton title="Blog" symbol="wallpaper_slideshow" link="blog" />
+	<hr class="dark:border-gray-400"/>
+	<SidebarButton title="Links" symbol="link" link="linkinbio" />
 
 </div>

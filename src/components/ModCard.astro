@@ -1,0 +1,38 @@
+---
+import {Image} from "astro:assets";
+
+const props = Astro.props
+---
+
+<div class="w-[380px] m-2 border-black border-opacity-20 border-[1px] rounded-lg p-5 dark:border-white dark:border-opacity-20 bg-gradient-to-r from-violet-100 to-indigo-100 dark:bg-gradient-to-r dark:from-violet-900 dark:to-indigo-900">
+
+	<h1 class="text-black font-bold text-2xl dark:text-white">{props.title}</h1>
+	<p class="text-gray-700 dark:text-gray-400 text-sm h-10">{props.description}</p>
+	<br/>
+	<div>
+
+		<Image
+			src={props.image}
+			width="330"
+			height="330"
+			alt={props.title}
+			class="rounded-lg"
+		/>
+
+	</div>
+
+	<br/>
+
+	<hr class="border-black border-opacity-20 dark:border-white dark:border-opacity-20 p-5" />
+
+	<div>
+		<a href={props.link} target="_blank" rel="noopener noreferrer" class="text-black p-3 bg-white border-[1px] border-black rounded-lg dark:text-white dark:bg-black dark:border-white dark:border-opacity-20 border-opacity-20 font-bold hover:dark:bg-white hover:dark:text-black duration-300">
+			ficsit.app
+		</a>
+		&nbsp
+		<a href={props.github} target="_blank" rel="noopener noreferrer" class="text-white bg-black p-3 rounded-lg dark:bg-blue-500 font-bold hover:dark:bg-blue-300 duration-300">
+			GitHub
+		</a>
+	</div>
+	<br/>
+</div>

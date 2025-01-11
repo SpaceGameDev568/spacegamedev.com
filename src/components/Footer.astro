@@ -1,31 +1,34 @@
 ---
-import "../styles/components/footer.scss";
-import {Image} from "astro:assets";
----
-<section class="footer">
 
-    <a class="social-button" href="/linkinbio">
-        SOCIALS
-    </a>
+import {Image} from "astro:assets";---
 
-    <p> Made with ❤️ by SpaceGameDev Software </p>
+<div id="footer" class="bg-gray-900 p-10 mt-10">
 
-    <p> Built using the awesome <a href="https://astro.build"><b>Astro</b></a> framework. </p>
+	<p class="text-white w-fit float-left">Copyright © 2022 - 2025 Jesse Hodgson. All Rights Reserved.
 
-    <small> Copyright &#169; 2022 - 2024 Jesse Hodgson. All Rights Reserved. </small>
+		<br/>
 
-    <br/><br/>
+		Performance and security by Cloudflare.
 
-        <a class="betterstack-attribution" target="_blank" href="https://uptime.betterstack.com">
-            <Image
-                    src="https://uptime.betterstack.com/assets/static_assets/badges/light.png"
-                    id="betterstack-attribution"
-                    width="130"
-                    height="52"
-                    alt="Better Stack Website Monitoring"
-                />
-        </a>
+	</p>
 
-    <br/>
+	<div class="float-right w-[182px] overflow-x-hidden">
+		<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
+	</div>
 
-</section>
+	<br/><br/><br/><br/>
+
+	<div class="w-fit">
+
+		<a target="_blank" href="https://uptime.betterstack.com">
+			<Image
+					src="https://uptime.betterstack.com/assets/static_assets/badges/light.png"
+					id="betterstack-attribution"
+					width="130"
+					height="52"
+					alt="Better Stack Website Monitoring"
+			/>
+		</a>
+
+	</div>
+</div>

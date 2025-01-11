@@ -1,8 +1,6 @@
-import '../../../styles/components/sidebar-toggle.scss';
-
 import {useState} from "react";
 
-function SidebarToggle() {
+function SidebarToggleButton() {
 
   const [state, setState] = useState("Collapsed");
 
@@ -25,18 +23,14 @@ function SidebarToggle() {
 
   return (
       <>
-        <div className="button-container">
+          <button className={"material-symbols-rounded aspect-square h-[calc(100%-0.5rem)] mt-1 ml-1 text-4xl hover:bg-blue-500 duration-300 rounded-lg text-white bg-transparent"} id={"material-icon"} onClick={toggleSidebar}>
 
-          <button className={"sidebar-button-toggle"} onClick={toggleSidebar}>
-
-            <span className="material-symbols-rounded icon-large" id={"material-icon"}> menu </span>
+            menu
 
           </button>
-
-        </div>
       </>
   )
 
 }
 
-export default SidebarToggle;
+export default SidebarToggleButton;
