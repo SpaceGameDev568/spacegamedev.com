@@ -1,8 +1,18 @@
 ---
+import {Image} from "astro:assets";
 
-import {Image} from "astro:assets";---
+import flag from "../../public/images/AmericanFlag.png"
+---
 
-<div id="footer" class="bg-gray-900 p-10 mt-10">
+<div id="footer" class="bg-[#222225] p-10 mt-10 border-opacity-10 border-white border-t-[1px]">
+
+	<Image
+	src={flag}
+	alt="American Flag"
+	height="50"
+	width="100"
+	class="float-left mr-5 mb-5"
+	/>
 
 	<p class="text-white w-fit float-left">Copyright © 2022 - 2025 Jesse Hodgson. All Rights Reserved.
 
@@ -12,7 +22,7 @@ import {Image} from "astro:assets";---
 
 	</p>
 
-	<div class="float-right w-[182px] overflow-x-hidden">
+	<div class="md:float-right w-[182px] overflow-x-hidden">
 		<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
 	</div>
 

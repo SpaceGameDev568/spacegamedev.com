@@ -1,74 +1,131 @@
 ---
-import Layout from '../layouts/Layout.astro';
+
 import {Image} from 'astro:assets';
 
-import profilePicture from '../../public/images/ProfilePicture.webp';
+import Layout from '../layouts/Layout.astro';
 import ModCard from '../components/ModCard.astro'
 import ContactForm from '../components/react/ContactForm';
 
-import ModdingHeader from '../../public/images/FactoryProps1.webp'
+import profilePicture from '../../public/images/ProfilePicture.webp';
+import FPMHero from '../../public/images/Screenshot20250122-10513200000.png';
+import PrimaryActionButton from "../components/PrimaryActionButton.astro";
+import SecondaryActionButton from "../components/SecondaryActionButton.astro";
+
+import BetterGrassLogo from "../../public/images/ModLogos/BetterGrass.png";
+import DiscordRichPresenceLogo from "../../public/images/ModLogos/DiscordRichPresence.png";
+import FactoryPropsLogo from "../../public/images/ModLogos/FactoryProps.png";
+import ModUpdateNotifierLogo from "../../public/images/ModLogos/ModUpdateNotifier.png";
+import MorePlayersLogo from "../../public/images/ModLogos/MorePlayers.png";
+import RemoveAllAnnoyancesLogo from "../../public/images/ModLogos/RemoveAllAnnoyances.png";
+import SatisWHACKtoryLogo from "../../public/images/ModLogos/SatisWHACKtory.png";
+import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
+
 ---
 
 <Layout title="SpaceGameDev / Home">
 
-	<div class="bg-gradient-to-r from-violet-100 to-indigo-100 dark:bg-gradient-to-r dark:from-violet-900 dark:to-indigo-900 m-10 rounded-2xl">
+	<div id="header-spacer" class="h-[50px] mb-10"/>
 
-		<div class="h-[256px] w-fit ml-auto mr-0">
+	<div class="ml-auto mr-auto w-[80%]">
+
+		<div class="2xl:h-[550px] lg:h-[1024px]">
+
 			<Image
-					src={profilePicture}
-					alt="me"
-					width="256"
-					height="256"
-					class="rounded-2xl float-right mr-10 mt-10"
+					src={FPMHero}
+					alt="Factory Props"
+					width="900"
+					height="500"
+					class="rounded-2xl aspect-video lg:ml-auto lg:mr-0 shadow-[0px_0px_100px_-15px_#66a2a1] 2xl:hidden -mt-[150px]"
+					id="mobile-header-image"
 					loading="eager"
+			/>
+
+			<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute">
+
+				<h1 class="font-heading font-bold text-white lg:text-8xl text-5xl">Factory Props</h1><br/>
+				<h2 class="font-heading text-white  text-4xl"> Your Ultimate Decorating Toolkit.</h2><br/>
+				<p class="text-white text-2xl bg-[#101014] bg-opacity-25 rounded-2xl md:w-[60%]">
+					Factory Props is a mod for Satisfactory created to give you all the options in the world (literally) when decorating your factories!
+				</p>
+
+				<br/><br/><br/><br/>
+
+				<PrimaryActionButton
+					link="https://ficsit.app/mod/Factory_Prop_Mod"
+					title="Learn More"
+				/>
+
+				&nbsp
+
+				<SecondaryActionButton
+					link="#satisfactory-mods"
+					title="Discover Mods"
+				/>
+
+				<br/><br/>
+				<br/><br/>
+				<br/><br/>
+				<br/><br/>
+
+			</div>
+
+			<script>
+
+				import { animate, scroll } from "motion"
+
+				animate("#fpm-heading", { y: [400, 100], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+
+				animate("#mobile-header-image", { y: [400, 150], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+
+			</script>
+
+			<Image
+				src={FPMHero}
+				alt="Factory Props"
+				width="900"
+				height="500"
+				loading="eager"
+				class="rounded-2xl aspect-video lg:ml-auto lg:mr-0 shadow-[0px_0px_100px_-15px_#66a2a1] lg:w-[900px] w-[500px] 2xl:block hidden"
+			/>
+
+		</div>
+
+		<br/><br/><br/><br/>
+
+		<div class="border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225] box-border p-5">
+			<div class="float-left">
+				<h1 class="text-white lg:text-5xl text-3xl font-heading font-bold">SpaceGameDev Software</h1><br/>
+				<p class="text-white">I'm SpaceGameDev, and I make Factory Props and other mods for Satisfactory!
+				<br/><br/>
+				<PrimaryActionButton
+					link="about"
+					title="About Me"
+				/>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+
+			<Image
+			src={profilePicture}
+			alt="Me with a plane flying overhead"
+			width="256"
+			height="256"
+			class="rounded-2xl aspect-square md:ml-auto md:mr-0"
+			loading="eager"
 			/>
 		</div>
 
-			<h1 id="heading-text-animated" class="text-6xl font-bold text-black dark:text-white font-heading z-10 ml-10  underline decoration-blue-500 drop-shadow-lg"> SPACEGAMEDEV</h1>
-			<br/>
-			<h2 id="heading-text-animated-2" class="absoulte text-black dark:text-white z-10 ml-10">Space Nerd, AvGeek, and Software Developer</h2>
-
 	</div>
 
-	<br/><br/>
-
-	<script>
-
-		import { animate, scroll } from "motion"
-
-		animate("#heading-text-animated", { y: [-300, -200], opacity: [0, 100] }, { ease: "easeInOut", duration: 2 } )
-		animate("#heading-text-animated-2", { y: [-300, -200], opacity: [0, 100] }, { ease: "easeInOut", duration: 2.5 } )
-
-	</script>
-
-
-	<p class="text-black dark:text-white ml-40 mr-40 text-lg">
-		Hey, I'm Jesse!
-		My nickname, "SpaceGameDev", is derived from my love of everything related to Spaceflight, and my passion
-		for Software Development and Video Games.
-
-		<br/><br/>
-
-		Starting my professional journey with Software Development and IT in 2021, I created my first mod for
-		Satisfactory, called "Factory Props".
-		Since then I have significantly increased my expertise through both first-hand experience and online
-		resources.
-		In Fall 2023, I obtained my IT Support Certificate from Google.
-		Since then, I've been learning as much as I can, and helping friends and family with tech issues.
-
-		<br/><br/>
-
-		I've taken up photography more recently, and since I already love to go planespotting at my local airport, I
-		take lots of plane photos there.
-	</p>
 
 	<br/><br/><br/><br/>
 
-	<hr class="border-black dark:border-white border-opacity-20 dark:border-opacity-20"/>
+	<hr class="border-white border-opacity-20"/>
 
 	<br/>
 
-	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-black dark:text-white font-heading"> SATISFACTORY MODS </h1>
+	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center" id="satisfactory-mods"> Satisfactory Mods </h1>
 
 	<br/><br/>
 
@@ -77,7 +134,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="Factory Props"
 				description="The Ultimate Decorating Toolkit!"
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8ivr6Mvuv4sCkX/logo.webp"
+				image={FactoryPropsLogo}
 				link="https://ficsit.app/mod/Factory_Prop_Mod"
 				github="https://github.com/SpaceGameDev568/Factory_Prop_Mod"
 		/>
@@ -85,7 +142,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="Discord Rich Presence"
 				description="Show off your Satisfactory presence info on your Discord profile!"
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/2t2nCEBqMdUt1n/logo.webp"
+				image={DiscordRichPresenceLogo}
 				link="https://ficsit.app/mod/FG_DiscordRP"
 				github="https://github.com/SpaceGameDev568/FG_DiscordRP"
 		/>
@@ -93,7 +150,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="Remove All Annoyances"
 				description="Removes annoying things from the world."
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/FGnDVTV2ygmANY/logo.webp"
+				image={RemoveAllAnnoyancesLogo}
 				link="https://ficsit.app/mod/RemoveAllAnnoyances"
 				github="https://github.com/SpaceGameDev568/RemoveAllAnnoyances"
 		/>
@@ -101,7 +158,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="Better Grass"
 				description="More beautiful grass for your game."
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/4S2xwMEFdMKymS/logo.webp"
+				image={BetterGrassLogo}
 				link="https://ficsit.app/mod/BetterGrass"
 				github="https://github.com/SpaceGameDev568/BetterGrass"
 		/>
@@ -109,7 +166,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="SatisWHACKtory"
 				description="FICSIT Inc. is not responsible for any injuries caused by the use of this mod."
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8XYLMRNbnfzc2G/logo.webp"
+				image={SatisWHACKtoryLogo}
 				link="https://ficsit.app/mod/ObstacleMod"
 				github="https://github.com/SpaceGameDev568/ObstacleMod"
 		/>
@@ -117,7 +174,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="Mod Update Notifier"
 				description="This mod will notify you whenever a supported mod has an update available!"
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/8KzYMxowiUmKLn/logo.webp"
+				image={ModUpdateNotifierLogo}
 				link="https://ficsit.app/mod/ModUpdateNotifier"
 				github="https://github.com/SpaceGameDev568/ModUpdateNotifier"
 		/>
@@ -125,7 +182,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="2m Walls"
 				description="2m high walls for the extra efficient builder."
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/7NEYeWC3Mf5Rqa/logo.webp"
+				image={TwoMeterWallsLogo}
 				link="https://ficsit.app/mod/TwoMeterWalls"
 				github="https://github.com/SpaceGameDev568/TwoMeterWalls"
 		/>
@@ -133,7 +190,7 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 		<ModCard
 				title="More Players"
 				description="Allows you to have more than just 4 people in your game."
-				image="https://storage.ficsit.app/file/smr-prod-s3/images/mods/CMA7t3H6L1dkWT/logo.webp"
+				image={MorePlayersLogo}
 				link="https://ficsit.app/mod/MorePlayers"
 				github="https://github.com/SpaceGameDev568/MorePlayers"
 		/>
@@ -142,11 +199,11 @@ import ModdingHeader from '../../public/images/FactoryProps1.webp'
 
 	<br/><br/>
 
-	<hr class="border-black dark:border-white border-opacity-20 dark:border-opacity-20"/>
+	<hr class="border-white border-opacity-20"/>
 
 	<br/><br/>
 
-	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-black dark:text-white font-heading"> CONTACT </h1>
+	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading"> Get In Touch </h1>
 
 	<br/><br/>
 

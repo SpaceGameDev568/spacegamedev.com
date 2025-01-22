@@ -1,38 +1,47 @@
 ---
 import {Image} from "astro:assets";
+import PrimaryActionButton from "./PrimaryActionButton.astro";
+import SecondaryActionButton from "./SecondaryActionButton.astro";
 
 const props = Astro.props
 ---
 
-<div class="w-[380px] m-2 border-black border-opacity-20 border-[1px] rounded-lg p-5 dark:border-white dark:border-opacity-20 bg-gradient-to-r from-violet-100 to-indigo-100 dark:bg-gradient-to-r dark:from-violet-900 dark:to-indigo-900">
+<div class="w-[380px] m-2  border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225]"> <!-- border-opacity-20 bg-gradient-to-r from-violet-900 to-indigo-900 -->
 
-	<h1 class="text-black font-bold text-2xl dark:text-white">{props.title}</h1>
-	<p class="text-gray-700 dark:text-gray-400 text-sm h-10">{props.description}</p>
-	<br/>
 	<div>
 
 		<Image
 			src={props.image}
-			width="330"
-			height="330"
+			width="380"
+			height="380"
 			alt={props.title}
-			class="rounded-lg"
+			class="rounded-tl-2xl rounded-tr-2xl"
 		/>
 
 	</div>
 
 	<br/>
 
-	<hr class="border-black border-opacity-20 dark:border-white dark:border-opacity-20 p-5" />
+	<div class="p-5">
 
-	<div>
-		<a href={props.link} target="_blank" rel="noopener noreferrer" class="text-black p-3 bg-white border-[1px] border-black rounded-lg dark:text-white dark:bg-black dark:border-white dark:border-opacity-20 border-opacity-20 font-bold hover:dark:bg-white hover:dark:text-black duration-300">
-			ficsit.app
-		</a>
-		&nbsp
-		<a href={props.github} target="_blank" rel="noopener noreferrer" class="text-white bg-black p-3 rounded-lg dark:bg-blue-500 font-bold hover:dark:bg-blue-300 duration-300">
-			GitHub
-		</a>
+		<h1 class="font-bold text-2xl text-white">{props.title}</h1>
+		<p class="text-gray-400 text-sm h-10">{props.description}</p>
+		<br/>
+
+		<hr class="border-white border-opacity-20 p-5" />
+
+		<div>
+			<PrimaryActionButton
+				link={props.link}
+				title="ficsit.app"
+			/>
+			&nbsp
+			<SecondaryActionButton
+				link={props.github}
+				title="GitHub"
+			/>
+		</div>
+
 	</div>
 	<br/>
 </div>

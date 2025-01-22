@@ -23,7 +23,7 @@ function SidebarToggleButton() {
 
   return (
       <>
-          <button className={"material-symbols-rounded aspect-square h-[calc(100%-0.5rem)] mt-1 ml-1 text-4xl hover:bg-blue-500 duration-300 rounded-lg text-white bg-transparent"} id={"material-icon"} onClick={toggleSidebar}>
+          <button className={"material-symbols-rounded aspect-square h-[calc(100%-0.5rem)] mt-1 ml-1 text-4xl hover:bg-blue-500 duration-300 rounded-lg text-white bg-transparent select-none hover:ring-4 border-[1px] border-opacity-10 border-white"} id={"material-icon"} title={"Toggle Sidebar"} onClick={toggleSidebar}>
 
             menu
 

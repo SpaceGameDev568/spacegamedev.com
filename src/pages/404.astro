@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import PillButton from "../components/PillButton.astro";
+import PrimaryActionButton from "../components/PrimaryActionButton.astro";
 ---
 
 
@@ -8,21 +8,25 @@ import PillButton from "../components/PillButton.astro";
 
 	<div>
 
-		<p class="font-bold text-[25vw] ml-auto mr-auto w-fit text-center">404</p>
+		<p class="font-bold text-[25vw] ml-auto mr-auto w-fit text-center text-white">404</p>
 
 		<br>
 
-		<p class="ml-auto mr-auto w-fit text-center">
+		<p class="ml-auto mr-auto w-fit text-center text-white">
 			Sorry, that page could not be found.<br>
 			Would you like to return to the home page?
 		</p>
 
 		<br>
 
-		<PillButton
-				link="/"
-				title="Home"
-		/>
+		<div class="ml-auto mr-auto w-fit">
+
+			<PrimaryActionButton
+					link="/"
+					title="Home"
+			/>
+
+		</div>
 
 	</div>
 
