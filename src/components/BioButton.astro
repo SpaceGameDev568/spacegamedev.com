@@ -5,7 +5,7 @@ const props = Astro.props
 
 <a
 	href={props.link}
-	class="flex duration-300 bg-white hover:border-black hover:border-[1px] p-2 rounded-2xl m-1 ml-auto mr-auto h-[62px] w-[342px] items-center justify-left shadow-[rgba(0, 0, 0, 0.2)] shadow-md mt-5"
+	class="flex duration-300 bg-blue-500 hover:bg-blue-300 text-white p-3 m-1 ml-auto mr-auto h-[62px] w-[342px] items-center justify-left shadow-md mt-5 hover:ring-4 box-border rounded-2xl"
     title={props.alt}>
 
 	<Image
@@ -17,6 +17,6 @@ const props = Astro.props
 	/>
 
 	<div class="justify-self-center width-[calc(100% + 32px)]">
-		<p class="font-bold text-black"> {props.title} </p>
+		<p class="font-bold "> {props.title} </p>
 	</div>
 </a>

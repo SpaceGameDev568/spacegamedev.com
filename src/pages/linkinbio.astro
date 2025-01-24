@@ -6,134 +6,143 @@ import profilePicture from '../../public/images/ProfilePicture.webp';
 
 import BioButton from "../components/BioButton.astro";
 
-import GitHubLogo from '../../public/images/Icons/GitHub.svg';
+import GitHubLogo from '../../public/images/Icons/GitHub2.svg';
 import GitLabLogo from '../../public/images/Icons/GitLab.svg';
-import LinkedInLogo from '../../public/images/Icons/LinkedIn.png';
+import LinkedInLogo from '../../public/images/Icons/LinkedIn.svg';
 import YouTubeLogo from '../../public/images/Icons/YouTube.svg';
-import SteamLogo from '../../public/images/Icons/Steam.svg';
-import ThreadsLogo from '../../public/images/Icons/Threads.svg';
+import SteamLogo from '../../public/images/Icons/Steam2.svg';
+import ThreadsLogo from '../../public/images/Icons/Threads2.svg';
 import InstagramLogo from '../../public/images/Icons/Instagram.svg';
 import TwitchLogo from '../../public/images/Icons/Twitch.svg';
 import SMRLogo from '../../public/images/Icons/SMR.webp';
-import WebsiteLogo from '../../public/images/Icons/Website.svg';
-import XLogo from '../../public/images/Icons/X.svg';
+import WebsiteLogo from '../../public/images/Icons/Website2.svg';
+import XLogo from '../../public/images/Icons/X2.svg';
+import {animate} from "motion";
 ---
 
 <Layout title="SpaceGameDev / LinkInBio">
 
-	<div id="header-spacer" class="h-[50px] mb-10"/>
+	<div id="content">
 
-	<br/><br/>
-
-	<Image
-			src={profilePicture}
-			alt="Me"
-			width="342"
-			height="342"
-			class="rounded-2xl ml-auto mr-auto w-fit"
-			loading="eager"
-	/>
-
-	<br/>
-
-	<h2 class="text-4xl font-bold ml-auto mr-auto w-fit text-center text-white"> Jesse Hodgson </h2>
-
-	<br/>
-
-	<div class="w-[342px] ml-auto mr-auto">
-
-	<a href="https://www.buymeacoffee.com/spacegamedev" class="ml-auto mr-auto w-[342px]">
-		<img
-			src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=spacegamedev&button_colour=FFDD00&font_colour=000001&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
-			alt="Buy Me A Coffee"
-			class="shadow-[rgba(0, 0, 0, 0.2)] rounded-2xl hover:border-black border-transparent border-[1px] duration-300 ml-auto mr-auto w-[342px] h-[74]"
-		/>
-	</a>
-
-	<br/>
-
-		<BioButton
-				title="Website"
-				link="/"
-				image={WebsiteLogo}
-				alt="My Website"
-		/>
-
-		<BioButton
-				title="Satisfactory Mods"
-				link="https://ficsit.app/user/5GqLMHyzA3myPG"
-				image={SMRLogo}
-				alt="SpaceGameDev on SMR"
-		/>
-
-		<BioButton
-				title="GitHub"
-				link="https://github.com/SpaceGameDev568"
-				image={GitHubLogo}
-				alt="SpaceGameDev568 on GitHub"
-		/>
-
-		<BioButton
-				title="GitLab"
-				link="https://gitlab.com/SpaceGameDev568"
-				image={GitLabLogo}
-				alt="SpaceGameDev568 on GitLab"
-		/>
-
-		<BioButton
-				title="Instagram"
-				link="https://www.instagram.com/jessehodgsonaviation"
-				image={InstagramLogo}
-				alt="@jessehodgsonaviation on Instagram"
-		/>
-
-		<BioButton
-				title="LinkedIn"
-				link="https://www.linkedin.com/in/jesse-hodgson/"
-				image={LinkedInLogo}
-				alt="Jesse Hodgson on LinkedIn"
-		/>
-
-		<BioButton
-				title="Steam"
-				link="https://steamcommunity.com/id/spacegamedev/"
-				image={SteamLogo}
-				alt="SpaceGameDev on Steam"
-		/>
-
-		<BioButton
-				title="Threads"
-				link="https://www.threads.net/@jessehodgsonaviation"
-				image={ThreadsLogo}
-				alt="@jessehodgsonaviation on Threads"
-		/>
-
-		<BioButton
-				title="Twitch"
-				link="https://www.twitch.tv/spacegamedev568"
-				image={TwitchLogo}
-				alt="SpaceGameDev568 on Twitch"
-		/>
-
-		<BioButton
-				title="X"
-				link="https://x.com/SpaceGameDev568"
-				image={XLogo}
-				alt="@SpaceGameDev568 on X"
-		/>
-
-		<BioButton
-				title="YouTube"
-				link="https://youtube.com/@spacegamedev"
-				image={YouTubeLogo}
-				alt="@spacegamedev on YouTube"
+		<Image
+				src={profilePicture}
+				alt="Me"
+				width="342"
+				height="342"
+				class="rounded-2xl ml-auto mr-auto w-fit"
+				loading="eager"
 		/>
 
 		<br/>
 
-		<!-- <p class="font-bold ml-auto mr-auto w-fit text-black dark:text-white"> Made with ❤️ by <a href="/"> SpaceGameDev Software </a></p> -->
+		<h2 class="text-4xl font-bold ml-auto mr-auto w-fit text-center text-white"> Jesse Hodgson </h2>
+
+		<br/>
+
+		<div class="w-[342px] ml-auto mr-auto">
+
+		<a href="https://www.buymeacoffee.com/spacegamedev" class="ml-auto mr-auto w-[342px]">
+			<img
+				src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=spacegamedev&button_colour=FFDD00&font_colour=000001&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+				alt="Buy Me A Coffee"
+				class="shadow-md duration-300 ml-auto mr-auto w-[342px] h-[74] hover:ring-4 box-border border-[1px] rounded-2xl border-white border-opacity-20 ring-white ring-opacity-20"
+			/>
+		</a>
+
+		<br/>
+
+			<BioButton
+					title="Website"
+					link="/"
+					image={WebsiteLogo}
+					alt="My Website"
+			/>
+
+			<BioButton
+					title="Satisfactory Mods"
+					link="https://ficsit.app/user/5GqLMHyzA3myPG"
+					image={SMRLogo}
+					alt="SpaceGameDev on SMR"
+			/>
+
+			<BioButton
+					title="GitHub"
+					link="https://github.com/SpaceGameDev568"
+					image={GitHubLogo}
+					alt="SpaceGameDev568 on GitHub"
+			/>
+
+			<BioButton
+					title="GitLab"
+					link="https://gitlab.com/SpaceGameDev568"
+					image={GitLabLogo}
+					alt="SpaceGameDev568 on GitLab"
+			/>
+
+			<BioButton
+					title="Instagram"
+					link="https://www.instagram.com/jessehodgsonaviation"
+					image={InstagramLogo}
+					alt="@jessehodgsonaviation on Instagram"
+			/>
+
+			<BioButton
+					title="LinkedIn"
+					link="https://www.linkedin.com/in/jesse-hodgson/"
+					image={LinkedInLogo}
+					alt="Jesse Hodgson on LinkedIn"
+			/>
+
+			<BioButton
+					title="Steam"
+					link="https://steamcommunity.com/id/spacegamedev/"
+					image={SteamLogo}
+					alt="SpaceGameDev on Steam"
+			/>
+
+			<BioButton
+					title="Threads"
+					link="https://www.threads.net/@jessehodgsonaviation"
+					image={ThreadsLogo}
+					alt="@jessehodgsonaviation on Threads"
+			/>
+
+			<BioButton
+					title="Twitch"
+					link="https://www.twitch.tv/spacegamedev568"
+					image={TwitchLogo}
+					alt="SpaceGameDev568 on Twitch"
+			/>
+
+			<BioButton
+					title="X"
+					link="https://x.com/SpaceGameDev568"
+					image={XLogo}
+					alt="@SpaceGameDev568 on X"
+			/>
+
+			<BioButton
+					title="YouTube"
+					link="https://youtube.com/@spacegamedev"
+					image={YouTubeLogo}
+					alt="@spacegamedev on YouTube"
+			/>
+
+			<br/>
+
+			<!-- <p class="font-bold ml-auto mr-auto w-fit text-black dark:text-white"> Made with ❤️ by <a href="/"> SpaceGameDev Software </a></p> -->
+
+		</div>
 
 	</div>
+
+	<script>
+		import { animate, scroll } from "motion"
+
+		document.addEventListener('astro:page-load', () => {
+			animate("#content", { y: [400, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+		});
+	</script>
 
 	<br/>
 

@@ -16,126 +16,138 @@ import BitsAndBytesCertificate from "../../public/certificates/thumbnails/comput
 import BecomingAPowerUserCertificate from "../../public/certificates/thumbnails/becoming-a-power-user.webp";
 import SystemAdministrationCertificate from "../../public/certificates/thumbnails/system-administration.webp";
 import DefenseAgainstTheDigitalDarkArtsCertificate from "../../public/certificates/thumbnails/defense-against-digital-dark-arts.webp";
+import {animate} from "motion";
 
 ---
 
 <Layout title="SpaceGameDev / About">
 
-	<div id="header-spacer" class="h-[50px] mb-10"/>
+	<div id="content">
 
-	<Image
-			src={profilePicture}
-			alt="Me with a plane flying overhead"
-			width="256"
-			height="256"
-			class="rounded-2xl aspect-square ml-auto mr-auto w-fit"
-	/>
-
-	<br/>
-	<br/>
-
-	<section class="ml-auto mr-auto border-opacity-10 rounded-2xl border-white bg-[#222225] box-border border-[1px] p-5 w-[80%]">
-
-		<h1 class="md:text-5xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-heading"> About Me </h1>
+		<Image
+				src={profilePicture}
+				alt="Me with a plane flying overhead"
+				width="256"
+				height="256"
+				class="rounded-2xl aspect-square ml-auto mr-auto w-fit"
+				loading="eager"
+		/>
 
 		<br/>
+		<br/>
 
-		<p class="text-white text-lg ">
+		<section class="ml-auto mr-auto border-opacity-10 rounded-2xl border-white bg-[#222225] box-border border-[1px] p-5 w-[80%]">
 
-			Hey, I'm Jesse!
-			My nickname, "SpaceGameDev", is derived from my love of everything related to Spaceflight, and my passion
-			for Software Development and Video Games.
+			<h1 class="md:text-5xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-heading"> About Me </h1>
 
-			<br/><br/>
+			<br/>
 
-			Starting my professional journey with Software Development and IT in 2021, I created my first mod for
-			Satisfactory, called "Factory Props".
-			Since then I have significantly increased my expertise through both first-hand experience and online
-			resources.
-			In Fall 2023, I obtained my IT Support Certificate from Google.
-			Since then, I've been learning as much as I can, and helping friends and family with tech issues.
+			<p class="text-white text-lg ">
 
-			<br/><br/>
+				Hey, I'm Jesse!
+				My nickname, "SpaceGameDev", is derived from my love of everything related to Spaceflight, and my passion
+				for Software Development and Video Games.
 
-			I've taken up photography more recently, and since I already love to go planespotting at my local airport, I
-			take lots of plane photos there.
+				<br/><br/>
 
-		</p>
+				Starting my professional journey with Software Development and IT in 2021, I created my first mod for
+				Satisfactory, called "Factory Props".
+				Since then I have significantly increased my expertise through both first-hand experience and online
+				resources.
+				In Fall 2023, I obtained my IT Support Certificate from Google.
+				Since then, I've been learning as much as I can, and helping friends and family with tech issues.
 
-	</section>
+				<br/><br/>
+
+				I've taken up photography more recently, and since I already love to go planespotting at my local airport, I
+				take lots of plane photos there.
+
+			</p>
+
+		</section>
 
 
-	<br/>
-	<br/>
+		<br/>
+		<br/>
 
-	<section class="w-[80%] ml-auto mr-auto border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225] box-border p-5">
+		<section class="w-[80%] ml-auto mr-auto border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225] box-border p-5">
 
-		<h1 class="md:text-5xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-heading"> Achievements & Certificates </h1>
+			<h1 class="md:text-5xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-heading"> Achievements & Certificates </h1>
 
-		<ImageButton
-				link="https://www.credly.com/badges/a0e09d60-b274-4675-9ad3-db3cafb271dd"
-				image={GoogleITSupportBadge}
-				width="340"
-				height="340"
-				alt="Google IT Support Specialization"
-				title="Google IT Support Specialization"
-		/>
+			<ImageButton
+					link="https://www.credly.com/badges/a0e09d60-b274-4675-9ad3-db3cafb271dd"
+					image={GoogleITSupportBadge}
+					width="340"
+					height="340"
+					alt="Google IT Support Specialization"
+					title="Google IT Support Specialization"
+					loading="eager"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20Google%20IT%20Support.pdf"
-				image={GoogleITSupportCertificate}
-				width="800"
-				height="646"
-				alt="Google IT Support Certificate"
-				title="Google IT Support Certificate"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20Google%20IT%20Support.pdf"
+					image={GoogleITSupportCertificate}
+					width="800"
+					height="646"
+					alt="Google IT Support Certificate"
+					title="Google IT Support Certificate"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20Technical%20Support%20Fundamentals.pdf"
-				image={TechSupportFundamentalsCertificate}
-				width="800"
-				height="619"
-				alt="Technical Support Fundamentals"
-				title="Technical Support Fundamentals"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20Technical%20Support%20Fundamentals.pdf"
+					image={TechSupportFundamentalsCertificate}
+					width="800"
+					height="619"
+					alt="Technical Support Fundamentals"
+					title="Technical Support Fundamentals"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20The%20Bits%20and%20Bytes%20of%20Computer%20Networking.pdf"
-				image={BitsAndBytesCertificate}
-				width="800"
-				height="619"
-				alt="The Bits and Bytes of Computer Networking"
-				title="The Bits and Bytes of Computer Networking"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20The%20Bits%20and%20Bytes%20of%20Computer%20Networking.pdf"
+					image={BitsAndBytesCertificate}
+					width="800"
+					height="619"
+					alt="The Bits and Bytes of Computer Networking"
+					title="The Bits and Bytes of Computer Networking"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20Operating%20Systems%20and%20You%20Becoming%20a%20power%20user.pdf"
-				image={BecomingAPowerUserCertificate}
-				width="800"
-				height="619"
-				alt="Operating Systems and You: Becoming a Power User"
-				title="Operating Systems and You: Becoming a Power User"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20Operating%20Systems%20and%20You%20Becoming%20a%20power%20user.pdf"
+					image={BecomingAPowerUserCertificate}
+					width="800"
+					height="619"
+					alt="Operating Systems and You: Becoming a Power User"
+					title="Operating Systems and You: Becoming a Power User"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20System%20Administration%20and%20IT%20Intfrastructure%20Services.pdf"
-				image={SystemAdministrationCertificate}
-				width="800"
-				height="619"
-				alt="System Administration and IT Infrastructure Services"
-				title="System Administration and IT Infrastructure Services"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20System%20Administration%20and%20IT%20Intfrastructure%20Services.pdf"
+					image={SystemAdministrationCertificate}
+					width="800"
+					height="619"
+					alt="System Administration and IT Infrastructure Services"
+					title="System Administration and IT Infrastructure Services"
+			/>
 
-		<ImageButton
-				link="../../public/certificates/Coursera%20IT%20Security%20Defense%20against%20the%20digital%20dark%20arts.pdf"
-				image={DefenseAgainstTheDigitalDarkArtsCertificate}
-				width="800"
-				height="619"
-				alt="IT Security: Defense Against the Digital Dark Arts"
-				title="IT Security: Defense Against the Digital Dark Arts"
-		/>
+			<ImageButton
+					link="../../public/certificates/Coursera%20IT%20Security%20Defense%20against%20the%20digital%20dark%20arts.pdf"
+					image={DefenseAgainstTheDigitalDarkArtsCertificate}
+					width="800"
+					height="619"
+					alt="IT Security: Defense Against the Digital Dark Arts"
+					title="IT Security: Defense Against the Digital Dark Arts"
+			/>
 
-	</section>
+		</section>
 
+	</div>
+
+	<script>
+		import { animate, scroll } from "motion"
+
+		document.addEventListener('astro:page-load', () => {
+			animate("#content", { y: [400, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+		});
+	</script>
 
 </Layout>

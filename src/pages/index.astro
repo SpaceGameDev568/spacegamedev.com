@@ -24,8 +24,6 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 
 <Layout title="SpaceGameDev / Home">
 
-	<div id="header-spacer" class="h-[50px] mb-10"/>
-
 	<div class="ml-auto mr-auto w-[80%]">
 
 		<div class="2xl:h-[550px] lg:h-[1024px]">
@@ -70,13 +68,13 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 			</div>
 
 			<script>
-
 				import { animate, scroll } from "motion"
 
-				animate("#fpm-heading", { y: [400, 100], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+				document.addEventListener('astro:page-load', () => {
+					animate("#fpm-heading", { y: [400, 100], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
 
-				animate("#mobile-header-image", { y: [400, 150], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
-
+					animate("#mobile-header-image", { y: [400, 150], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+				});
 			</script>
 
 			<Image
@@ -95,7 +93,7 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 		<div class="border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225] box-border p-5">
 			<div class="float-left">
 				<h1 class="text-white lg:text-5xl text-3xl font-heading font-bold">SpaceGameDev Software</h1><br/>
-				<p class="text-white">I'm SpaceGameDev, and I make Factory Props and other mods for Satisfactory!
+				<p class="text-white">I'm SpaceGameDev, and I make Factory Props and other mods for Satisfactory!</p>
 				<br/><br/>
 				<PrimaryActionButton
 					link="about"
@@ -112,7 +110,6 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 			width="256"
 			height="256"
 			class="rounded-2xl aspect-square md:ml-auto md:mr-0"
-			loading="eager"
 			/>
 		</div>
 
@@ -205,7 +202,7 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 
 	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading"> Get In Touch </h1>
 
-	<br/><br/>
+	<br/>
 
 	<ContactForm client:only/>
 
