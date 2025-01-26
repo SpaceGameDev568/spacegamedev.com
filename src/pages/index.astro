@@ -7,6 +7,7 @@ import ModCard from '../components/ModCard.astro'
 import ContactForm from '../components/react/ContactForm';
 
 import profilePicture from '../../public/images/ProfilePicture.webp';
+import bisectBanner from "../../public/images/Bisect2.webp";
 import FPMHero from '../../public/images/Screenshot20250122-10513200000.png';
 import PrimaryActionButton from "../components/PrimaryActionButton.astro";
 import SecondaryActionButton from "../components/SecondaryActionButton.astro";
@@ -24,18 +25,18 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 
 <Layout title="SpaceGameDev / Home">
 
-	<div class="ml-auto mr-auto w-[80%]">
+	<div class="ml-auto mr-auto w-[90%] md:w-[80%]">
 
 		<div class="2xl:h-[550px] lg:h-[1024px]">
 
 			<Image
-					src={FPMHero}
-					alt="Factory Props"
-					width="900"
-					height="500"
-					class="rounded-2xl aspect-video lg:ml-auto lg:mr-0 shadow-[0px_0px_100px_-15px_#66a2a1] 2xl:hidden -mt-[150px]"
-					id="mobile-header-image"
-					loading="eager"
+				src={FPMHero}
+				alt="Factory Props"
+				width="900"
+				height="500"
+				class="rounded-2xl aspect-video lg:ml-auto lg:mr-0 shadow-[0px_0px_100px_-15px_#66a2a1] 2xl:hidden -mt-[150px]"
+				id="mobile-header-image"
+				loading="eager"
 			/>
 
 			<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute">
@@ -94,7 +95,7 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 			<div class="float-left">
 				<h1 class="text-white lg:text-5xl text-3xl font-heading font-bold">SpaceGameDev Software</h1><br/>
 				<p class="text-white">I'm SpaceGameDev, and I make Factory Props and other mods for Satisfactory!</p>
-				<br/><br/>
+				<br/>
 				<PrimaryActionButton
 					link="about"
 					title="About Me"
@@ -105,12 +106,44 @@ import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
 			</div>
 
 			<Image
-			src={profilePicture}
-			alt="Me with a plane flying overhead"
-			width="256"
-			height="256"
-			class="rounded-2xl aspect-square md:ml-auto md:mr-0"
+				src={profilePicture}
+				alt="Me with a plane flying overhead"
+				width="256"
+				height="256"
+				class="rounded-2xl aspect-square mr-auto w-fit ml-auto md:mr-0"
 			/>
+		</div>
+
+		<br/><br/>
+
+		<div class="border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225] box-border p-5">
+			<div class="xl:float-left xl:w-[50%]">
+				<h1 class="text-white lg:text-5xl text-3xl font-heading font-bold">Bisect Hosting</h1><br/>
+				<p class="text-white">
+					If you're looking to host a Satisfactory (or another game) server capable of running mods, I encourage you to check out BisectHosting!
+					<br/><br/>
+					I've partnered with BisectHosting so you can get a fast, reliable, and modding-capable server at a discounted price with my promo code. Use code spacegamedev for 25% off your first month for new customers!
+				</p>
+				<br/>
+				<PrimaryActionButton
+						link="https://bisecthosting.com/spacegamedev"
+						title="Get Started"
+				/>
+				<br/><br/>
+			</div>
+
+			<a href="https://bisecthosting.com/spacegamedev">
+
+				<Image
+						src={bisectBanner}
+						alt="Bisect Hosting: Get 25% off your first month when you use code spacegamedev. 8 Gigabytes recommended."
+						width="513"
+						height="315"
+						class="rounded-2xl ml-auto mr-auto xl:mt-auto xl:mr-0 xl:w-[50%]"
+				/>
+
+			</a>
+
 		</div>
 
 	</div>

@@ -1,5 +1,7 @@
 ---
 
+import {Image} from 'astro:assets';
+
 import SidebarButton from './SidebarButton.astro';
 import SidebarToggleButton from './react/SidebarToggleButton.tsx';
 
@@ -15,17 +17,16 @@ const props = Astro.props
 
 </div>
 
-
-
-<!-- <div id="header-spacer" class="h-[50px] mb-10"/> -->
-
 <div id="sidebar" class="block fixed h-[calc(100%-3.25rem)] top-[3.25rem] w-[100%] -left-[100%] md:w-[15rem] md:left-[-15rem]  m-0  md:rounded-br-2xl md:shadow-2xl z-50 bg-[#222225] bg-opacity-50 backdrop-blur-sm md:after:w-[100px] md:after:bg-blue-500" transition:persist>
+
+	<h1 class="text-white font-bold text-2xl w-fit ml-auto mr-auto font-heading text-center md:hidden">
+		SpaceGameDev
+		<br/>
+		Software
+	</h1>
 
 	<SidebarButton title="Home" symbol="home" link="/"/>
 	<SidebarButton title="About" symbol="person_book" link="/about" />
-	<!--<SidebarButton title="Achievements" symbol="trophy" link="achievements" />
-	<SidebarButton title="Gallery" symbol="photo_library" link="gallery" />
-	<SidebarButton title="Blog" symbol="wallpaper_slideshow" link="blog" />-->
 	<SidebarButton title="Links" symbol="link" link="/linkinbio" />
 
 	<div class="w-fit ml-auto mr-auto">
