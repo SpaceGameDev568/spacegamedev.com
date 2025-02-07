@@ -6,7 +6,7 @@ import SecondaryActionButton from "./SecondaryActionButton.astro";
 const props = Astro.props
 ---
 
-<div class="w-[380px] m-2  border-[1px] border-opacity-10 rounded-2xl border-white bg-[#222225]"> <!-- border-opacity-20 bg-gradient-to-r from-violet-900 to-indigo-900 -->
+<div class="w-[380px] m-2  border-[1px] rounded-2xl border-white/10 bg-[#222225]">
 
 	<div>
 
@@ -28,7 +28,7 @@ const props = Astro.props
 		<p class="text-gray-400 text-sm h-10">{props.description}</p>
 		<br/>
 
-		<hr class="border-white border-opacity-20 p-5" />
+		<hr class="border-white/20 p-5" />
 
 		<div>
 			<PrimaryActionButton
