@@ -1,2 +1,0 @@
-# SpaceGameDev's Website     [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/o4k1.svg)](https://betteruptime.com/?utm_source=status_badge)
-This is my personal website to show off my projects. It's written in Astro and Tailwind, and deployed with Cloudflare Pages at https://spacegamedev.com
