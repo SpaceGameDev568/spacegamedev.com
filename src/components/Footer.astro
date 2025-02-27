@@ -1,0 +1,66 @@
+---
+import {Image} from "astro:assets";
+
+import flag from "../../public/images/Flag_of_the_United_States_Wikipedia.svg"
+
+import bisectBanner from "../../public/images/BisectBanner.webp";
+---
+
+<div id="footer" class="bg-[#222225] p-10 mt-10 border-white/10 border-t-[1px]">
+
+	<Image
+	src={flag}
+	alt="American Flag"
+	height="50"
+	width="100"
+	class="float-left mr-5 mb-5"
+	/>
+
+	<p class="text-white w-fit float-left">Copyright © 2022 - 2025 Jesse Hodgson. All Rights Reserved.
+
+		<br/>
+
+		Performance and security by Cloudflare.
+
+		<br/>
+
+		Source code available for reference on <a href="https://github.com/SpaceGameDev568/spacegamedev.com" class="text-blue-500 hover:text-blue-300 duration-300">GitHub</a>.
+
+	</p>
+
+	<br/><br/>
+
+	<div class="md:float-right w-[182px] overflow-x-hidden">
+		<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
+	</div>
+
+	<br/><br/>
+
+	<div class="w-fit">
+
+		<a target="_blank" href="https://uptime.betterstack.com">
+			<Image
+					src="https://uptime.betterstack.com/assets/static_assets/badges/light.png"
+					id="betterstack-attribution"
+					width="130"
+					height="52"
+					alt="Better Stack Website Monitoring"
+			/>
+		</a>
+
+	</div>
+
+	<br/><br/>
+
+	<a href="https://bisecthosting.com/spacegamedev">
+
+		<Image
+				src={bisectBanner}
+				alt="Bisect Hosting: Get 25% off your first month when you use code spacegamedev. 8 Gigabytes recommended."
+				width="1086"
+				height="180"
+				class="rounded-2xl ml-auto mr-auto hover:ring-4 hover:ring-blue-500/50 duration-300"
+		/>
+
+	</a>
+</div>

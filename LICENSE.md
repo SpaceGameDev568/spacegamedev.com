@@ -1,0 +1,1 @@
+Copyright © 2022 - 2025 Jesse Hodgson. All Rights Reserved.
