@@ -38,9 +38,9 @@ function ContactForm() {
 
           <br/>
 
-          <label htmlFor="name" className={"hidden"}>Name</label><input type="text" id="name" name="name" placeholder="Name" className={"block w-[80%] ml-auto mr-auto min-w-[60%] p-3 rounded-lg resize-y font-mono bg-[#222225] text-white duration-300 border-[1px] border-white/10"}/>
+          <label htmlFor="name" className={"hidden"}>Name</label><input type="text" id="name" name="name" placeholder="Name" className={"block w-[80%] ml-auto mr-auto min-w-[60%] p-3 rounded-lg resize-y font-mono bg-[#222225] text-white border-[1px] border-white/10"}/>
           <br/><br/>
-          <label htmlFor="inquiry" className={"hidden"}>Inquiry</label><textarea id="inquiry" name="inquiry" placeholder="Inquiry" spellCheck="true" rows={rows} className={"block w-[80%] ml-auto mr-auto min-w-[60%] p-3 bg-[#222225] rounded-lg resize-y font-mono text-white duration-300 border-[1px] border-white/10"}></textarea>
+          <label htmlFor="inquiry" className={"hidden"}>Inquiry</label><textarea id="inquiry" name="inquiry" placeholder="Inquiry" spellCheck="true" rows={rows} className={"block w-[80%] ml-auto mr-auto min-w-[60%] p-3 bg-[#222225] rounded-lg resize-y font-mono text-white border-[1px] border-white/10"}></textarea>
 
           <br/><br/>
 
