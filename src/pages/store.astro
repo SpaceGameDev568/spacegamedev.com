@@ -1,0 +1,25 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="SpaceGameDev / Store">
+
+	<div id="content">
+
+		<div class="bg-[#222225] rounded-xl hover:outline-4 hover:outline-blue-500/50 duration-300 hover:outline-offset-4 m-[20%] p-1 pt-5 pb-5 hover:-translate-y-1">
+			test
+		</div>
+
+	</div>
+
+	<script>
+		import { animate } from "motion"
+
+		document.addEventListener('astro:page-load', () => {
+			animate("#content", { y: [400, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+		});
+	</script>
+
+</Layout>
