@@ -1,0 +1,256 @@
+---
+
+import {Image} from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import ModCard from '../components/ModCard.astro'
+import BHCard from '../components/BHCard.astro'
+import ContactForm from '../components/react/ContactForm';
+
+import profilePicture from '../../public/images/ProfilePicture.png';
+import FPMHero from '../../public/images/FilledAvatar.svg';
+import PrimaryActionButton from "../components/PrimaryActionButton.astro";
+import SecondaryActionButton from "../components/SecondaryActionButton.astro";
+
+import BetterGrassLogo from "../../public/images/ModLogos/BetterGrass.png";
+import DiscordRichPresenceLogo from "../../public/images/ModLogos/DiscordRichPresence.png";
+import FactoryPropsLogo from "../../public/images/ModLogos/FactoryProps.png";
+import ModUpdateNotifierLogo from "../../public/images/ModLogos/ModUpdateNotifier.png";
+import MorePlayersLogo from "../../public/images/ModLogos/MorePlayers.png";
+import RemoveAllAnnoyancesLogo from "../../public/images/ModLogos/RemoveAllAnnoyances.png";
+import SatisWHACKtoryLogo from "../../public/images/ModLogos/SatisWHACKtory.png";
+import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
+import CustomBisectBanner from "../../public/images/CustomBisectBanner.webp";
+import BisectOne from "../../public/images/BisectOne.svg"
+import BHLogo from "../../public/images/BisectHosting_x_SpaceGameDevModding.svg"
+import BHLogomark from "../../public/images/BisectHostingLogomark.svg"
+import ServerRack from "../../public/images/server-box-rack.webp"
+import PurchaseButton from "../components/PurchaseButton.astro";
+
+---
+
+<Layout title="SpaceGameDev / Hosting">
+
+	<div id="header-spacer" class="h-[50px] mb-10"/>
+
+	<div class="ml-auto mr-auto w-[90%] md:w-[80%]">
+
+			<div class="2xl:h-[550px] lg:h-[750px] md:h-[580px]">
+
+				<Image
+						src={BHLogomark}
+						alt="Factory Props"
+						width="120"
+						height="120"
+						class="rounded-2xl md:ml-0 ml-auto mr-auto 2xl:hidden -mt-[150px]"
+						id="mobile-header-image"
+						loading="eager"
+				/>
+
+				<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute">
+					<br/>
+					<h1 class="font-heading font-bold text-white lg:text-8xl text-5xl">Server Hosting</h1><br/>
+					<h2 class="font-heading text-blue-500 text-4xl"> Provided by BisectHosting </h2><br/>
+					<p class="text-white text-2xl bg-[#101014]/25 rounded-2xl md:w-[60%] p-2">
+						This page will help you determine whether you may need a server, and if so, why I believe you should choose BisectHosting.
+					</p>
+
+					<br/><br/><br/><br/>
+
+					<SecondaryActionButton
+							link="#why-bh"
+							title="Why BH?"
+					/>
+
+					&nbsp
+
+					<PrimaryActionButton
+							link="#interested"
+							title="Get Started"
+					/>
+
+						<br/><br/>
+						<br/><br/>
+						<br/><br/>
+						<br/><br/>
+						<br/><br/>
+						<br/><br/>
+
+
+
+				</div>
+
+				<script>
+					import { animate } from "motion"
+
+					document.addEventListener('astro:page-load', () => {
+						animate("#fpm-heading", { y: [400, 175], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+
+						animate("#mobile-header-image", { y: [400, 150], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+					});
+				</script>
+
+				<Image
+						src={BHLogomark}
+						alt="BisectHosting"
+						width="512"
+						height="512"
+						loading="eager"
+						class="lg:ml-auto lg:mr-2 lg:mt-10 2xl:block hidden"
+				/>
+			</div>
+
+			<br/><br/><br/>
+
+			<div id="why-bh"/>
+
+			<br/><br/>
+
+			<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-blue-500 font-heading text-center"> Why might you need a server host? </h1>
+
+			<br/><br/>
+
+			<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border m-2 p-5 w-full">
+
+				<p class="text-white text-xl text-left ml-auto mr-auto w-fit">
+					- If you enjoy playing with friends but you want them to be able to keep playing on your world even when you aren't online<br/><br/>
+					- If your PC struggles to keep up when you're hosting a multiplayer world<br/><br/>
+					- If you want to run lots of mods<br/><br/>
+					- If you want to have all of the above benefits, but don't want to deal with port-forwarding or revealing your IP address<br/><br/>
+				</p>
+
+				<br/>
+
+				<h2 class="text-white text-center text-3xl font-bold"> Then you probably need a server host. </h2>
+			</div>
+
+			<br/><br/>
+
+			<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-blue-500 font-heading text-center"> Why choose BisectHosting? </h1>
+
+			<br/><br/>
+
+			<div class="flex flex-wrap place-content-center">
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border m-2 p-5 w-full">
+
+					<h1 class="lg:text-4xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> As of December 2025, BisectHosting has: </h1>
+
+					<br/><br/>
+
+					<p class="lg:text-2xl text-xl font-bold ml-auto mr-auto w-fit text-white font-heading text-left">
+						- 1.2M++ Servers Hosted<br/>
+						- 20 Global Locations<br/>
+						- 100+ Games Hosted<br/>
+						- 13+ Years of Experience<br/>
+					</p>
+
+				</div>
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border p-5 w-[380px] m-2">
+					<p class="text-blue-500 text-2xl font-bold">
+						One Subscription
+					</p>
+					<br/>
+					<p class="text-white">
+						With BisectHosting's new BisectOne™ plan, you can enjoy more than 100 games with 1 subscription. If you're bored, just swap the game on the server!
+					</p>
+				</div>
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border p-5 w-[380px] m-2">
+					<p class="text-blue-500 text-2xl font-bold">
+						Modern Hardware
+					</p>
+					<br/>
+					<p class="text-white">
+						BisectHosting exclusively uses the latest AMD Ryzen CPUs.
+						With their smart provisioning system,
+						they automatically allocate your server the perfect hardware,
+						based on if it needs fast single-threaded performance,
+						or balanced multi-threaded efficiency.
+					</p>
+				</div>
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border p-5 w-[380px] m-2">
+					<p class="text-blue-500 text-2xl font-bold">
+						Worldwide coverage
+					</p>
+					<br/>
+					<p class="text-white">
+						BisectHosting has 20 colocation centers worldwide,
+						meaning all you have to do is choose the location closest to you for the lowest latency!
+					</p>
+
+				</div>
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border p-5 w-[380px] m-2">
+					<p class="text-blue-500 text-2xl font-bold">
+						Unmatched 24/7/365 Customer Service
+					</p>
+					<br/>
+					<p class="text-white">
+						Whether you prefer live chat or ticket services, you can always reach out for help and expect a swift response.
+						A support agent will typically be ready to help you within 15 minutes of opening a ticket!
+					</p>
+
+				</div>
+
+				<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border p-5 w-[380px] m-2">
+					<p class="text-blue-500 text-2xl font-bold">
+						User Friendly
+					</p>
+					<br/>
+					<p class="text-white">
+						Every server comes with the powerful, yet easy to use Starship™ control panel, which makes managing your server a breeze.
+					</p>
+
+				</div>
+
+			</div>
+
+			<div id="interested"/>
+
+			<br/><br/>
+
+			<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-blue-500 font-heading text-center"> Interested? </h1>
+
+			<br/><br/>
+
+			<div class="border-[1px] rounded-2xl border-white/10  bg-[#222225]/75 box-border m-2 p-5 w-full">
+
+				<p class="text-white text-xl text-left ml-auto mr-auto w-fit">
+					I've been partnering with them since 2024 to offer you, my incredible fans, 25% off your first month!<br/>
+					All you need to do is click the link below and use promo code "<code class="font-mono text-blue-500">SPACEGAMEDEV</code>" at checkout!<br/>
+					<code class="text-gray-400 font-sans text-base">This also benefits me, as I earn a commission from sales made when using my link, which goes towards maintaining and creating new mods for you to enjoy!</code><br/>
+				</p>
+
+				<br/>
+
+				<div class="lg:w-[380px] ml-auto mr-auto"><PurchaseButton title="Get your server now!" symbol="shopping_cart" link="https://bisecthosting.com/spacegamedev?r=WebsiteHostingPage"/></div>
+			</div>
+
+			<br/><br/>
+
+			<Image
+					src={BisectOne}
+					alt="BisectOne"
+					width="512"
+					height="512"
+					loading="eager"
+					class="ml-auto mr-auto"
+			/>
+
+			<br/><br/>
+
+			<Image
+					src={BHLogo}
+					alt="BisectHosting"
+					width="1024"
+					height="1024"
+					loading="eager"
+					class="ml-auto mr-auto"
+			/>
+
+		</div>
+
+</Layout>

@@ -20,13 +20,13 @@ import { ClientRouter } from 'astro:transitions';
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/webp" href="/images/favicon.webp" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<title>{title}</title>
 		<ClientRouter />
 	</head>
-	<body class="bg-[#101014]">
+	<body class="bg-[url(/../../images/SatisfactoryModdingBackground-Darkened.webp)] bg-no-repeat bg-cover bg-[#101014] bg-fixed">
 		<Header pageName={title} />
-
-		<div id="header-spacer" class="h-[50px] mb-10"/>
 
 		<div id="content">
 

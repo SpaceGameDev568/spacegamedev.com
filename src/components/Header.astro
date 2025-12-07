@@ -1,7 +1,5 @@
 ---
 
-import {Image} from 'astro:assets';
-
 import SidebarButton from './SidebarButton.astro';
 
 import SidebarToggleButton from '../components/react/SidebarToggleButton.tsx';
@@ -23,12 +21,12 @@ const props = Astro.props
 	<h1 class="text-white font-bold text-2xl ml-auto mr-auto font-heading text-left md:hidden w-[90%]">
 		SpaceGameDev
 		<br/>
-		Software
+		Modding
 	</h1>
 
 	<SidebarButton title="Home" symbol="home" link="/"/>
-	<SidebarButton title="About" symbol="person_book" link="/about" />
 	<SidebarButton title="Links" symbol="link" link="/linkinbio" />
+	<SidebarButton title="Hosting" symbol="dns" link="/hosting" />
 	<hr class="border-white/20" />
 	<SidebarButton title="Docs" symbol="book" link="https://docs.spacegamedev.com" />
 
