@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 20222 - 2025 Jesse Hodgson
+Copyright (c) 2022 - 2026 Jesse Hodgson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
