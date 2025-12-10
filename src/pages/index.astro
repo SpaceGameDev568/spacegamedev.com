@@ -4,9 +4,15 @@ import {Image} from 'astro:assets';
 
 import Layout from '../layouts/Layout.astro';
 import ModCard from '../components/ModCard.astro'
-import FPMHero from '../../public/images/FilledAvatar.svg';
+import ProjectCard from "../components/ProjectCard.astro";
+import ModpackCard from "../components/ModpackCard.astro";
+
+import SpaceGameDevLogo from '../../public/images/FilledAvatar.svg';
 import PrimaryActionButton from "../components/PrimaryActionButton.astro";
 import SecondaryActionButton from "../components/SecondaryActionButton.astro";
+
+import SatisfactoryLogo from "../../public/images/SatisfactoryLogo.webp"
+import MinecraftLogo from "../../public/images/MinecraftLogo.svg";
 
 import BetterGrassLogo from "../../public/images/ModLogos/BetterGrass.png";
 import DiscordRichPresenceLogo from "../../public/images/ModLogos/DiscordRichPresence.png";
@@ -16,10 +22,9 @@ import MorePlayersLogo from "../../public/images/ModLogos/MorePlayers.png";
 import RemoveAllAnnoyancesLogo from "../../public/images/ModLogos/RemoveAllAnnoyances.png";
 import SatisWHACKtoryLogo from "../../public/images/ModLogos/SatisWHACKtory.png";
 import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
-import SatisfactoryLogo from "../../public/images/SatisfactoryLogo.webp"
-import ProjectCard from "../components/ProjectCard.astro";
-
+import KuvankaunisLogo from "../../public/images/ModLogos/Kuvankaunis.png";
 import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
+
 
 ---
 
@@ -32,7 +37,7 @@ import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
 		<div class="2xl:h-[550px] lg:h-[750px] md:h-[580px]">
 
 			<Image
-				src={FPMHero}
+				src={SpaceGameDevLogo}
 				alt="SpaceGameDev"
 				width="120"
 				height="120"
@@ -46,7 +51,7 @@ import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
 				<h1 class="font-heading font-bold text-white lg:text-8xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
 				<h2 class="font-heading text-blue-500 lg:text-4xl text-3xl"> Open Source modding for everyone </h2><br/>
 				<p class="text-white text-2xl bg-[#101014]/25 rounded-2xl md:w-[60%] p-2">
-					The home of mods like Factory Props and Mod Update Notifier for Satisfactory
+					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft
 				</p>
 
 				<br/><br/><br/><br/>
@@ -87,7 +92,7 @@ import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
 			</script>
 
 			<Image
-				src={FPMHero}
+				src={SpaceGameDevLogo}
 				alt="SpaceGameDev"
 				width="512"
 				height="512"
@@ -111,7 +116,7 @@ import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
 				width="512"
 				height="512"
 				loading="eager"
-				class="rounded-2xl ml-auto mr-auto"
+				class="ml-auto mr-auto"
 		/>
 
 		<br/><br/>
@@ -180,6 +185,35 @@ import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
 					image={MorePlayersLogo}
 					link="https://ficsit.app/mod/MorePlayers"
 					github="https://github.com/SpaceGameDev568/MorePlayers"
+			/>
+
+		</div>
+
+		<br/><br/>
+
+		<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Modpacks for </h1>
+
+		<br/>
+
+		<Image
+				src={MinecraftLogo}
+				alt="Minecraft"
+				width="512"
+				height="512"
+				loading="eager"
+				class="ml-auto mr-auto"
+		/>
+
+		<br/><br/>
+
+		<div class="flex flex-wrap place-content-center">
+
+			<ModpackCard
+					title="Kuvankaunis"
+					description="A modern Minecraft modpack focused on visuals and exploration."
+					image={KuvankaunisLogo}
+					link="https://modrinth.com/modpack/kuvankaunis"
+					github="https://github.com/SpaceGameDev568/Kuvankaunis"
 			/>
 
 		</div>
