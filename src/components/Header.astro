@@ -10,7 +10,7 @@ import '../styles/global.css';
 
 ---
 
-<div id="header" class="fixed h-[3.25rem] bg-[#222225]/50 w-full z-50 backdrop-blur-xs">
+<div id="header" class="fixed h-13 bg-[#222225]/50 w-full z-50 backdrop-blur-xs">
 
 	<SidebarToggleButton client:only="react"/>
 
@@ -18,7 +18,7 @@ import '../styles/global.css';
 
 </div>
 
-<div id="sidebar" class="block fixed h-[calc(100%-3.25rem)] top-[3.25rem] w-[100%] -left-[100%] md:w-[15rem] md:left-[-15rem]  m-0  md:rounded-br-2xl md:shadow-2xl z-50 bg-[#222225]/50 backdrop-blur-xs md:after:w-[100px] md:after:bg-blue-500" transition:persist>
+<div id="sidebar" class="block fixed h-[calc(100%-3.25rem)] top-13 w-full -left-full md:w-60 md:-left-60  m-0  md:rounded-br-2xl md:shadow-2xl z-50 bg-[#222225]/50 backdrop-blur-xs md:after:w-[100px] md:after:bg-blue-500" transition:persist>
 
 	<h1 class="text-white font-bold text-2xl ml-auto mr-auto font-heading text-left md:hidden w-[90%]">
 		SpaceGameDev
@@ -26,12 +26,12 @@ import '../styles/global.css';
 		Modding
 	</h1>
 
-	<SidebarButton title="Home" symbol="home" link="/"/>
-	<SidebarButton title="Links" symbol="link" link="/linkinbio" />
-	<SidebarButton title="Hosting" symbol="dns" link="/hosting" />
+	<SidebarButton title="Home" image="/../../images/MaterialIcons/home_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/"/>
+	<SidebarButton title="Links" image="/../../images/MaterialIcons/link_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/linkinbio" />
+	<SidebarButton title="Hosting" image="/../../images/MaterialIcons/dns_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/hosting" />
 	<hr class="border-white/20" />
-	<SidebarButton title="Docs" symbol="book" link="https://docs.spacegamedev.com" />
-	<SidebarButton title="Discord" symbol="crowdsource" link="https://discord.gg/tgNjem4bjU" />
+	<SidebarButton title="Docs" image="/../../images/MaterialIcons/book_2_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="https://docs.spacegamedev.com" />
+	<SidebarButton title="Discord" image="/../../images/Icons/DiscordWhite.svg" link="https://discord.gg/tgNjem4bjU" />
 
 	<div class="w-fit ml-auto mr-auto">
 		<div class="md:float-left w-[182px] overflow-x-hidden">
