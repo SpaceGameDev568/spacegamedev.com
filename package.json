@@ -9,12 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.2",
-    "@astrojs/svelte": "^7.2.5",
+    "@astrojs/react": "^5.0.5",
+    "@astrojs/svelte": "^8.1.1",
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "astro": "^5.16.16",
+    "astro": "^6.3.7",
     "motion": "^12.23.25",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
@@ -22,12 +22,5 @@
     "svelte": "^5.45.6",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp",
-      "@tailwindcss/oxide"
-    ]
   }
 }
