@@ -7,7 +7,6 @@ import ModCard from '../components/ModCard.astro'
 import ProjectCard from "../components/ProjectCard.astro";
 import ModpackCard from "../components/ModpackCard.astro";
 
-import SpaceGameDevLogo from '../../public/images/FilledAvatar.svg';
 import PrimaryActionButton from "../components/PrimaryActionButton.astro";
 import SecondaryActionButton from "../components/SecondaryActionButton.astro";
 
@@ -41,8 +40,8 @@ import ZLANLogo from "../../public/images/ZLANLogo.svg";
 
 		<div class="2xl:h-[550px] lg:h-[750px] md:h-[580px]">
 
-			<Image
-				src={SpaceGameDevLogo}
+			<img
+				src="../public/images/FilledAvatar.svg"
 				alt="SpaceGameDev"
 				width="120"
 				height="120"
@@ -53,7 +52,7 @@ import ZLANLogo from "../../public/images/ZLANLogo.svg";
 
 			<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute">
 
-				<h1 class="font-heading font-bold text-white lg:text-8xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
+				<h1 class="font-heading font-bold animate-rgb-cycle lg:text-8xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
 				<h2 class="text-blue-500 lg:text-4xl text-3xl"> Open Source modding for everyone </h2><br/>
 				<p class="text-white text-2xl bg-[#101014]/25 rounded-2xl md:w-[60%] p-2">
 					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft.
@@ -96,8 +95,8 @@ import ZLANLogo from "../../public/images/ZLANLogo.svg";
 				});
 			</script>
 
-			<Image
-				src={SpaceGameDevLogo}
+			<img
+				src="../public/images/RGBFilledAvatar.svg"
 				alt="SpaceGameDev"
 				width="512"
 				height="512"
@@ -117,7 +116,7 @@ import ZLANLogo from "../../public/images/ZLANLogo.svg";
 
 		<Image
 				src={SatisfactoryLogo}
-				alt="Satisfactory"
+				alt="RGBSatisfactory"
 				width="512"
 				loading="eager"
 				class="ml-auto mr-auto"
