@@ -1,12 +1,19 @@
 ---
 import {Image} from "astro:assets";
 const props = Astro.props
+
 ---
 
 <a href={props.link} class="flex items-center justify-left w-[90%] h-10 rounded-2xl mt-2 mb-2 ml-auto mr-auto pt-7 pb-7 no-underline border border-white/10 text-white select-none box-border text-2xl font-bold hover:bg-blue-500 duration-300 hover:ring-4 hover:ring-blue-500/50">
 
     <span class="ml-5">
-        <img src={props.image} class="w-7 h-7" alt="Link">
+        <Image
+            src={props.image}
+            alt={props.alt}
+            width="28"
+            height="28"
+            class="w-7 h-7"
+        />
     </span>
     <p class="ml-2"> {props.title} </p>
 

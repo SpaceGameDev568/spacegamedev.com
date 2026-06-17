@@ -2,56 +2,56 @@
 
 import {Image} from 'astro:assets';
 
-import Layout from '../layouts/Layout.astro';
-import ModCard from '../components/cards/ModCard.astro'
-import ProjectCard from "../components/cards/ProjectCard.astro";
-import ModpackCard from "../components/cards/ModpackCard.astro";
+import Layout from '@layouts/Layout.astro';
+import ModCard from '@components/cards/ModCard.astro'
+import ProjectCard from "@components/cards/ProjectCard.astro";
+import ModpackCard from "@components/cards/ModpackCard.astro";
 
-import PrimaryActionButton from "../components/PrimaryActionButton.astro";
-import SecondaryActionButton from "../components/SecondaryActionButton.astro";
+import PrimaryActionButton from "@components/PrimaryActionButton.astro";
+import SecondaryActionButton from "@components/SecondaryActionButton.astro";
 
-import SatisfactoryLogo from "../../public/images/SatisfactoryLogo.webp"
-import MinecraftLogo from "../../public/images/MinecraftLogo.svg";
+import SatisfactoryLogo from "@assets/images/SatisfactoryLogo.webp"
+import MinecraftLogo from "@assets/images/MinecraftLogo.svg";
 
-import BetterGrassLogo from "../../public/images/ModLogos/BetterGrass.png";
-import DiscordRichPresenceLogo from "../../public/images/ModLogos/DiscordRichPresence.png";
-import FactoryPropsLogo from "../../public/images/ModLogos/FactoryProps.png";
-import ModUpdateNotifierLogo from "../../public/images/ModLogos/ModUpdateNotifier.png";
-import MorePlayersLogo from "../../public/images/ModLogos/MorePlayers.png";
-import RemoveAllAnnoyancesLogo from "../../public/images/ModLogos/RemoveAllAnnoyances.png";
-import SatisWHACKtoryLogo from "../../public/images/ModLogos/SatisWHACKtory.png";
-import TwoMeterWallsLogo from "../../public/images/ModLogos/TwoMeterWalls.png";
-import IECLogo from "../../public/images/ModLogos/IEC.png";
-import RagdollOnDemandLogo from "../../public/images/ModLogos/RagdollOnDemand.png";
-import PropPioneerLogo from "../../public/images/ModLogos/PropPioneer.png";
-import FactoryCartStationLogo from "../../public/images/ModLogos/FactoryCartStationLogo.png";
-import CoffeeCupAddonsLogo from "../../public/images/ModLogos/CoffeeCupAddonsLogo.png";
-import KuvankaunisLogo from "../../public/images/ModLogos/Kuvankaunis.png";
-import SnapAxisLogo from "../../public/images/SnapAxisProjectThumbnail.svg";
-import ZLANLogo from "../../public/images/ZLANLogo.svg";
+import BetterGrassLogo from "@assets/images/ModLogos/BetterGrass.png";
+import DiscordRichPresenceLogo from "@assets/images/ModLogos/DiscordRichPresence.png";
+import FactoryPropsLogo from "@assets/images/ModLogos/FactoryProps.png";
+import ModUpdateNotifierLogo from "@assets/images/ModLogos/ModUpdateNotifier.png";
+import MorePlayersLogo from "@assets/images/ModLogos/MorePlayers.png";
+import RemoveAllAnnoyancesLogo from "@assets/images/ModLogos/RemoveAllAnnoyances.png";
+import SatisWHACKtoryLogo from "@assets/images/ModLogos/SatisWHACKtory.png";
+import TwoMeterWallsLogo from "@assets/images/ModLogos/TwoMeterWalls.png";
+import IECLogo from "@assets/images/ModLogos/IEC.png";
+import RagdollOnDemandLogo from "@assets/images/ModLogos/RagdollOnDemand.png";
+import PropPioneerLogo from "@assets/images/ModLogos/PropPioneer.png";
+import FactoryCartStationLogo from "@assets/images/ModLogos/FactoryCartStationLogo.png";
+import CoffeeCupAddonsLogo from "@assets/images/ModLogos/CoffeeCupAddonsLogo.png";
+import KuvankaunisLogo from "@assets/images/ModLogos/Kuvankaunis.png";
+import SnapAxisLogo from "@assets/images/SnapAxisProjectThumbnail.svg";
+import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 
 ---
 
 <Layout title="SpaceGameDev / Home">
 
-	<div id="header-spacer" class="h-[50px] mb-10"/>
+	<div id="header-spacer" class="h-12.5 mb-10"/>
 
 	<div class="ml-auto mr-auto w-[90%] md:w-[80%]">
 
-		<div class="2xl:h-[550px] lg:h-[750px] md:h-[580px]">
+		<div class="2xl:h-137.5 lg:h-187.5 md:h-145">
 
 			<img
-				src="../images/Favicon.svg"
+				src="/images/Favicon.svg"
 				alt="SpaceGameDev"
 				width="120"
 				height="120"
-				class="rounded-2xl md:ml-0 mr-auto 2xl:hidden mt-[50px] mb-5"
+				class="rounded-2xl md:ml-0 mr-auto 2xl:hidden mt-12.5 mb-5"
 				id="mobile-header-image"
 				loading="eager"
 			/>
 
-			<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute mt-[50px]">
+			<div id="fpm-heading" class="leading-3 lg:w-[60%] lg:float-left lg:absolute mt-12.5">
 
 				<h1 class="font-heading font-bold text-white lg:text-8xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
 				<h2 class="animate-rgb-cycle lg:text-4xl text-3xl"> Open Source modding for everyone </h2><br/>
@@ -99,7 +99,7 @@ import ZLANLogo from "../../public/images/ZLANLogo.svg";
 			-->
 
 			<img
-				src="../images/Favicon.svg"
+				src="/images/Favicon.svg"
 				alt="SpaceGameDev"
 				width="512"
 				height="512"

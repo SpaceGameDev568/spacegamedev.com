@@ -1,10 +1,10 @@
 ---
 import {Image} from "astro:assets";
 
-import flag from "../../public/images/Flag_of_the_United_States_Wikipedia.svg"
-import BHLogomark from "../../public/images/BisectHostingLogomark.svg";
+import flag from "@assets/images/Flag_of_the_United_States_Wikipedia.svg"
+import BHLogomark from "@assets/images/BisectHostingLogomark.svg";
 
-import '../styles/global.css';
+import '@styles/global.css';
 ---
 
 <div id="footer" class="bg-background-primary p-10 mt-10 border-white/10 border-t border-b">
@@ -32,27 +32,27 @@ import '../styles/global.css';
 		In God We Trust
 
 		<br/><br/>
-
 	</p>
 
+	<div class="w-45.5 overflow-x-hidden lg:mr-0 ml-auto">
+		<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
+	</div>
+
+	<br/>
 
 	<div class="md:float-right w-fit">
-
-		<div class="w-[182px] overflow-x-hidden md:mr-0 md:ml-auto">
-			<iframe title="Better Stack Status" src="https://status.spacegamedev.com/badge?theme=dark" id="betterstack-badge" width="250" height="30" loading="lazy"></iframe>
-		</div>
-
-		<br/>
 
 		<div class="w-fit md:mr-0 md:ml-auto">
 
 			<a target="_blank" href="https://uptime.betterstack.com">
+
 				<Image
-						src="https://uptime.betterstack.com/assets/static_assets/badges/light.png"
-						id="betterstack-attribution"
-						width="130"
-						height="52"
-						alt="Better Stack Website Monitoring"
+					src="https://uptime.betterstack.com/assets/static_assets/badges/dark.png"
+					id="betterstack-attribution"
+					width="260"
+					height="104"
+					alt="Better Stack Website Monitoring"
+					class="w-45"
 				/>
 			</a>
 

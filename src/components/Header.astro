@@ -1,12 +1,18 @@
 ---
 
-import SidebarButton from './SidebarButton.astro';
+import SidebarButton from '@components/SidebarButton.astro';
 
-import SidebarToggleButton from '../components/react/SidebarToggleButton.tsx';
+import SidebarToggleButton from '@components/react/SidebarToggleButton.tsx';
 
 const props = Astro.props
 
-import '../styles/global.css';
+import '@styles/global.css';
+
+import HomeIcon from '@assets/images/MaterialIcons/home_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import LinksIcon from '@assets/images/MaterialIcons/link_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import HostingIcon from '@assets/images/MaterialIcons/dns_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import DocsIcon from '@assets/images/MaterialIcons/book_2_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg';
+import DiscordIcon from '@assets/images/Icons/DiscordWhite.svg';
 
 ---
 
@@ -26,12 +32,12 @@ import '../styles/global.css';
 		Modding
 	</h1>
 
-	<SidebarButton title="Home" image="/../../images/MaterialIcons/home_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/"/>
-	<SidebarButton title="Links" image="/../../images/MaterialIcons/link_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/linkinbio" />
-	<SidebarButton title="Hosting" image="/../../images/MaterialIcons/dns_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="/hosting" />
+	<SidebarButton title="Home" image={HomeIcon} alt="Home" link="/"/>
+	<SidebarButton title="Links" image={LinksIcon} alt="Links" link="/linkinbio"/>
+	<SidebarButton title="Hosting" image={HostingIcon} alt="Hosting" link="/hosting"/>
 	<hr class="border-white/20" />
-	<SidebarButton title="Docs" image="/../../images/MaterialIcons/book_2_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" link="https://docs.spacegamedev.com" />
-	<SidebarButton title="Discord" image="/../../images/Icons/DiscordWhite.svg" link="/discord" />
+	<SidebarButton title="Docs" image={DocsIcon} alt="Docs" link="https://docs.spacegamedev.com"/>
+	<SidebarButton title="Discord" image={DiscordIcon} alt="Discord" link="/discord"/>
 
 	<div class="w-fit ml-auto mr-auto">
 		<div class="md:float-left w-45.5 overflow-x-hidden">
