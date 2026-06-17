@@ -1,0 +1,54 @@
+
+---
+
+import {Image} from 'astro:assets';
+
+import Layout from "../layouts/Layout.astro";
+import PrimaryActionButton from "../components/PrimaryActionButton.astro";
+
+import OrgLogo from "../assets/OrgLogo.svg";
+---
+
+
+<Layout title="SpaceGameDev / Discord">
+
+	<div id="header-spacer" class="h-12.5 mb-10"/>
+
+	<div class="bg-background-primary border border-white/10 rounded-2xl w-fit p-5 ml-auto mr-auto">
+
+		<Image
+				src={OrgLogo}
+				alt="SpaceGameDev"
+				width="380"
+				height="380"
+				class="ml-auto mr-auto"
+				loading="eager"
+		/>
+
+		<br/>
+
+		<div class="w-95">
+
+			<p class="text-white font-heading font-bold text-5xl p-5 ml-auto mr-auto w-fit">Join the Discord server</p>
+
+			<p class="text-white text-2xl p-5 ml-auto mr-auto w-fit">Get help, project announcements, and chat with other cool people!</p>
+
+			<br/>
+
+			<div class="w-fit ml-auto mr-auto">
+
+				<PrimaryActionButton
+						title="Join"
+						link="https://discord.gg/tgNjem4bjU"
+				/>
+
+			</div>
+
+			<br/>
+			<br/>
+
+		</div>
+
+	</div>
+
+</Layout>

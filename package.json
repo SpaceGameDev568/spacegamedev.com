@@ -9,18 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.5",
-    "@astrojs/svelte": "^8.1.1",
-    "@tailwindcss/vite": "^4.1.17",
-    "@types/react": "^19.2.7",
+    "@astrojs/react": "^5.0.7",
+    "@astrojs/svelte": "^8.1.2",
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "astro": "^6.3.7",
-    "motion": "^12.23.25",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "astro": "^6.4.7",
+    "motion": "^12.40.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "sharp": "^0.33.5",
-    "svelte": "^5.45.6",
-    "tailwindcss": "^4.1.17",
+    "svelte": "^5.56.3",
+    "tailwindcss": "^4.3.1",
     "typescript": "^5.9.3"
   }
 }

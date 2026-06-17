@@ -10,7 +10,10 @@ import svelte from '@astrojs/svelte';
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    server: {
+      allowedHosts: ['astro.internal.spacegamedev.com', 'localhost', '127.0.0.1'],
+    },
   },
 
   integrations: [react(), svelte()]
