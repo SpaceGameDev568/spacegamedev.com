@@ -1,21 +1,12 @@
 ---
-const { title, url, description, image, date } = Astro.props
+const { title, url, description, date } = Astro.props
 ---
-<li class="w-100 bg-background-primary p-5 hover:bg-spacegamedev-primary duration-300 border border-white/10 m-2">
+<a href={url}>
+	<li class="w-100 aspect-video bg-background-primary p-5 hover:bg-spacegamedev-primary duration-300 border border-white/10 m-2">
 
-	<a href={url}>
-		<div class="aspect-square flex items-center">
-			<img
-				src={image.url}
-				alt={image.alt}
-				class="w-100 ml-auto mr-auto"
-			/>
-		</div>
-		<br/>
-		<p class="text-white">{title}</p>
-		<p class="text-blue-500">{date}</p>
-		<p class="text-gray-400 text-sm h-10">{description}</p>
-	</a>
-</li>
-<br/>
-<br/>
+			<p class="text-white">{title}</p>
+			<p class="text-blue-500">{date}</p>
+			<p class="text-gray-400 text-sm h-10">{description}</p>
+
+	</li>
+</a>

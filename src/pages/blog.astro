@@ -26,7 +26,7 @@ const allPosts = Object.values(
 	<br/>
 
 	<ul class="ml-auto mr-auto w-fit flex flex-wrap place-content-center">
-		{allPosts.map((post:any) => <BlogPostCard url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} description={post.frontmatter.description} image={post.frontmatter.image} />)}
+		{allPosts.map((post:any) => <BlogPostCard url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} description={post.frontmatter.description} />)}
 	</ul>
 
 </Layout>
