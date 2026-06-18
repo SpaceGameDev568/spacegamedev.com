@@ -3,12 +3,8 @@
 import {Image} from 'astro:assets';
 
 import Layout from '@layouts/Layout.astro';
-import PrimaryActionButton from "@components/PrimaryActionButton.astro";
-import SecondaryActionButton from "@components/SecondaryActionButton.astro";
-import PurchaseButton from "@components/PurchaseButton.astro";
-
-import BisectOne from "@assets/images/BisectOne.svg"
-import BHLogo from "@assets/images/BisectHosting_x_SpaceGameDevModding.svg"
+import ActionButton from "@components/buttons/ActionButton.astro";
+import PurchaseButton from "@components/buttons/PurchaseButton.astro";
 import BHLogomark from "@assets/images/BisectHostingLogomark.svg"
 
 ---
@@ -41,16 +37,18 @@ import BHLogomark from "@assets/images/BisectHostingLogomark.svg"
 
 					<br/><br/><br/><br/>
 
-					<SecondaryActionButton
+					<ActionButton
 							link="#why-bh"
 							title="Why BH?"
+							variant="bh_secondary"
 					/>
 
 					&nbsp
 
-					<PrimaryActionButton
+					<ActionButton
 							link="#interested"
 							title="Get Started"
+							variant="bh_primary"
 					/>
 
 						<br/><br/>

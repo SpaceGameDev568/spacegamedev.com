@@ -1,6 +1,6 @@
 import '@styles/global.css'
 
-function ScrollTopButton() {
+function ScrollToTopButton() {
 
 	function ScrollToTop() {
 		window.scrollTo({left: 0, top: 0, behavior: "smooth"})
@@ -15,4 +15,4 @@ function ScrollTopButton() {
 
 }
 
-export default ScrollTopButton;
+export default ScrollToTopButton;

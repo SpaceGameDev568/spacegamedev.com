@@ -4,7 +4,7 @@
 import {Image} from 'astro:assets';
 
 import Layout from "@layouts/Layout.astro";
-import PrimaryActionButton from "@components/PrimaryActionButton.astro";
+import ActionButton from "../components/buttons/ActionButton.astro";
 
 import OrgLogo from "@assets/images/OrgLogo.svg";
 ---
@@ -36,7 +36,7 @@ import OrgLogo from "@assets/images/OrgLogo.svg";
 
 		<div class="w-fit ml-auto mr-auto">
 
-			<PrimaryActionButton
+			<ActionButton
 					title="Join"
 					link="https://discord.gg/tgNjem4bjU"
 			/>

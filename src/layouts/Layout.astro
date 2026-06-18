@@ -10,7 +10,7 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 
 import { ClientRouter } from 'astro:transitions';
-import ScrollTopButton from '@components/react/ScrollTopButton';
+import ScrollToTopButton from '@components/react/ScrollToTopButton.tsx';
 ---
 
 <!doctype html>
@@ -30,7 +30,7 @@ import ScrollTopButton from '@components/react/ScrollTopButton';
 	<body class="bg-[url(/images/BG-Plane.png)] bg-no-repeat bg-cover bg-blend-darken bg-black/15 bg-fixed">
 		<Header pageName={title} />
 
-		<ScrollTopButton client:only="react" transition:persist="ScrollTopButton"/>
+		<ScrollToTopButton client:only="react" transition:persist="ScrollTopButton"/>
 
 		<div id="content">
 

@@ -3,12 +3,9 @@
 import {Image} from 'astro:assets';
 
 import Layout from '@layouts/Layout.astro';
-import ModCard from '@components/cards/ModCard.astro'
-import ProjectCard from "@components/cards/ProjectCard.astro";
-import ModpackCard from "@components/cards/ModpackCard.astro";
+import ProjectCard from '../components/cards/ProjectCard.astro'
 
-import PrimaryActionButton from "@components/PrimaryActionButton.astro";
-import SecondaryActionButton from "@components/SecondaryActionButton.astro";
+import ActionButton from "../components/buttons/ActionButton.astro";
 
 import SatisfactoryLogo from "@assets/images/SatisfactoryLogo.webp"
 import MinecraftLogo from "@assets/images/MinecraftLogo.svg";
@@ -17,7 +14,6 @@ import BetterGrassLogo from "@assets/images/ModLogos/BetterGrass.png";
 import DiscordRichPresenceLogo from "@assets/images/ModLogos/DiscordRichPresence.png";
 import FactoryPropsLogo from "@assets/images/ModLogos/FactoryProps.png";
 import ModUpdateNotifierLogo from "@assets/images/ModLogos/ModUpdateNotifier.png";
-import MorePlayersLogo from "@assets/images/ModLogos/MorePlayers.png";
 import RemoveAllAnnoyancesLogo from "@assets/images/ModLogos/RemoveAllAnnoyances.png";
 import SatisWHACKtoryLogo from "@assets/images/ModLogos/SatisWHACKtory.png";
 import TwoMeterWallsLogo from "@assets/images/ModLogos/TwoMeterWalls.png";
@@ -29,6 +25,7 @@ import CoffeeCupAddonsLogo from "@assets/images/ModLogos/CoffeeCupAddonsLogo.png
 import KuvankaunisLogo from "@assets/images/ModLogos/Kuvankaunis.png";
 import SnapAxisLogo from "@assets/images/SnapAxisProjectThumbnail.svg";
 import ZLANLogo from "@assets/images/ZLANLogo.svg";
+import ContactForm from '@components/react/ContactForm';
 
 
 ---
@@ -46,7 +43,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 				alt="SpaceGameDev"
 				width="120"
 				height="120"
-				class="rounded-2xl md:ml-0 mr-auto 2xl:hidden mt-12.5 mb-5"
+				class="md:ml-0 mr-auto 2xl:hidden mt-12.5 mb-5"
 				id="mobile-header-image"
 				loading="eager"
 			/>
@@ -61,16 +58,18 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 				<br/><br/><br/><br/>
 
-				<SecondaryActionButton
+				<ActionButton
 						link="/hosting"
 						title="Server Hosting"
+						variant="secondary"
 				/>
 
 				&nbsp
 
-				<SecondaryActionButton
+				<ActionButton
 						link="/blog"
 						title="Blog"
+						variant="secondary"
 				/>
 
 				<br class="md:hidden"/>
@@ -81,9 +80,10 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 				<p class="hidden md:inline">&nbsp</p>
 
-				<PrimaryActionButton
+				<ActionButton
 						link="#satisfactory-mods"
 						title="Projects"
+						variant="primary"
 				/>
 
 
@@ -117,7 +117,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 				width="512"
 				height="512"
 				loading="eager"
-				class="rounded-2xl lg:ml-auto lg:mr-0 2xl:block hidden"
+				class="lg:ml-auto lg:mr-0 2xl:block hidden"
 			/>
 
 		</div>
@@ -142,7 +142,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 		<div class="flex flex-wrap place-content-center">
 
-			<ModCard
+			<ProjectCard
 					title="Factory Props"
 					description="The Ultimate Decorating Toolkit!"
 					image={FactoryPropsLogo}
@@ -150,7 +150,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/Factory_Prop_Mod"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Mod Update Notifier"
 					description="This mod will notify you whenever a supported mod has an update available!"
 					image={ModUpdateNotifierLogo}
@@ -159,7 +159,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 			/>
 
 
-			<ModCard
+			<ProjectCard
 					title="Discord Rich Presence"
 					description="Show off your Satisfactory presence info on your Discord profile!"
 					image={DiscordRichPresenceLogo}
@@ -167,7 +167,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/FG_DiscordRP"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Prop Pioneer"
 					description="A buildable Pioneer prop that you can customize and pose!"
 					image={PropPioneerLogo}
@@ -175,7 +175,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/PropPioneer"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Factory Cart Station"
 					description="A docking station for your Factory Carts!"
 					image={FactoryCartStationLogo}
@@ -183,7 +183,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/FactoryCartStation"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Improved Explorer Cameras"
 					description="Improved camera modes for the explorer."
 					image={IECLogo}
@@ -191,7 +191,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/ImprovedExplorerCameras"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Remove All Annoyances"
 					description="Removes annoying things from the world."
 					image={RemoveAllAnnoyancesLogo}
@@ -199,7 +199,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/RemoveAllAnnoyances"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Better Grass"
 					description="More beautiful grass for your game."
 					image={BetterGrassLogo}
@@ -207,7 +207,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/BetterGrass"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Ragdoll On Demand"
 					description="Brings back the ragdoll-on-keypress feature from the alpha"
 					image={RagdollOnDemandLogo}
@@ -215,7 +215,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/RagdollOnDemand"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="SatisWHACKtory"
 					description="FICSIT Inc. is not responsible for any injuries caused by the use of this mod."
 					image={SatisWHACKtoryLogo}
@@ -223,7 +223,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/ObstacleMod"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="2m Walls"
 					description="2m high walls for the extra efficient builder."
 					image={TwoMeterWallsLogo}
@@ -231,24 +231,13 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					github="https://github.com/SpaceGameDev568/TwoMeterWalls"
 			/>
 
-			<ModCard
+			<ProjectCard
 					title="Coffee Cup Addons"
 					description="Addons for Coffee Cup Studios events, such as the Coffee Cup Cup."
 					image={CoffeeCupAddonsLogo}
 					link="https://ficsit.app/mod/CoffeeCupAddons"
 					github="https://github.com/SpaceGameDev568/CoffeeCupAddons"
 			/>
-
-			<!--
-			<ModCard
-					title="More Players"
-					description="Allows you to have more than just 4 people in your game."
-					image={MorePlayersLogo}
-					link="https://ficsit.app/mod/MorePlayers"
-					github="https://github.com/SpaceGameDev568/MorePlayers"
-			/>
-			-->
-
 
 		</div>
 
@@ -271,12 +260,13 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 		<div class="flex flex-wrap place-content-center">
 
-			<ModpackCard
+			<ProjectCard
 					title="Kuvankaunis"
 					description="A modern Minecraft modpack focused on visuals and exploration."
 					image={KuvankaunisLogo}
 					link="https://modrinth.com/modpack/kuvankaunis"
 					github="https://github.com/SpaceGameDev568/Kuvankaunis"
+					variant="Modpack"
 			/>
 
 		</div>
@@ -295,6 +285,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					image={ZLANLogo}
 					link="https://zlan.fr"
 					github="https://github.com/Panakotta00/ZLAN-Satisfactory"
+					variant="Project"
 			/>
 
 			<ProjectCard
@@ -303,6 +294,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 					image={SnapAxisLogo}
 					link="https://snapaxis.net"
 					github="https://github.com/DREAMTEAM-WAVE-MAKERS/snapaxisLAUNCHpad"
+					variant="Project"
 			/>
 
 		</div>
