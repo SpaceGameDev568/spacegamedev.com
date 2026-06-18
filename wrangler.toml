@@ -1,0 +1,6 @@
+name = "spacegamedev"
+# Set this to today's date
+compatibility_date = "20206-06-18"
+assets = {
+    directory = "./dist"
+}
