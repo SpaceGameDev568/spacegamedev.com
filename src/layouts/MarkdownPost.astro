@@ -1,0 +1,39 @@
+---
+import Layout from "@layouts/Layout.astro";
+const { frontmatter } = Astro.props;
+
+const PageTitle = "Posts / " + frontmatter.title;
+
+---
+
+<Layout title={PageTitle}>
+
+	<div id="header-spacer" class="h-12.5 mb-10"/>
+
+	<div class="ml-auto mr-auto w-fit bg-background-primary pb-5 pr-5 pl-5 xl:border border-white/10">
+
+		<div class="flex">
+			<a class="material-symbols-rounded text-white hover:bg-spacegamedev-primary duration-300 p-3" href="/blog">
+				arrow_back
+			</a>
+
+			<p class="text-white font-heading font-bold text-2xl mt-2 ml-2">{frontmatter.title}</p>
+
+		</div>
+
+		<p class="text-blue-500">{frontmatter.pubDate.toString().slice(0, 10)}</p>
+		<p class="text-white">{frontmatter.description}</p>
+		<p class="text-white">Written by: {frontmatter.author}</p>
+
+		<br/>
+
+		<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+
+		<br/>
+
+		<div class="text-white">
+			<!-- Post content -->
+			<slot />
+		</div>
+	</div>
+</Layout>

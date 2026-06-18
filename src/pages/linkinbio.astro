@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import {Image} from "astro:assets";
 
-import profilePicture from '@assets/images/ProfilePicture.png';
+import profilePicture from '../../public/images/ProfilePicture.png';
 
 import BioButton from "@components/BioButton.astro";
 
@@ -25,20 +25,20 @@ import XLogo from '@assets/images/Icons/X2.svg';
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div id="content" class="lg:border border-white/10 lg:rounded-2xl lg:bg-background-primary lg:box-border lg:p-5 w-fit ml-auto mr-auto">
+	<div id="content" class="md:border border-white/10 md:bg-background-primary md:box-border md:p-5 w-fit ml-auto mr-auto">
 
 		<Image
 				src={profilePicture}
 				alt="Me"
 				width="342"
 				height="342"
-				class="rounded-2xl ml-auto mr-auto w-fit"
+				class="ml-auto mr-auto w-fit"
 				loading="eager"
 		/>
 
 		<br/>
 
-		<h2 class="text-4xl font-bold ml-auto mr-auto w-fit text-center animate-rgb-cycle"> SpaceGameDev </h2>
+		<h2 class="text-4xl font-bold ml-auto mr-auto w-fit text-center animate-rgb-cycle font-bh-sans"> SpaceGameDev </h2>
 
 		<br/>
 
@@ -96,11 +96,28 @@ import XLogo from '@assets/images/Icons/X2.svg';
 					alt="SpaceGameDev568 on GitHub"
 			/>
 
+			<!--
 			<BioButton
 					title="GitLab"
 					link="https://gitlab.com/SpaceGameDev568"
 					image={GitLabLogo}
 					alt="SpaceGameDev568 on GitLab"
+			/>
+
+			-->
+
+			<BioButton
+					title="YouTube"
+					link="https://youtube.com/@spacegamedev"
+					image={YouTubeLogo}
+					alt="@spacegamedev on YouTube"
+			/>
+
+			<BioButton
+					title="X"
+					link="https://x.com/SpaceGameDev568"
+					image={XLogo}
+					alt="@SpaceGameDev568 on X"
 			/>
 
 			<BioButton
@@ -117,27 +134,14 @@ import XLogo from '@assets/images/Icons/X2.svg';
 					alt="SpaceGameDev on Steam"
 			/>
 
+			<!--
 			<BioButton
 					title="Twitch"
 					link="https://www.twitch.tv/spacegamedev568"
 					image={TwitchLogo}
 					alt="SpaceGameDev568 on Twitch"
 			/>
-
-			<BioButton
-					title="X"
-					link="https://x.com/SpaceGameDev568"
-					image={XLogo}
-					alt="@SpaceGameDev568 on X"
-			/>
-
-			<BioButton
-					title="YouTube"
-					link="https://youtube.com/@spacegamedev"
-					image={YouTubeLogo}
-					alt="@spacegamedev on YouTube"
-			/>
-
+			-->
 		</div>
 
 	</div>

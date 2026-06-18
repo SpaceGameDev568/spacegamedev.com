@@ -46,7 +46,7 @@ function ContactForm() {
 
           <div className={"ml-auto mr-auto w-fit"}>
 
-            <button className="text-white p-3 rounded-lg bg-blue-500 font-bold hover:bg-blue-300 duration-300 box-border hover:ring-4 hover:ring-blue-500/50 cursor-pointer" onClick={submitForm}>Submit</button>
+            <button className="text-white p-3 rounded-lg bg-spacegamedev-primary font-bold hover:bg-blue-300 duration-300 box-border hover:ring-4 hover:ring-spacegamedev-primary/50 cursor-pointer" onClick={submitForm}>Submit</button>
 
           </div>
 

@@ -55,22 +55,35 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 				<h1 class="font-heading font-bold text-white lg:text-8xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
 				<h2 class="animate-rgb-cycle lg:text-4xl text-3xl"> Open Source modding for everyone </h2><br/>
-				<p class="text-white text-2xl bg-[#101014]/25 rounded-2xl md:w-[60%] p-2">
+				<p class="text-white text-2xl bg-[#101014]/25 md:w-[60%] p-2">
 					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft.
 				</p>
 
 				<br/><br/><br/><br/>
 
 				<SecondaryActionButton
-						link="#satisfactory-mods"
-						title="Learn More"
+						link="/hosting"
+						title="Server Hosting"
 				/>
 
 				&nbsp
 
+				<SecondaryActionButton
+						link="/blog"
+						title="Blog"
+				/>
+
+				<br class="md:hidden"/>
+				<br class="md:hidden"/>
+				<br class="md:hidden"/>
+				<br class="md:hidden"/>
+				<br class="md:hidden"/>
+
+				<p class="hidden md:inline">&nbsp</p>
+
 				<PrimaryActionButton
-						link="/hosting"
-						title="Server Hosting"
+						link="#satisfactory-mods"
+						title="Projects"
 				/>
 
 
@@ -275,6 +288,14 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 		<br/><br/>
 
 		<div class="flex flex-wrap place-content-center">
+
+			<ProjectCard
+					title="ZLAN 2026 (Satisfactory Mod)"
+					description="Worked on the mod that made Satisfactory at ZLAN 2026 possible!"
+					image={ZLANLogo}
+					link="https://zlan.fr"
+					github="https://github.com/Panakotta00/ZLAN-Satisfactory"
+			/>
 
 			<ProjectCard
 					title="SnapAxis"

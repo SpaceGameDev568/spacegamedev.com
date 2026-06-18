@@ -10,6 +10,7 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 
 import { ClientRouter } from 'astro:transitions';
+import ScrollTopButton from '@components/react/ScrollTopButton';
 ---
 
 <!doctype html>
@@ -26,8 +27,10 @@ import { ClientRouter } from 'astro:transitions';
 		<title>{title}</title>
 		<ClientRouter />
 	</head>
-	<body class="bg-[url(/images/SatisfactoryModdingBackground-Darkened.webp)] bg-no-repeat bg-cover bg-[#101014] bg-fixed">
+	<body class="bg-[url(/images/SatisfactoryModdingBackground-Blurred.webp)] bg-no-repeat bg-cover bg-blend-darken bg-black/15 bg-fixed">
 		<Header pageName={title} />
+
+		<ScrollTopButton client:only="react" transition:persist="ScrollTopButton"/>
 
 		<div id="content">
 

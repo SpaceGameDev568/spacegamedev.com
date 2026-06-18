@@ -33,7 +33,7 @@ function SidebarToggleButton() {
 
   return (
       <>
-        <button className={"material-symbols-rounded text-base p-2 text-white mt-1 ml-1 hover:bg-blue-500 duration-300 rounded-lg bg-transparent select-none hover:ring-4 hover:ring-blue-500/50 cursor-pointer border border-white/10"} title={"Toggle Sidebar"} onClick={toggleSidebar} id={"material-icon"}>{state}</button>
+        <button className={"material-symbols-rounded w-auto h-full aspect-square text-white hover:bg-spacegamedev-primary duration-300 bg-transparent select-none hover:ring-4 hover:ring-spacegamedev-primary/50 cursor-pointer border-r border-white/10"} title={"Toggle Sidebar"} onClick={toggleSidebar} id={"material-icon"}>{state}</button>
       </>
   )
 

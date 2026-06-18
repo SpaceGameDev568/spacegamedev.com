@@ -1,0 +1,27 @@
+---
+
+import {Image} from 'astro:assets';
+
+import Layout from '@layouts/Layout.astro';
+
+import BlogPost from "../components/BlogPost.astro";
+
+const allPosts = Object.values(
+	import.meta.glob("./posts/*.md", { eager: true })
+);
+---
+
+<Layout title="SpaceGameDev / Blog">
+
+	<div id="header-spacer" class="h-12.5 mb-10"/>
+
+	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Personal Blog </h1>
+
+	<br/>
+	<br/>
+
+	<ul class="ml-auto mr-auto w-fit">
+		{allPosts.map((post:any) => <BlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} description={post.frontmatter.description} image={post.frontmatter.image} />)}
+	</ul>
+
+</Layout>

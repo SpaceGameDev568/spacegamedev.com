@@ -6,7 +6,9 @@
 
 /*@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');*/
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 
@@ -17,17 +19,51 @@
 			'FILL' 1,
 			'wght' 400,
 			'GRAD' 0,
-			'opsz' 24;
+			'opsz' 48;
+}
+
+@font-face {
+	font-family: 'Akira Expanded';
+	src: url('/fonts/AkiraExpanded.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
 }
 
 @theme {
-	--font-sans: 'Comfortaa', 'sans-serif';
+	--font-sans: 'Montserrat', 'sans-serif';
 	--font-mono: 'JetBrains Mono', 'monospace';
 	--font-heading: 'Inter Tight', 'sans-serif';
 	--font-icon: 'Material Symbols Rounded';
+	--font-bh-heading: 'Akira Expanded', 'sans-serif';
+	--font-bh-sans: 'Montserrat', 'sans-serif';
+
+	--color-spacegamedev-primary: #1d68a4;
 
 	--color-background-primary: #272C31;
 	--color-background-secondary: #31363D;
+
+
+	/* BisectHosting Colors */
+	--color-bh-vivid-sky-blue: #03ddff;
+	--color-bh-white: #FFFFFF;
+	--color-bh-eerie-black: #0D1129;
+	--color-bh-eucalyptus: #37D79D;
+	--color-bh-new-car: #1B57C4;
+	--color-bh-purple-x11: #B739F2;
+
+	--animate-breathe: breathe 10s ease-in-out infinite;
+
+	@keyframes breathe {
+		0% {transform: scale(1);}
+		50% {transform: scale(0.9);}
+		100% {transform: scale(1);}
+	}
 
 	--animate-rgb-cycle: rgb-cycle 10s ease-out infinite;
 
