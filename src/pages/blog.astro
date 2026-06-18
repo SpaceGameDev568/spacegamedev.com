@@ -1,14 +1,19 @@
 ---
 
-import {Image} from 'astro:assets';
-
 import Layout from '@layouts/Layout.astro';
 
 import BlogPostCard from "@components/cards/BlogPostCard.astro";
 
 const allPosts = Object.values(
 	import.meta.glob("./posts/*.md", { eager: true })
-);
+).sort((a:any, b:any) => {
+	// Sort descending (newest first)
+	const dateA = new Date(a.frontmatter.pubDate).valueOf();
+	const dateB = new Date(b.frontmatter.pubDate).valueOf();
+
+	return dateB - dateA; // Descending
+});
+
 ---
 
 <Layout title="SpaceGameDev / Blog">
@@ -20,7 +25,7 @@ const allPosts = Object.values(
 	<br/>
 	<br/>
 
-	<ul class="ml-auto mr-auto w-fit">
+	<ul class="ml-auto mr-auto w-fit flex flex-wrap place-content-center">
 		{allPosts.map((post:any) => <BlogPostCard url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} description={post.frontmatter.description} image={post.frontmatter.image} />)}
 	</ul>
 
