@@ -20,17 +20,17 @@ import DiscordIcon from '@assets/images/Icons/DiscordWhite.svg';
 import OrgLogo from "@assets/images/OrgLogo.svg";
 ---
 
-<div id="header" class="fixed h-13 bg-background-primary/90 w-full z-50 backdrop-blur-xs transition-colors duration-300">
+<div id="header" class="fixed h-13 bg-background-primary/90 w-full z-50 backdrop-blur-xs transition-colors duration-300 flex">
 
 	<SidebarToggleButton client:only="react"/>
 
-	<p class="font-heading font-bold text-2xl mt-2 mr-10 ml-auto text-right w-fit text-white float-right hidden md:block" title="Page Title">{props.pageName}</p>
+	<p class="font-heading font-bold text-2xl mt-2 mr-auto ml-auto text-center w-fit text-white hidden md:block" title="Page Title">{props.pageName}</p>
 	<Image
 			src={OrgLogo}
 			alt="SpaceGameDev Logo"
 			width="24"
 			loading="eager"
-			class="mt-2 mr-2 ml-auto w-fit float-right md:invisible h-10"
+			class="mt-1.5 mr-2 w-fit h-10 ml-auto md:ml-0"
 	/>
 
 </div>
