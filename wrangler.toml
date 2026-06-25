@@ -2,6 +2,7 @@ name = "spacegamedev.com"
 # Set this to today's date
 compatibility_date = "2026-06-25"
 preview_urls = true
+pages_build_output_dir = "./dist"
 
 [assets]
 directory = "./dist/"
