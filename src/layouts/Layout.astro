@@ -11,6 +11,16 @@ import Header from '@components/Header.astro';
 
 import { ClientRouter } from 'astro:transitions';
 import ScrollToTopButton from '@components/react/ScrollToTopButton.tsx';
+
+let FullTitle: string;
+
+if(import.meta.env.DEV) {
+	FullTitle = "DEV " + title;
+} else {
+	FullTitle = title;
+}
+
+
 ---
 
 <!doctype html>
@@ -24,7 +34,7 @@ import ScrollToTopButton from '@components/react/ScrollToTopButton.tsx';
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/webp" href="/images/Favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{FullTitle}</title>
 		<ClientRouter />
 	</head>
 	<body class="bg-[url(/images/GamepadBG.svg)] bg-no-repeat bg-cover bg-blend-darken bg-black/30 bg-fixed">

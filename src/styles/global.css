@@ -29,6 +29,10 @@
 	font-style: normal;
 }
 
+a[target="_blank"]::after {
+	content: '↗';
+}
+
 @layer base {
 	html {
 		@apply scroll-smooth;
@@ -47,6 +51,13 @@
 
 	--color-background-primary: #272C31;
 	--color-background-secondary: #31363D;
+
+	--color-grad-blue: #0f68e4;
+	--color-grad-purple: #6a1fbb;
+	--color-grad-magenta: #a3159f;
+	--color-grad-red: #ca3434;
+
+	--color-spacegamedev-gradient: linear-gradient(180deg, white, black);
 
 
 	/* BisectHosting Colors */

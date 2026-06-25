@@ -10,7 +10,7 @@ const PageTitle = "Posts / " + frontmatter.title;
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div class="ml-auto mr-auto w-fit bg-background-primary pb-5 pr-5 pl-5 xl:border border-white/10">
+	<div class="ml-auto mr-auto w-fit bg-background-primary xl:border border-white/10">
 
 		<div class="flex">
 			<a class="material-symbols-rounded text-white hover:bg-spacegamedev-primary duration-300 p-3 select-none" href="/blog">
@@ -21,15 +21,17 @@ const PageTitle = "Posts / " + frontmatter.title;
 
 		</div>
 
-		<p class="text-blue-500">{frontmatter.pubDate.toString().slice(0, 10)}</p>
-		<p class="text-white">{frontmatter.description}</p>
-		<p class="text-white">Written by: {frontmatter.author}</p>
+		<div class="m-5">
+			<p class="text-blue-500">{frontmatter.pubDate.toString().slice(0, 10)}</p>
+			<p class="text-white">{frontmatter.description}</p>
+			<p class="text-white">Written by: {frontmatter.author}</p>
 
-		<br/>
+			<br/>
 
-		<div class="text-white">
-			<!-- Post content -->
-			<slot />
+			<div class="text-white">
+				<!-- Post content -->
+				<slot />
+			</div>
 		</div>
 	</div>
 </Layout>

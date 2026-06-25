@@ -36,6 +36,7 @@ const variantClass = typeVariants[variant] || typeVariants['Mod'];
 			height="380"
 			alt={props.title}
 			class="border-b border-white/10 aspect-square"
+			quality={90}
 		/>
 
 	</div>
@@ -55,12 +56,14 @@ const variantClass = typeVariants[variant] || typeVariants['Mod'];
 				link={props.link}
 				title={variantClass}
 				variant="primary"
+				target="_blank"
 			/>
 			&nbsp
 			<ActionButton
 				link={props.github}
 				title="GitHub"
 				variant="secondary"
+				target="_blank"
 			/>
 		</div>
 

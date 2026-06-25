@@ -4,10 +4,11 @@ const props = Astro.props
 interface Props {
 	title: string;
 	link: string;
+	target: string;
 	variant?: 'primary' | 'secondary' | 'large_primary' | 'bh_primary' | 'bh_secondary';
 	}
 
-const { title, link, variant = 'primary' } = Astro.props;
+const { title, link, target, variant = 'primary' } = Astro.props;
 
 // Map props to static Tailwind classes
 const colorVariants: Record<string, string> = {
@@ -21,8 +22,6 @@ const colorVariants: Record<string, string> = {
 const variantClass = colorVariants[variant] || colorVariants['primary'];
 ---
 
-<a href={link} class={`text-white lg:text-lg lg:p-4 p-3 font-bold duration-300 box-border hover:ring-4 select-none ${variantClass} border border-gray-500/50`}>
+<a href={link} target={target} class={`text-white lg:text-lg lg:p-4 p-3 font-bold duration-300 box-border hover:ring-4 select-none ${variantClass} border border-gray-500/50`}>
 	{title}
 </a>
-
-<!-- Open in new tab target="_blank" rel="noopener noreferrer"  -->

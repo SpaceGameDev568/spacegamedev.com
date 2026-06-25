@@ -18,13 +18,13 @@ function SidebarToggleButton() {
   function expandSidebar() {
     setState(state === 'menu' ? 'close' : 'menu');
     sidebar.style.left = '0px';
-    sidebar.style.transition = '800ms cubic-bezier(0.34, 1.56, 0.64, 1)';
+    sidebar.style.transition = '800ms cubic-bezier(0.22, 1, 0.36, 1)';
   }
 
   function collapseSidebar() {
     setState(state === 'menu' ? 'close' : 'menu');
     sidebar.style.left = sidebar.style.width;
-    sidebar.style.transition = '800ms cubic-bezier(0.36, 0, 0.66, -0.56)';
+    sidebar.style.transition = '800ms cubic-bezier(0.83, 0, 0.17, 1)';
   }
 
   document.addEventListener('astro:after-swap', event => {
