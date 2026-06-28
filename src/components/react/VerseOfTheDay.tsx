@@ -166,7 +166,7 @@ function VerseOfTheDay() {
 
 	return (
 		<>
-			<p className={"text-2xl text-white font-serif w-100"}>{verse}</p>
+			<p className={"text-2xl text-white font-serif md:w-100"}>{verse}</p>
 		</>
 	)
 }

@@ -22,6 +22,6 @@ const colorVariants: Record<string, string> = {
 const variantClass = colorVariants[variant] || colorVariants['primary'];
 ---
 
-<a href={link} target={target} class={`text-white lg:text-lg lg:p-4 p-3 font-bold duration-300 box-border hover:ring-4 select-none ${variantClass} border border-gray-500/50`}>
+<a href={link} target={target} class={`text-white text-lg p-4 font-bold duration-300 box-border hover:ring-4 select-none ${variantClass} border border-gray-500/50 whitespace-nowrap`}>
 	{title}
 </a>
