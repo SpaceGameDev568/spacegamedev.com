@@ -25,7 +25,7 @@ import CoffeeCupAddonsLogo from "@assets/images/ModLogos/CoffeeCupAddons.png";
 import KuvankaunisLogo from "@assets/images/ModLogos/Kuvankaunis.png";
 import SnapAxisLogo from "@assets/images/SnapAxisProjectThumbnail.svg";
 import ZLANLogo from "@assets/images/ZLANLogo.svg";
-import ContactForm from '@components/react/ContactForm';
+import VerseOfTheDayWrapper from "@components/VerseOfTheDayWrapper.astro";
 
 
 ---
@@ -58,36 +58,30 @@ import ContactForm from '@components/react/ContactForm';
 
 				<br/><br/><br/><br/>
 
-				<ActionButton
-						link="/hosting"
-						title="Server Hosting"
-						variant="secondary"
-						target="_self"
-				/>
+				<div class="flex gap-2">
 
-				&nbsp
+					<ActionButton
+							link="/hosting"
+							title="Server Hosting"
+							variant="secondary"
+							target="_self"
+					/>
 
-				<ActionButton
-						link="/blog"
-						title="Blog"
-						variant="secondary"
-						target="_self"
-				/>
+					<ActionButton
+							link="/blog"
+							title="Blog"
+							variant="secondary"
+							target="_self"
+					/>
 
-				<br class="md:hidden"/>
-				<br class="md:hidden"/>
-				<br class="md:hidden"/>
-				<br class="md:hidden"/>
-				<br class="md:hidden"/>
+					<ActionButton
+							link="#satisfactory-mods"
+							title="Projects"
+							variant="primary"
+							target="_self"
+					/>
 
-				<p class="hidden md:inline">&nbsp</p>
-
-				<ActionButton
-						link="#satisfactory-mods"
-						title="Projects"
-						variant="primary"
-						target="_self"
-				/>
+				</div>
 
 
 
@@ -124,6 +118,10 @@ import ContactForm from '@components/react/ContactForm';
 			/>
 
 		</div>
+
+		<br/><br/><br/><br/>
+
+		<VerseOfTheDayWrapper/>
 
 		<div id="satisfactory-mods"/>
 

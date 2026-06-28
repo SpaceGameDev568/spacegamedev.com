@@ -31,6 +31,8 @@
 
 a[target="_blank"]::after {
 	content: '↗';
+	margin-left: 10px;
+	font-family: 'Jetbrains Mono', 'monospace';
 }
 
 @layer base {
@@ -41,6 +43,7 @@ a[target="_blank"]::after {
 
 @theme {
 	--font-sans: 'Montserrat', 'sans-serif';
+	--font-serif: 'serif';
 	--font-mono: 'JetBrains Mono', 'monospace';
 	--font-heading: 'Inter Tight', 'sans-serif';
 	--font-icon: 'Material Symbols Rounded';
@@ -58,7 +61,6 @@ a[target="_blank"]::after {
 	--color-grad-red: #ca3434;
 
 	--color-spacegamedev-gradient: linear-gradient(180deg, white, black);
-
 
 	/* BisectHosting Colors */
 	--color-bh-vivid-sky-blue: #03ddff;

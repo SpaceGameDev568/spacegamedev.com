@@ -16,7 +16,6 @@ interface Props {
 
 const { title, link, variant = 'Mod' } = Astro.props;
 
-// Map props to static Tailwind classes
 const typeVariants: Record<string, string> = {
 	Mod: "ficsit.app",
 	Modpack: "Modrinth",
@@ -51,14 +50,14 @@ const variantClass = typeVariants[variant] || typeVariants['Mod'];
 
 		<hr class="border-white/20 p-5" />
 
-		<div>
+		<div class="flex gap-2">
 			<ActionButton
 				link={props.link}
 				title={variantClass}
 				variant="primary"
 				target="_blank"
 			/>
-			&nbsp
+
 			<ActionButton
 				link={props.github}
 				title="GitHub"
