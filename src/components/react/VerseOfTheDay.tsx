@@ -3,7 +3,7 @@ import '@styles/global.css'
 import React, { useEffect } from 'react';
 
 function VerseOfTheDay() {
-	// All verses are copyright 2001 - 2026 Crossway unless otherwise noted
+	// Scripture quotations marked “ESV” are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. The ESV text may not be quoted in any publication made available to the public by a Creative Commons license. The ESV may not be translated into any other language.
 	const verses: string[] = [
 		"For great is the LORD, and greatly to be praised, and he is to be feared above all gods. - 1 Chronicles 16:25 ESV",
 		"For all the gods of the peoples are worthless idols, but the LORD made the heavens. - 1 Chronicles 16:26 ESV",
