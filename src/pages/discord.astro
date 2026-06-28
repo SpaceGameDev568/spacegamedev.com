@@ -14,36 +14,43 @@ import OrgLogo from "@assets/images/OrgLogo.svg";
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div id="content" class="md:border border-white/10 md:bg-background-primary md:box-border md:p-5 w-85.5 border-box ml-auto mr-auto">
+	<div id="content" class="md:border border-white/10 md:bg-background-primary md:box-border w-85.5 border-box ml-auto mr-auto">
 
-		<Image
-				src={OrgLogo}
-				alt="SpaceGameDev"
-				width="342"
-				height="342"
-				loading="eager"
-		/>
+		<div class="m-5 mb-10">
+			<Image
+					src={OrgLogo}
+					alt="SpaceGameDev"
+					width="342"
+					height="342"
+					loading="eager"
+			/>
 
-		<br/>
+			<br/>
 
-		<p class="text-4xl font-bold text-white font-heading">SpaceGameDev Modding</p>
+			<p class="text-4xl font-bold text-white font-heading">SpaceGameDev Modding</p>
 
-		<p class="text-gray-400 h-10">Discord server</p>
+			<p class="text-gray-400 h-10">Discord server</p>
 
-		<p class="text-white text-xl">Get help, see project announcements, and chat with other cool people!</p>
+			<p class="text-white text-xl">Get help, see project announcements, and chat with other cool people!</p>
 
-		<br/><br/>
+			<br/><br/>
 
-		<ActionButton
-				title="Join"
-				link="https://discord.gg/tgNjem4bjU"
-				variant="large_primary"
-				target="_self"
-		/>
-
-		<br/>
-		<br/>
+			<ActionButton
+					title="Join"
+					link="https://discord.gg/tgNjem4bjU"
+					variant="large_primary"
+					target="_self"
+			/>
+		</div>
 
 	</div>
+
+	<script>
+		import { animate } from "motion"
+
+		document.addEventListener('astro:page-load', () => {
+			animate("#content", { y: [225, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+		});
+	</script>
 
 </Layout>
