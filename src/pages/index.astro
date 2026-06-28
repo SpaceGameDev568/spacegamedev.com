@@ -3,13 +3,19 @@
 import {Image} from 'astro:assets';
 
 import Layout from '@layouts/Layout.astro';
-import ProjectCard from '../components/cards/ProjectCard.astro'
 
-import ActionButton from "../components/buttons/ActionButton.astro";
+// Components
+import ActionButton from "@components/buttons/ActionButton.astro";
+import ProjectCard from '@components/cards/ProjectCard.astro';
 
+// Miscellaneous images
+import OrgLogo from "@assets/images/OrgLogo.svg"
+
+// Modding headers
 import SatisfactoryLogo from "@assets/images/SatisfactoryLogo.webp"
 import MinecraftLogo from "@assets/images/MinecraftLogo.svg";
 
+// Project logos
 import BetterGrassLogo from "@assets/images/ModLogos/BetterGrass.png";
 import DiscordRichPresenceLogo from "@assets/images/ModLogos/DiscordRichPresence.png";
 import FactoryPropsLogo from "@assets/images/ModLogos/FactoryProps.png";
@@ -39,8 +45,8 @@ import VerseOfTheDayWrapper from "@components/VerseOfTheDayWrapper.astro";
 		<div id="heading" class="mt-12.5 grid grid-cols-1 lg:grid-cols-2 items-center">
 
 			<div class="lg:order-last lg:ml-auto lg:mr-0">
-				<img
-						src="/images/Favicon.svg"
+				<Image
+						src={OrgLogo}
 						alt="SpaceGameDev"
 						width="512"
 						height="512"
@@ -55,6 +61,7 @@ import VerseOfTheDayWrapper from "@components/VerseOfTheDayWrapper.astro";
 				<p class="text-white text-2xl bg-[#101014]/25 p-2">
 					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft.
 				</p>
+				<!--<div class="animate-bg-rgb-cycle w-full h-10"/>-->
 
 				<br/>
 
@@ -105,7 +112,7 @@ import VerseOfTheDayWrapper from "@components/VerseOfTheDayWrapper.astro";
 
 		<Image
 				src={SatisfactoryLogo}
-				alt="RGBSatisfactory"
+				alt="Satisfactory"
 				width="512"
 				loading="eager"
 				class="ml-auto mr-auto"

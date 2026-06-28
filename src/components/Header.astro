@@ -2,7 +2,7 @@
 
 import SidebarButton from './buttons/SidebarButton.astro';
 
-import SidebarToggleButton from '@components/react/SidebarToggleButton.tsx';
+import SidebarToggleButton from './svelte/SidebarToggleButton.svelte';
 
 const props = Astro.props;
 
@@ -22,7 +22,7 @@ import OrgLogo from "@assets/images/OrgLogo.svg";
 
 <div id="header" class="fixed h-13 bg-background-primary/90 w-full z-50 backdrop-blur-xs transition-colors duration-300 flex">
 
-	<SidebarToggleButton client:only="react"/>
+	<SidebarToggleButton client:only/>
 
 	<p class="font-heading font-bold text-2xl mt-2 mr-auto ml-auto text-center w-fit text-white hidden md:block" title="Page Title">{props.pageName}</p>
 	<Image
