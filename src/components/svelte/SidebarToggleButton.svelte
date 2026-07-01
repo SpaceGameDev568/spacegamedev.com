@@ -1,6 +1,5 @@
 <script>
   import {onMount} from 'svelte';
-  import '@styles/global.css';
 
   let state = 'menu';
   let sidebar;
