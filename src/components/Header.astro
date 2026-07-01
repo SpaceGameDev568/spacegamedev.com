@@ -22,7 +22,7 @@ import OrgLogo from "@assets/images/OrgLogo.svg";
 
 <div id="header" class="fixed h-13 bg-background-primary/90 w-full z-50 backdrop-blur-xs transition-colors duration-300 flex">
 
-	<SidebarToggleButton client:only/>
+	<SidebarToggleButton client:load/>
 
 	<p class="font-heading font-bold text-2xl mt-2 mr-auto ml-auto text-center w-fit text-white hidden md:block" title="Page Title">{props.pageName}</p>
 	<Image
@@ -35,7 +35,7 @@ import OrgLogo from "@assets/images/OrgLogo.svg";
 
 </div>
 
-<div id="sidebar" class="fixed h-[calc(100%-3.25rem)] top-13 w-full -left-full md:w-60 md:-left-60  m-0 z-50 bg-background-primary/90  backdrop-blur-xs md:after:w-25 md:after:bg-spacegamedev-primary flex flex-col duration-300" transition:persist="sidebar">
+<div id="sidebar" class="fixed h-[calc(100%-3.25rem)] top-13 w-full -left-full md:w-60 md:-left-60  m-0 z-50 bg-background-primary/90  backdrop-blur-xs md:after:w-25 md:after:bg-spacegamedev-primary flex flex-col duration-300" transition:persist>
 
 	<h1 class="text-white font-bold text-2xl ml-auto mr-auto font-heading text-left md:hidden w-[90%] mt-5 mb-5">
 		SpaceGameDev
