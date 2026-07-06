@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import {Image} from "astro:assets";
 
-import profilePicture from '../../public/images/ProfilePicture.png';
+import profilePicture from '@assets/images/ProfilePictureVector.png';
 
 import BioButton from "../components/buttons/BioButton.astro";
 
@@ -31,9 +31,7 @@ import LinkedInLogo from '@assets/images/Icons/LinkedIn.png';
 		<Image
 				src={profilePicture}
 				alt="Me"
-				width="342"
-				height="342"
-				class="ml-auto mr-auto w-fit"
+				class="m-auto w-85.5"
 				loading="eager"
 		/>
 
