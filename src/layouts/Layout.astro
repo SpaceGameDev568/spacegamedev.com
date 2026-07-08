@@ -35,7 +35,7 @@ if(import.meta.env.DEV) {
 		<title>{FullTitle}</title>
 		<ClientRouter />
 	</head>
-	<body class="bg-[url(/images/GamepadBG.svg)] bg-no-repeat bg-cover bg-blend-darken bg-black/30 bg-fixed">
+	<body class="bg-[url(/images/SGDGradientBall.png)] bg-no-repeat bg-cover bg-center bg-blend-darken bg-black/30 bg-fixed">
 		<Header pageName={title} />
 
 		<ScrollToTopButton client:only="svelte" transition:persist="ScrollTopButton"/>
@@ -52,26 +52,26 @@ if(import.meta.env.DEV) {
 		<!-- To ignore something, add the css class: esv-crossref-ignore -->
 		<script src="https://static.esvmedia.org/crossref/crossref.min.js" type="text/javascript"></script>
 
-	<script>
-		// Set CrossRef Options
+		<script>
+			// Set CrossRef Options
 
-		// @ts-expect-error
-		window.ESV_CROSSREF_OPTIONS = {
-			border_color: '434749',
-			border_radius: 0,
-			header_font_color: 'FFFFFF',
-			body_font_color: 'FFFFFF',
-			footer_font_color: 'FFFFFF',
-			header_background_color: '252626',
-			body_background_color: '2C2E2F',
-			footer_background_color: '252626',
-			header_font_size: 16,
-			body_font_size: 14,
-			footer_font_size: 14,
-			header_font_family: 'Inter Tight',
-			body_font_family: 'Jetbrains Mono',
-			footer_font_family: 'Inter Tight'
-		};
-	</script>
+			// @ts-expect-error
+			window.ESV_CROSSREF_OPTIONS = {
+				border_color: '434749',
+				border_radius: 0,
+				header_font_color: 'FFFFFF',
+				body_font_color: 'FFFFFF',
+				footer_font_color: 'FFFFFF',
+				header_background_color: '252626',
+				body_background_color: '2C2E2F',
+				footer_background_color: '252626',
+				header_font_size: 16,
+				body_font_size: 14,
+				footer_font_size: 14,
+				header_font_family: 'Inter Tight',
+				body_font_family: 'Jetbrains Mono',
+				footer_font_family: 'Inter Tight'
+			};
+		</script>
 	</body>
 </html>

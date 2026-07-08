@@ -7,7 +7,7 @@
   onMount(() => {
     sidebar = document.getElementById('sidebar');
 
-    const astroHandler = () => swapPage();
+    const astroHandler = () => collapseSidebar();
     document.addEventListener('astro:after-swap', astroHandler);
 
     return () => {
@@ -36,17 +36,6 @@
     if (sidebar) {
       sidebar.style.left = sidebar.style.width;
       sidebar.style.transition = '800ms cubic-bezier(0.83, 0, 0.17, 1)';
-    }
-  }
-
-  function swapPage() {
-    state = state === 'menu' ? 'close' : 'menu';
-    if (sidebar) {
-      sidebar.style.transition = '0ms linear';
-      sidebar.style.left = '0px';
-
-      sidebar.style.transition = '800ms cubic-bezier(0.83, 0, 0.17, 1)';
-      sidebar.style.left = sidebar.style.width;
     }
   }
 </script>

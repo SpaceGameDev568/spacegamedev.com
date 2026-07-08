@@ -1,10 +1,9 @@
 
 ---
-
 import {Image} from 'astro:assets';
 
 import Layout from "@layouts/Layout.astro";
-import ActionButton from "../components/buttons/ActionButton.astro";
+import ActionButton from "@components/buttons/ActionButton.astro";
 
 import OrgLogoFlat from "@assets/images/OrgLogoFlat.svg";
 ---
@@ -14,7 +13,7 @@ import OrgLogoFlat from "@assets/images/OrgLogoFlat.svg";
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div id="content" class="md:border border-white/10 md:bg-background-primary md:box-border w-85.5 border-box ml-auto mr-auto">
+	<div id="content" class="md:border border-white/10 md:bg-background-primary/25 backdrop-blur-sm md:box-border w-85.5 border-box m-auto">
 
 		<div class="m-5 mb-10">
 			<Image

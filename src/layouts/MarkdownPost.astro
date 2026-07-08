@@ -3,14 +3,13 @@ import Layout from "@layouts/Layout.astro";
 const { frontmatter } = Astro.props;
 
 const PageTitle = "Posts / " + frontmatter.title;
-
 ---
 
 <Layout title={PageTitle}>
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div class="ml-auto mr-auto w-fit bg-background-primary xl:border border-white/10">
+	<div class="m-auto w-fit bg-background-primary xl:border border-white/10">
 
 		<div class="flex">
 			<a class="material-symbols-rounded text-white hover:bg-spacegamedev-primary duration-300 p-3 select-none" href="/blog">
@@ -22,7 +21,7 @@ const PageTitle = "Posts / " + frontmatter.title;
 		</div>
 
 		<div class="m-5">
-			<p class="text-blue-500">{frontmatter.pubDate.toString().slice(0, 10)}</p>
+			<p class="text-blue-500">{frontmatter.pubDate.toLocaleDateString("en-US")}</p>
 			<p class="text-white">{frontmatter.description}</p>
 			<p class="text-white">Written by: {frontmatter.author}</p>
 

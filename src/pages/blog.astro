@@ -1,15 +1,14 @@
 ---
 
 import Layout from '@layouts/Layout.astro';
+import { getCollection } from "astro:content";
 
 import BlogPostCard from "@components/cards/BlogPostCard.astro";
 
-const allPosts = Object.values(
-	import.meta.glob("./posts/*.md", { eager: true })
-).sort((a:any, b:any) => {
+const allPosts = (await getCollection("blog")).sort((a:any, b:any) => {
 	// Sort descending (newest first)
-	const dateA = new Date(a.frontmatter.pubDate).valueOf();
-	const dateB = new Date(b.frontmatter.pubDate).valueOf();
+	const dateA = new Date(a.data.pubDate).valueOf();
+	const dateB = new Date(b.data.pubDate).valueOf();
 
 	return dateB - dateA; // Descending
 });
@@ -20,13 +19,17 @@ const allPosts = Object.values(
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Personal Blog </h1>
+	<h1 class="text-5xl font-bold m-auto w-fit text-white font-heading text-center"> Personal Blog </h1>
 
 	<br/>
 	<br/>
 
-	<ul class="ml-auto mr-auto w-fit flex flex-wrap place-content-center">
-		{allPosts.map((post:any) => <BlogPostCard url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} description={post.frontmatter.description} />)}
+	<ul class="m-auto w-fit flex flex-wrap place-content-center">
+		{
+			allPosts.map((post:any) => (
+				<BlogPostCard url={`/posts/${post.id}/`} title={post.data.title} date={post.data.pubDate.toLocaleDateString("en-US")} description={post.data.description} />
+		))
+		}
 	</ul>
 
 </Layout>

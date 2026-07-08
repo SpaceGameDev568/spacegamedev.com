@@ -4,7 +4,7 @@ import {Image} from "astro:assets";
 
 import profilePicture from '@assets/images/ProfilePictureVector.png';
 
-import BioButton from "../components/buttons/BioButton.astro";
+import BioButton from "@components/buttons/BioButton.astro";
 
 import BHLogo from "@assets/images/BisectHostingLogomark.svg"
 import DiscordLogo from "@assets/images/Icons/Discord.svg";
@@ -26,7 +26,7 @@ import LinkedInLogo from '@assets/images/Icons/LinkedIn.png';
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div id="content" class="md:border border-white/10 md:bg-background-primary md:box-border md:p-5 w-fit ml-auto mr-auto">
+	<div id="content" class="md:border border-white/10 md:bg-background-primary/25 backdrop-blur-sm md:box-border md:p-5 w-fit m-auto">
 
 		<Image
 				src={profilePicture}
@@ -37,17 +37,17 @@ import LinkedInLogo from '@assets/images/Icons/LinkedIn.png';
 
 		<br/>
 
-		<h2 class="text-4xl font-bold ml-auto mr-auto w-fit text-center animate-rgb-cycle font-bh-sans"> SpaceGameDev </h2>
+		<h2 class="text-4xl font-bold m-auto w-fit text-center animate-rgb-cycle font-bh-sans"> SpaceGameDev </h2>
 
 		<br/>
 
-		<div class="w-85.5 ml-auto mr-auto">
+		<div class="w-85.5 m-auto">
 
-		<a href="https://www.buymeacoffee.com/spacegamedev" class="ml-auto mr-auto w-85.5">
+		<a href="https://www.buymeacoffee.com/spacegamedev" class="m-auto w-85.5">
 			<img
 				src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=spacegamedev&button_colour=FFDD00&font_colour=000001&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
 				alt="Buy Me A Coffee"
-				class="shadow-md duration-300 ml-auto mr-auto w-85.5 h-[74] hover:ring-4 box-border rounded-2xl ring-white/20"
+				class="shadow-md duration-300 m-auto w-85.5 h-[74] hover:ring-4 box-border rounded-2xl ring-white/20"
 			/>
 		</a>
 

@@ -1,5 +1,4 @@
 ---
-
 import {Image} from 'astro:assets';
 
 import Layout from '@layouts/Layout.astro';
@@ -32,7 +31,7 @@ import CoffeeCupAddonsLogo from "@assets/images/ModLogos/CoffeeCupAddons.png";
 import QuickThirdPersonLogo from "@assets/images/ModLogos/QuickThirdPerson.png";
 
 import KuvankaunisLogo from "@assets/images/ModLogos/Kuvankaunis.png";
-import SnapAxisLogo from "@assets/images/SnapAxisProjectThumbnail.svg";
+import SnapAxisLogo from "@assets/images/SnapAxis.svg";
 import ZLANLogo from "@assets/images/ZLANLogo.svg";
 ---
 
@@ -40,7 +39,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div class="ml-auto mr-auto w-[90%] 2xl:w-[80%]">
+	<div class="m-auto w-[90%] 2xl:w-[80%]">
 
 		<div id="heading" class="mt-12.5 grid grid-cols-1 lg:grid-cols-2 items-center">
 
@@ -56,16 +55,18 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 			</div>
 
 			<div class="leading-3">
-				<h1 class="font-heading font-bold text-white xl:text-8xl lg:text-6xl text-4xl">SpaceGameDev<br/>Modding</h1><br/>
+				<h1 class="font-heading font-bold text-white xl:text-8xl lg:text-6xl text-4xl">SpaceGameDev<br/>Modding
+				</h1><br/>
 				<h2 class="animate-rgb-cycle lg:text-4xl text-3xl"> Open Source modding for everyone </h2><br/>
-				<p class="text-white text-2xl bg-[#101014]/25 p-2">
-					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft.
+				<p class="text-white text-2xl bg-[#101014]/25 p-2 backdrop-blur-sm">
+					The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like
+					Kuvankaunis for Minecraft.
 				</p>
 				<!--<div class="animate-bg-rgb-cycle w-full h-10"/>-->
 
 				<br/>
 
-				<div class="flex flex-wrap place-content-center gap-2 w-fit m-auto sm:m-0">
+				<div class="flex flex-wrap place-content-center gap-5 w-fit m-auto sm:m-0">
 
 					<ActionButton
 							link="/hosting"
@@ -92,10 +93,10 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 			</div>
 
 			<script>
-				import { animate } from "motion"
+				import {animate} from "motion"
 
 				document.addEventListener('astro:page-load', () => {
-					animate("#heading", { y: [225, 0], opacity: [0, 100] }, { ease: "easeInOut", duration: 1} )
+					animate("#heading", {y: [225, 0], opacity: [0, 100]}, {ease: "easeInOut", duration: 1})
 
 				});
 			</script>
@@ -106,7 +107,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 		<br/><br/><br/><br/>
 
-		<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Mods for </h1>
+		<h1 class="text-5xl font-bold m-auto w-fit text-white font-heading text-center"> Mods for </h1>
 
 		<br/>
 
@@ -115,7 +116,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 				alt="Satisfactory"
 				width="512"
 				loading="eager"
-				class="ml-auto mr-auto"
+				class="m-auto"
 		/>
 
 		<br/><br/>
@@ -232,7 +233,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 		<br/><br/>
 
-		<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Modpacks for </h1>
+		<h1 class="text-5xl font-bold m-auto w-fit text-white font-heading text-center"> Modpacks for </h1>
 
 		<br/>
 
@@ -242,7 +243,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 				width="512"
 				height="512"
 				loading="eager"
-				class="ml-auto mr-auto"
+				class="m-auto"
 		/>
 
 		<br/><br/>
@@ -262,7 +263,7 @@ import ZLANLogo from "@assets/images/ZLANLogo.svg";
 
 		<br/><br/>
 
-		<h1 class="text-5xl font-bold ml-auto mr-auto w-fit text-white font-heading text-center"> Partner Projects </h1>
+		<h1 class="text-5xl font-bold m-auto w-fit text-white font-heading text-center"> Partner Projects </h1>
 
 		<br/><br/>
 

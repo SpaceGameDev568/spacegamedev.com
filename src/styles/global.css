@@ -50,7 +50,7 @@ a[target="_blank"]::after {
 	--font-bh-heading: 'Akira Expanded', 'sans-serif';
 	--font-bh-sans: 'Montserrat', 'sans-serif';
 
-	--color-spacegamedev-primary: #1d68a4;
+	--color-spacegamedev-primary: #0f68e4; /* Alternatives: #1d68a4, #0f68e4 */
 
 	--color-background-primary: #272C31;
 	--color-background-secondary: #31363D;
