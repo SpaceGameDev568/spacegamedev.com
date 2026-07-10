@@ -6,7 +6,11 @@ import Layout from '@layouts/Layout.astro';
 import ActionButton from "@components/buttons/ActionButton.astro";
 import PurchaseButton from "@components/buttons/PurchaseButton.astro";
 import BHLogomark from "@assets/images/BisectHostingLogomark.svg"
-import {animate} from "motion";
+import PioneerHero from "@assets/images/Hosting/PioneerHero.png"
+import SimTweeney from "@assets/images/Hosting/20260708202033_1.jpg"
+import FactoryImage2 from "@assets/images/Hosting/20260708201539_1.jpg"
+import FactoryImage3 from "@assets/images/Hosting/20260708200710_1.jpg"
+import FactoryImage4 from "@assets/images/Hosting/20260708200253_1.jpg"
 
 ---
 
@@ -14,7 +18,7 @@ import {animate} from "motion";
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div class="ml-auto mr-auto w-[90%] 2xl:w-[80%] font-bh-sans">
+	<div class="m-auto w-[90%] 2xl:w-[80%] font-bh-sans">
 
 		<div id="heading" class="mt-12.5 grid grid-cols-1 lg:grid-cols-2 items-center">
 
@@ -30,10 +34,10 @@ import {animate} from "motion";
 			</div>
 
 			<div class="leading-3">
-				<h1 class="font-bh-heading font-bold text-white xl:text-8xl lg:text-6xl text-4xl">Server Hosting</h1><br/>
-				<h2 class="font-bh-heading text-bh-new-car lg:text-4xl text-3xl"> Provided by<br/>Bisect<br class="md:hidden"/>Hosting </h2><br/>
-				<p class="text-white text-2xl bg-[#101014]/25 p-2">
-					This page will help you determine whether you may need a server host, and if so, why I believe you should choose BisectHosting!
+				<h1 class="font-bh-heading font-bold text-white xl:text-6xl lg:text-5xl md:text-4xl text-3xl">Satisfactory Server Hosting</h1><br/>
+				<h2 class="font-bh-heading text-bh-new-car lg:text-4xl text-3xl"> With<br/>Bisect<br class="md:hidden"/>Hosting </h2><br/>
+				<p class="text-white text-2xl bg-[#101014]/25 backdrop-blur-sm p-2">
+					On this page I'll explain how BisectHosting can improve your Modded Satisfactory multiplayer experience!
 				</p>
 
 				<br/>
@@ -41,15 +45,15 @@ import {animate} from "motion";
 				<div class="flex flex-wrap place-content-center gap-2 w-fit mr-10">
 
 					<ActionButton
-							link="#why-bh"
-							title="Why BH?"
+							link="#interested"
+							title="Get Started Now"
 							variant="bh_secondary"
 							target="_self"
 					/>
 
 					<ActionButton
-							link="#interested"
-							title="Get Started"
+							link="#why-bh"
+							title="Why BH?"
 							variant="bh_primary"
 							target="_self"
 					/>
@@ -70,133 +74,179 @@ import {animate} from "motion";
 
 		</div>
 
-		<br/><br/><br/>
-
 		<div id="why-bh"/>
 
 		<br/><br/>
+		<br/><br/>
 
-		<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-bh-new-car font-bh-heading text-center"> Why might you need a server host? </h1>
+		<div class="w-fit m-auto bg-[#101014]/25 backdrop-blur-sm p-5">
+			<p class="font-bold text-3xl font-heading m-auto w-fit md:text-center text-bh-vivid-sky-blue"> All screenshots on this page were taken of factories built on my BisectHosting server. </p>
+		</div>
+
+		<br/><br/>
+		<br/><br/>
+
+		<h1 class="lg:text-5xl text-3xl font-bold m-auto w-fit text-bh-white font-bh-heading text-center"> Our relationship </h1>
 
 		<br/><br/>
 
-		<div class="border  border-white/10  bg-bh-eerie-black box-border m-2 p-5 w-full">
+		<div class="grid gap-5 lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 auto-rows-min">
 
-			<p class="text-white text-xl text-left ml-auto mr-auto w-fit">
-				- If you enjoy playing with friends but you want them to be able to keep playing on your world even when you aren't online<br/><br/>
-				- If your PC struggles to keep up when you're hosting a multiplayer world<br/><br/>
-				- If you want to run lots of mods<br/><br/>
-				- If you want to have all of the above benefits, but don't want to deal with port-forwarding or revealing your IP address<br/><br/>
-			</p>
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5">
+				<p class="text-white text-xl text-left m-auto w-fit">
+					I'm a big advocate for self-hosting as much as possible, but I've always found hosting game servers to be a pain.<br/><br/>
+					When I started looking at managed hosting providers, BisectHosting was one of the first I came across.<br/><br/>
+					What I liked most when I tried them is that I don't have to deal with port forwarding anymore, and updating the server is one click, no SSH needed.<br/><br/>
+					In 2024, I decided to officially partner with them, meaning they sponsor me and provide me with a server to develop on for free,
+					and I can save you money when you sign up!
+				</p>
+			</div>
 
-			<br/>
+			<Image
+					src={SimTweeney}
+					alt="Sim Tweeney and Vase Jarlet admire their factory"
+					class="border  border-white/10 md:self-center"
+			/>
 
-			<h2 class="text-white text-center text-3xl font-bold"> Then you probably need a server host. </h2>
 		</div>
 
 		<br/><br/>
 
-		<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-bh-new-car font-bh-heading text-center"> Why choose Bisect<br class="md:hidden"/>Hosting? </h1>
+		<h1 class="lg:text-5xl text-3xl font-bold m-auto w-fit text-bh-white font-bh-heading text-center"> How that benefits you </h1>
 
 		<br/><br/>
 
-		<div class="flex flex-wrap place-content-center">
+		<div class="grid lg:grid-cols-2 gap-5 grid-rows-6 grid-cols-1 grid-flow-col m-auto w-fit">
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border m-2 p-5 w-full">
+			<Image
+					src={FactoryImage2}
+					alt="NotSpace and Biko drink coffee while watching the battery factory"
+					class="hidden lg:block border  border-white/10 row-span-3 self-center"
+			/>
 
-				<h1 class="lg:text-4xl text-3xl font-bold ml-auto mr-auto w-fit text-white font-bh-heading text-center"> As of December 2025, Bisect<br class="md:hidden"/>Hosting has: </h1>
+			<Image
+					src={FactoryImage3}
+					alt="My main base in the Grass Fields"
+					class="hidden lg:block border  border-white/10 row-span-3 self-center"
+			/>
 
-				<br/><br/>
+			<!--
 
-				<p class="lg:text-2xl text-xl font-bold ml-auto mr-auto w-fit text-white font-bh-heading text-left">
-					- 1.2M++ Servers Hosted<br/>
-					- 20 Global Locations<br/>
-					- 100+ Games Hosted<br/>
-					- 13+ Years of Experience<br/>
-				</p>
+			<Image
+					src={FactoryImage4}
+					alt="The factory producing Nuclear Fuel Rods for my Nuclear Power Plants"
+					class="hidden lg:block border  border-white/10 row-span-2"
+					width="800"
+			/>
 
+			-->
+
+			<!--
+
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 w-full col-span-2 2xl:row-span-2 row-span-3 order-1 max-w-200">
+
+				<ul class="text-white text-xl/10 text-left m-5 w-fit list-disc">
+					<li>All of my mods are designed to work great on dedicated servers. <br/> <span class="text-gray-400 text-sm">(Thanks in part to BH providing me the resources to test them!)</span></li>
+					<li>As many friends as you want; While you're typically limited to 4 players, you can have as many as you want with a BisectHosting server!</li>
+					<li>Servers are super simple to set up.</li>
+					<li>No port-forwarding or SSH needed.</li>
+					<li>Choose any of the 20+ locations across the globe closest to you for the best latency.</li>
+					<li>Large modded saves are much easier to manage, since they stay centralized in one location.</li>
+					<li>The Satisfactory Mod Manager has built-in support to install mods on dedicated servers.</li>
+					<li>Game updates are easy to install, and so are mods (Assuming Coffee Stain doesn't update the engine and break mods <b><i>again</i></b>.)</li>
+					<li>If updates do break mods, your server will continue to work fine in vanilla until we can update our mods. <br/> <span class="text-gray-400 text-sm">(Though you will likely need to uninstall them temporarily.)</span></li>
+					<li>If you get bored of Satisfactory, you can just swap your server to any of the other 100+ games BH hosts.</li>
+				</ul>
 			</div>
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border p-5 w-95 m-2">
-				<p class="text-bh-new-car text-2xl font-bold">
-					One Subscription
-				</p>
-				<br/>
-				<p class="text-white">
-					With BisectHosting's new BisectOne™ plan, you can enjoy more than 100 games with 1 subscription. If you're bored, just swap the game on the server!
-				</p>
+			-->
+
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				All of my mods are designed to work great on dedicated servers, in part because I'm able to test more easily using the server they provide me!
 			</div>
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border p-5 w-95 m-2">
-				<p class="text-bh-new-car text-2xl font-bold">
-					Modern Hardware
-				</p>
-				<br/>
-				<p class="text-white">
-					BisectHosting exclusively uses the latest AMD Ryzen CPUs.
-					With their smart provisioning system,
-					they automatically allocate your server the perfect hardware,
-					based on if it needs fast single-threaded performance,
-					or balanced multi-threaded efficiency.
-				</p>
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				While you're typically limited to 4 players, you can have as many as you want with a BisectHosting server!
+				Just make sure to select a plan with enough memory to make it a smooth experience for everyone.
 			</div>
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border p-5 w-95 m-2">
-				<p class="text-bh-new-car text-2xl font-bold">
-					Worldwide coverage
-				</p>
-				<br/>
-				<p class="text-white">
-					BisectHosting has 20 colocation centers worldwide,
-					meaning all you have to do is choose the location closest to you for the lowest latency!
-				</p>
-
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				Servers are super simple to set up, no port-forwarding or SSH needed!<br/>
+				Plus, the Satisfactory Mod Manager has built-in support easily to install mods on dedicated servers!
 			</div>
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border p-5 w-95 m-2">
-				<p class="text-bh-new-car text-2xl font-bold">
-					Unmatched 24/7/365 Customer Service
-				</p>
-				<br/>
-				<p class="text-white">
-					Whether you prefer live chat or ticket services, you can always reach out for help and expect a swift response.
-					A support agent will typically be ready to help you within 15 minutes of opening a ticket!
-				</p>
-
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				There are over 20 server locations across the globe for you to choose from to ensure you get the lowest latency!
 			</div>
 
-			<div class="border border-white/10  bg-bh-eerie-black box-border p-5 w-95 m-2">
-				<p class="text-bh-new-car text-2xl font-bold">
-					User Friendly
-				</p>
-				<br/>
-				<p class="text-white">
-					Every server comes with the powerful, yet easy to use Starship™ control panel, which makes managing your server a breeze.
-				</p>
-
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				Both the game and mods are simple to update (Assuming Coffee Stain doesn't update the engine and break mods <b><i>again</i></b>.)
+				If updates do break mods, your server will continue to work fine in vanilla until we can update our mods. <br/> <span class="text-gray-400 text-sm">(Though you will likely need to uninstall them temporarily.)</span>
 			</div>
 
+			<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 order-1 text-bh-white text-xl">
+				If you get bored of Satisfactory, you can just swap your server to any of the other 100+ games BH hosts!
+			</div>
+
+		</div>
+
+		<br/><br/>
+		<Image
+				src={FactoryImage4}
+				alt="The factory producing Nuclear Fuel Rods for my Nuclear Power Plants"
+				class="lg:hidden border  border-white/10"
+				width="800"
+		/>
+
+		<br/><br/>
+
+		<h1 class="lg:text-5xl text-3xl font-bold m-auto w-fit text-bh-white font-bh-heading text-center"> Support </h1>
+
+		<br/><br/>
+
+		<div class="border  border-white/10  bg-bh-eerie-black box-border p-5 w-full max-w-250 text-bh-white m-auto">
+			<p class="text-white text-xl text-left m-auto w-fit">
+				If you have any issues, trained professionals who understand modded servers are ready to help,
+				all day and night, any day of the year.<br/>
+				You'll usually get a response back within 15 minutes.<br/><br/>
+
+				<ActionButton link="https://help.bisecthosting.com/" target="_blank" title="Help Center" variant="bh_primary"/><br/><br/>
+
+				There's also Biko to assist you with quick issues that don't need a human involved,
+				and a vast knowledgebase available covering virtually any topic regarding your server.
+			</p>
 		</div>
 
 		<div id="interested"/>
 
 		<br/><br/>
 
-		<h1 class="lg:text-5xl text-4xl font-bold ml-auto mr-auto w-fit text-bh-new-car font-bh-heading text-center"> Interested? </h1>
+		<h1 class="lg:text-5xl text-3xl font-bold m-auto w-fit text-bh-white font-bh-heading text-center"> Interested? </h1>
 
 		<br/><br/>
 
-		<div class="border border-white/10  bg-bh-eerie-black box-border m-2 p-5 w-full">
+		<div class="border border-white/10  bg-bh-eerie-black box-border grid md:grid-cols-2  w-full max-w-250 m-auto">
 
-			<p class="text-white text-xl text-left ml-auto mr-auto w-fit">
-				I've been partnering with them since 2024 to offer you, my incredible fans, 25% off your first month!<br/>
-				All you need to do is click the link below and use promo code "<code class="font-mono text-bh-new-car">SPACEGAMEDEV</code>" at checkout!<br/>
-				<code class="text-gray-400 font-sans text-base">This also benefits me, as I earn a commission from sales made when using my link, which goes towards maintaining and creating new mods for you to enjoy!</code><br/>
-			</p>
+			<Image
+					src={PioneerHero}
+					alt="A Pioneer gesturing at another Pioneer giving a thumbs up"
+					width="300"
+					class="md:ml-5 md:mt-5 order-last md:order-0 md:mr-0 md:mb-0 m-auto"
+			/>
 
-			<br/>
+			<div class="self-center m-5">
 
-			<div class="ml-auto mr-auto"><PurchaseButton title="Get your server now!" symbol="shopping_cart" link="https://bisecthosting.com/spacegamedev?r=WebsiteHostingPage"/></div>
+				<p class="text-white text-xl text-left m-auto w-fit">
+					All you need to do is click the link below and use promo code "<code class="font-mono text-bh-vivid-sky-blue">SPACEGAMEDEV</code>" at checkout to get 25% off!<br/>
+					<code class="text-gray-400 font-sans text-base">This also benefits me, as I earn a commission from sales made when using my link, which goes towards maintaining my existing mods and creating new ones for you to enjoy!</code><br/>
+				</p>
+
+				<br/>
+
+				<div class="m-auto">
+					<PurchaseButton title="Create Server" symbol="dns" link="https://bisecthosting.com/spacegamedev?r=WebsiteHostingPage"/>
+				</div>
+			</div>
 		</div>
 
 	</div>
