@@ -27,11 +27,21 @@ if(import.meta.env.DEV) {
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-		<meta charset="UTF-8" />
-		<meta name="description" content="SpaceGameDev's Website" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/webp" href="/images/Favicon.svg" />
+
+		<meta charset="UTF-8" />
+		<meta name="description" content="Open Source modding for everyone. The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta name="theme-color" content="#0f68e4" />
+
+		<meta property="og:title" content="SpaceGameDev Modding" />
+		<meta property="og:site_name" content="spacegamedev.com" />
+		<meta property="og:description" content="Open Source modding for everyone. The home of mods like Factory Props and Mod Update Notifier for Satisfactory, and modpacks like Kuvankaunis for Minecraft." />
+		<meta property="og:image" content="https://spacegamedev.com/images/Favicon.svg" />
+		<meta property="og:url" content="https://spacegamedev.com/" />
+		<meta property="og:type" content="website" />
 		<title>{FullTitle}</title>
 		<ClientRouter />
 	</head>
