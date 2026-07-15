@@ -10,35 +10,38 @@ import ActionButton from "@components/buttons/ActionButton.astro";
 
 	<div>
 
-		<p class="font-bold leading-tight font-heading text-[25vw] m-auto w-fit text-center bg-clip-text text-transparent bg-[linear-gradient(60deg,rgb(247,149,51),rgb(243,112,85),rgb(239,78,123),rgb(161,102,171),rgb(80,115,184),rgb(16,152,173),rgb(7,179,155),rgb(111,186,130))]">404</p>
+		<p class="font-bold leading-tight font-heading text-[25vw] m-auto w-fit text-center bg-clip-text text-transparent  bg-[linear-gradient(60deg,#0f68e4,#6a1fbb,#a3159f,#ca3434)]">404</p>
 
-		<div class="w-fit m-auto bg-background-primary/50 p-5">
-		<p class="font-bold text-4xl font-heading m-auto w-fit text-center bg-clip-text text-transparent bg-[linear-gradient(60deg,rgb(247,149,51),rgb(243,112,85),rgb(239,78,123),rgb(161,102,171),rgb(80,115,184),rgb(16,152,173),rgb(7,179,155),rgb(111,186,130))] "> The cake is a lie. </p>
+		<div id="content" class="md:border border-white/10 md:bg-background-primary/25 md:backdrop-blur-sm md:box-border w-85.5 border-box m-auto p-5">
+
+			<p class="font-bold text-4xl font-heading m-auto w-fit text-center bg-clip-text text-transparent bg-[linear-gradient(60deg,rgb(247,149,51),rgb(243,112,85),rgb(239,78,123),rgb(161,102,171),rgb(80,115,184),rgb(16,152,173),rgb(7,179,155),rgb(111,186,130))] ">
+				The cake is a lie.
+			</p>
+
+			<br/>
+
+			<p class="m-auto w-fit text-white">
+				Sorry, that page could not be found.<br>
+				Would you like to return to the home page?
+			</p>
+
+			<br/>
+			<br/>
+
+			<div class="m-auto w-fit">
+
+				<ActionButton
+						link="/"
+						title="Home"
+						variant="large_primary"
+						target="_self"
+				/>
+
+			</div>
+			<br/>
 		</div>
 
-		<br/>
 
-		<p class="m-auto w-fit text-center text-white">
-			Sorry, that page could not be found.<br>
-			Would you like to return to the home page?
-		</p>
-
-		<br/>
-		<br/>
-
-		<div class="m-auto w-fit">
-
-			<ActionButton
-				link="/"
-				title="Home"
-				variant="large_primary"
-				target="_self"
-			/>
-
-		</div>
-
-		<br/>
-		<br/>
 
 	</div>
 
