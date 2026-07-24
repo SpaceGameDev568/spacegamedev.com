@@ -110,3 +110,8 @@ a[target="_blank"]::after {
 		100% { background-color: oklch(0.572 0.211 20.341); }
 	}
 }
+
+::selection {
+	color: white;
+	background-color: #02bba7;
+}
