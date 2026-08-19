@@ -64,7 +64,7 @@ if(import.meta.env.DEV) {
 		<ClientRouter />
 
 	</head>
-	<body class="bg-[url(/images/SGDGradientBall.webp)] bg-no-repeat bg-cover bg-center bg-blend-darken bg-black/30 bg-fixed">
+	<body class="bg-[url(/images/SGDGradientBallGrid.webp)] bg-no-repeat bg-cover bg-center bg-blend-darken bg-black/30 bg-fixed">
 		<Header pageName={title} />
 
 		<ScrollToTopButton client:only="svelte" transition:persist="ScrollTopButton"/>
@@ -79,7 +79,7 @@ if(import.meta.env.DEV) {
 
 		<!-- ESV Cross-Reference Tool: https://www.esv.org/resources/esv-crossreference-tool/ -->
 		<!-- To ignore something, add the css class: esv-crossref-ignore -->
-		<script src="https://static.esvmedia.org/crossref/crossref.min.js" type="text/javascript"></script>
+		<script src="https://static.esvmedia.org/crossref/crossref.min.js" is:inline type="text/javascript"></script>
 
 		<script>
 			// Set CrossRef Options
