@@ -12,14 +12,14 @@
     "@astrojs/sitemap": "^3.7.4",
     "@astrojs/svelte": "^9.0.1",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.3",
+    "astro": "^7.3.3",
     "motion": "^12.43.0",
     "sharp": "^0.33.5",
-    "svelte": "^5.56.9",
+    "svelte": "^5.57.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "wrangler": "^4.123.0"
+    "wrangler": "^4.135.0"
   }
 }
