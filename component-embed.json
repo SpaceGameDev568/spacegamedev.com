@@ -1,0 +1,11 @@
+{
+  "component": {
+	"type": 17,
+	"components": [
+	  {
+		"type": 10,
+		"content": "https://github.com/discord/discord-api-docs/blob/6fa0d7363caf8c3ff2cbfb1b0d6f003250e9c2f9/developers/link-previews/component-embeds.mdx"
+	  }
+	]
+  }
+}
