@@ -13,7 +13,7 @@ const { title, link, target, variant = 'primary' } = Astro.props;
 // Map props to static Tailwind classes
 const colorVariants: Record<string, string> = {
 	primary: "bg-spacegamedev-primary hover:bg-blue-300 hover:ring-spacegamedev-primary/50",
-	secondary: "bg-black ring-white/20 hover:bg-white hover:text-black",
+	secondary: "bg-neutral-900 ring-white/20 hover:bg-white hover:text-black",
 	large_primary: "bg-spacegamedev-primary hover:bg-blue-300 hover:ring-spacegamedev-primary/50 text-xl lg:text-xl lg:pt-5 lg:pb-5 pl-6 pr-6",
 	bh_primary: "bg-bh-new-car hover:bg-bh-purple-x11 hover:ring-bh-purple-x11/50",
 	bh_secondary: "bg-bh-eerie-black hover:bg-bh-purple-x11 hover:ring-bh-purple-x11/50",

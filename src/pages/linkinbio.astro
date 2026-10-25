@@ -19,35 +19,45 @@ import ModrinthLogo from '@assets/images/Icons/Modrinth.svg';
 import WebsiteLogo from '@assets/images/OrgLogo.svg';
 import XLogo from '@assets/images/Icons/X2.svg';
 import LinkedInLogo from '@assets/images/Icons/LinkedIn.png';
-
+import OrgLogo from "@assets/images/OrgLogo.svg";
 ---
 
 <Layout title="SpaceGameDev / LinkInBio">
 
 	<div id="header-spacer" class="h-12.5 mb-10"/>
 
-	<div id="content" class="md:border border-white/10 md:bg-background-primary/25 md:backdrop-blur-sm md:box-border md:p-5 w-fit m-auto">
+	<div id="content" class="md:border-b md:border-l md:border-r border-white/10 md:border-t-5 border-t-spacegamedev-primary md:bg-background-primary/25 backdrop-blur-sm md:box-border m-auto w-fit">
 
-		<Image
-				src={profilePicture}
-				alt="Me"
-				class="m-auto w-85.5"
-				loading="eager"
-		/>
+		<div class="bg-[url(/images/20250427_180416.jpg)] bg-no-repeat bg-cover bg-center bg-blend-darken bg-black/50 p-5 md:p-0 md:flex">
 
-		<br/>
+			<Image
+					src={profilePicture}
+					alt="Me"
+					class="w-50 rounded-full m-auto md:m-20"
+					loading="eager"
+			/>
 
-		<h2 class="text-4xl font-bold m-auto w-fit text-center animate-rgb-cycle font-bh-sans"> SpaceGameDev </h2>
+			<br/>
+
+			<div class="h-fit m-auto md:pr-20">
+
+				<h2 class="text-4xl font-bold animate-rgb-cycle font-heading text-center md:text-left md:text-white md:animate-none"> SpaceGameDev </h2>
+
+				<br/>
+
+				<h3 class="text-white text-xl text-center md:text-left">Satisfactory Modder, AvGeek, and always willing to help!</h3>
+
+			</div>
+
+		</div>
 
 		<br/>
 
 		<div class="w-85.5 m-auto">
 
-			<h3 class="text-white text-xl text-center">Satisfactory Modder, AvGeek, and always willing to help!</h3>
-
 			<br/>
 
-			<div class="bg-background-primary rounded-2xl text-white p-5">
+			<div class="bg-background-primary rounded-2xl text-white p-5 border border-white/10">
 
 				<p class="text-white font-bold mb-5">Like what I do? Consider supporting me by buying me a coffee! No pressure of course.</p>
 
@@ -62,101 +72,107 @@ import LinkedInLogo from '@assets/images/Icons/LinkedIn.png';
 
 			<br/>
 
-			<BioButton
-					title="Website"
-					link="/"
-					image={WebsiteLogo}
-					alt="My Website"
-			/>
+			<div class="border border-white/10 bg-background-primary">
 
-			<BioButton
-					title="Satisfactory Mods"
-					link="https://ficsit.app/user/5GqLMHyzA3myPG"
-					image={SMRLogo}
-					alt="SpaceGameDev on SMR"
-			/>
+				<BioButton
+						title="Website"
+						link="/"
+						image={WebsiteLogo}
+						alt="My Website"
+				/>
 
-			<BioButton
-					title="Modrinth"
-					link="https://modrinth.com/organization/spacegamedev-modding"
-					image={ModrinthLogo}
-					alt="SpaceGameDev Modding on Modrinth"
-			/>
+				<BioButton
+						title="Satisfactory Mods"
+						link="https://ficsit.app/user/5GqLMHyzA3myPG"
+						image={SMRLogo}
+						alt="SpaceGameDev on SMR"
+				/>
 
-			<BioButton
-					title="BisectHosting"
-					link="/hosting"
-					image={BHLogo}
-					alt="BisectHosting"
-			/>
+				<BioButton
+						title="Modrinth"
+						link="https://modrinth.com/organization/spacegamedev-modding"
+						image={ModrinthLogo}
+						alt="SpaceGameDev Modding on Modrinth"
+				/>
 
-			<BioButton
-					title="Discord"
-					link="https://discord.gg/tgNjem4bjU"
-					image={DiscordLogo}
-					alt="Discord"
-			/>
+				<BioButton
+						title="BisectHosting"
+						link="/hosting"
+						image={BHLogo}
+						alt="BisectHosting"
+				/>
 
-			<BioButton
-					title="GitHub"
-					link="https://github.com/SpaceGameDev568"
-					image={GitHubLogo}
-					alt="SpaceGameDev568 on GitHub"
-			/>
+				<BioButton
+						title="Discord"
+						link="https://discord.gg/tgNjem4bjU"
+						image={DiscordLogo}
+						alt="Discord"
+				/>
 
-			<!--
-			<BioButton
-					title="GitLab"
-					link="https://gitlab.com/SpaceGameDev568"
-					image={GitLabLogo}
-					alt="SpaceGameDev568 on GitLab"
-			/>
+				<BioButton
+						title="GitHub"
+						link="https://github.com/SpaceGameDev568"
+						image={GitHubLogo}
+						alt="SpaceGameDev568 on GitHub"
+				/>
 
-			-->
+				<!--
+				<BioButton
+						title="GitLab"
+						link="https://gitlab.com/SpaceGameDev568"
+						image={GitLabLogo}
+						alt="SpaceGameDev568 on GitLab"
+				/>
 
-			<BioButton
-					title="YouTube"
-					link="https://youtube.com/@spacegamedev"
-					image={YouTubeLogo}
-					alt="@spacegamedev on YouTube"
-			/>
+				-->
 
-			<BioButton
-					title="LinkedIn"
-					link="https://www.linkedin.com/in/jesse-hodgson/"
-					image={LinkedInLogo}
-					alt="Jesse Hodgson on GitHub"
-			/>
+				<BioButton
+						title="YouTube"
+						link="https://youtube.com/@spacegamedev"
+						image={YouTubeLogo}
+						alt="@spacegamedev on YouTube"
+				/>
 
-			<BioButton
-					title="X"
-					link="https://x.com/SpaceGameDev568"
-					image={XLogo}
-					alt="@SpaceGameDev568 on X"
-			/>
+				<BioButton
+						title="LinkedIn"
+						link="https://www.linkedin.com/in/jesse-hodgson/"
+						image={LinkedInLogo}
+						alt="Jesse Hodgson on GitHub"
+				/>
 
-			<BioButton
-					title="Instagram"
-					link="https://www.instagram.com/jessehodgsonaviation"
-					image={InstagramLogo}
-					alt="@jessehodgsonaviation on Instagram"
-			/>
+				<BioButton
+						title="X"
+						link="https://x.com/SpaceGameDev568"
+						image={XLogo}
+						alt="@SpaceGameDev568 on X"
+				/>
 
-			<BioButton
-					title="Steam"
-					link="https://steamcommunity.com/id/spacegamedev/"
-					image={SteamLogo}
-					alt="SpaceGameDev on Steam"
-			/>
+				<BioButton
+						title="Instagram"
+						link="https://www.instagram.com/jessehodgsonaviation"
+						image={InstagramLogo}
+						alt="@jessehodgsonaviation on Instagram"
+				/>
 
-			<!--
-			<BioButton
-					title="Twitch"
-					link="https://www.twitch.tv/spacegamedev568"
-					image={TwitchLogo}
-					alt="SpaceGameDev568 on Twitch"
-			/>
-			-->
+				<BioButton
+						title="Steam"
+						link="https://steamcommunity.com/id/spacegamedev/"
+						image={SteamLogo}
+						alt="SpaceGameDev on Steam"
+				/>
+
+				<!--
+				<BioButton
+						title="Twitch"
+						link="https://www.twitch.tv/spacegamedev568"
+						image={TwitchLogo}
+						alt="SpaceGameDev568 on Twitch"
+				/>
+				-->
+
+			</div>
+
+			<br/>
 		</div>
 
 	</div>

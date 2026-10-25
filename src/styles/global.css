@@ -26,7 +26,7 @@ a[target="_blank"]::after {
 }
 
 @theme {
-	--font-sans: 'Montserrat', 'sans-serif';
+	--font-sans: 'Inter', 'sans-serif';
 	--font-serif: 'serif';
 	--font-mono: 'JetBrains Mono', 'monospace';
 	--font-heading: 'Inter Tight', 'sans-serif';
